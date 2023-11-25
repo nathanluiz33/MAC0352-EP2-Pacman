@@ -35,7 +35,7 @@ class ClientCommunication:
         logging.info(f"Received data from server: {data}")
 
         if self.general_socket.protocol == 'UDP':
-            self.general_socket.change_address(data['adress'])
+            self.general_socket.change_address(data['address'])
 
         return data['type'] == 'connect' and data['status'] == 'ok'
 
@@ -116,3 +116,43 @@ class ClientCommunication:
             return data['leaderboard']
         else:
             return None
+        
+    def get_online_users (self):
+        package = {'type': 'get_online_users', 'status': 'try'}
+        message = json.dumps(package)
+
+        logging.debug(f"Sending message to server: {message}")
+        self.general_socket.send_message(message)
+
+        data = self.general_socket.receive_message()
+        data = data.decode('ascii')
+        logging.info(f"Received data from server: {data}")
+
+        data = json.loads(data)
+
+        if data['type'] == 'get_online_users' and data['status'] == 'ok':
+            return data['online_users']
+        else:
+            return None
+    
+    def tchau (self):
+        package = {'type': 'tchau', 'status': 'try'}
+        message = json.dumps(package)
+
+        logging.debug(f"Sending message to server: {message}")
+        self.general_socket.send_message(message)
+
+    def start_game (self, host_port):
+        package = {'type': 'start_game', 'status': 'try', 'host_port': host_port}
+        message = json.dumps(package)
+
+        logging.debug(f"Sending message to server: {message}")
+        self.general_socket.send_message(message)
+
+        data = self.general_socket.receive_message()
+        data = data.decode('ascii')
+        logging.info(f"Received data from server: {data}")
+
+        data = json.loads(data)
+
+        return data['type'] == 'start_game' and data['status'] == 'ok'

@@ -5,6 +5,7 @@ import socket
 import time
 import asyncio
 import random
+import os
 
 from os.path import abspath, dirname
 
@@ -13,6 +14,7 @@ sys.path.append(abspath(dirname(__file__)) + '/..')
 
 # Import the specific function from the module
 from communication.server_communication import ServerCommunication
+from communication.protocol import get_open_port
 
 host = '127.0.0.1'
 logging.basicConfig(filename='../communication/server.log', encoding='utf-8', level=logging.DEBUG)
@@ -30,22 +32,14 @@ def tcp_server(port):
     logging.info (f"TCP Server listening on {host}:{port}")
     while True:
         client_socket, client_address = tcp_socket.accept()
+        print (client_address[0], client_address[1])
 
         threading.Thread(target=handle_connection_tcp, args=(client_socket, client_address), daemon=True).start()
 
-def try_bind (client_socket, host, port):
-    try:
-        client_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-        client_socket.bind((host, port))
-        return True
-    except:
-        return False
-
 def handle_connection_udp (client_address, data):
+    new_port = get_open_port ()
+    
     client_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-    new_port = random.uniform(2000, 50000)
-    while not try_bind(client_socket, host, new_port):
-        new_port = int(random.uniform(2000, 50000))
     client_socket.bind((host, new_port))
 
     client_communication = ServerCommunication('UDP', client_socket, client_address)

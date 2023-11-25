@@ -4,6 +4,7 @@ import sys
 import socket
 import time
 import json
+import os
 
 from os.path import abspath, dirname
 
@@ -12,20 +13,46 @@ sys.path.append(abspath(dirname(__file__)) + '/..')
 
 # Import the specific function from the module
 from communication.client_communication import ClientCommunication
+from communication.game import Game
+from communication.protocol import get_open_port
+from communication.game import Pacman
 
 logging.basicConfig(filename='../communication/client.log', encoding='utf-8', level=logging.DEBUG)
 
+def receive_players (listen_port, pacman):
+    # inicializamos um socket que ira ouvir quem entra na sala
+    receive_players_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    receive_players_socket.bind(('127.0.0.1', listen_port))
+    receive_players_socket.listen()
+
+    logging.info (f"TCP Server listening on 127.0.0.1:{listen_port}")
+    while True:
+        ghost_socket, ghost_address = receive_players_socket.accept()
+        
+        recv_data = ghost_socket.recv(1024)
+        recv_data = recv_data.decode('ascii')
+        recv_data = json.loads(recv_data)
+        ghost_socket.close()
+
+        ghost_name = recv_data['username']
+        ghost_port = recv_data['port']
+
+        # TODO: add mutex
+        pacman.add_incoming_player((ghost_name, ghost_address[0], ghost_port))
+
+
+
+
 if __name__ == "__main__":
-    if len(sys.argv) != 5:
+    if len(sys.argv) != 4:
         print("Comando errado. Apresente o ip, o numero da porta e o protocolo como argumentos.")
         sys.exit(1)
 
-    client_port = int(sys.argv[1])
-    server_ip = sys.argv[2]
-    server_port = int(sys.argv[3])
-    protocol = sys.argv[4]
+    server_ip = sys.argv[1]
+    server_port = int(sys.argv[2])
+    protocol = sys.argv[3]
 
-    logging.info(f'Starting client on port {client_port}. It is connecting to {server_ip}:{server_port} using {protocol}')
+    logging.info(f'Starting client. It is connecting to {server_ip}:{server_port} using {protocol}')
 
     server_communication = ClientCommunication(server_ip, server_port, protocol)
     if not server_communication.connect_to_server():
@@ -36,6 +63,9 @@ if __name__ == "__main__":
     logging.info("Connected to server")
 
     state = 'NOT_LOGGED_IN'
+    cur_username = None
+    game = None
+    pacman = None
 
     while True:
         line = input("Pac-Man> ")
@@ -44,6 +74,8 @@ if __name__ == "__main__":
 
         if len(commands) > 0:
             if commands[0] == 'tchau':
+                server_communication.tchau()
+                
                 print("Saindo do jogo")
                 sys.exit(0)
 
@@ -56,6 +88,7 @@ if __name__ == "__main__":
                     password = commands[2]
                     create_user_ok, create_user_error = server_communication.create_user(username, password)
                     if create_user_ok:
+                        cur_username = username
                         print("Usuario criado com sucesso")
                     else:
                         print (create_user_error)
@@ -89,6 +122,7 @@ if __name__ == "__main__":
             elif commands[0] == 'sai':
                 if server_communication.logout():
                     print("Logout realizado com sucesso")
+                    username = None
                     state = 'NOT_LOGGED_IN'
                 else:
                     print("Ocorreu um erro ao realizar o logout")
@@ -106,7 +140,14 @@ if __name__ == "__main__":
                         print(f"{user}: {score}")
             elif commands[0] == 'inicia':
                 state = 'IN_GAME'
-                pass
+                game = Game (cur_username)
+
+                listen_port = get_open_port()
+                server_communication.start_game(listen_port)
+
+                pacman = Pacman(cur_username)
+
+                receive_players_thread = threading.Thread(target=receive_players, daemon=True, args=(listen_port, pacman))
             elif commands[0] == 'desafio':
                 if len(commands) != 2:
                     print("Comando errado. Apresente o usuario como argumento.")
@@ -118,7 +159,24 @@ if __name__ == "__main__":
                     #     print("Desafio enviado com sucesso")
                     # else:
                     #     print(challenge_error)
+            elif commands[0] == 'l':
+                online_users = server_communication.get_online_users()
+                if online_users == None:
+                    print("Ocorreu um erro ao buscar os usuarios online")
+                else:
+                    print("Usuarios online:")
+                    for user in online_users:
+                        print(user, online_users[user])
+            else:
+                print ("Comando errado. Utilize um dos seguintes comandos:")
+                print ("senha <senha_atual> <nova_senha>")
+                print ("sai")
+                print ("lideres")
+                print ("inicia")
+                print ("desafio <usuario>")
+                print ("l")
         elif state == 'IN_GAME':
+            # TODO: implementar in game
             pass
         else:
             print("Unknown state")

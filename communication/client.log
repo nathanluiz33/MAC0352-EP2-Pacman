@@ -1,486 +1,203 @@
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1234 using TCP
-INFO:root:Connected to 127.0.0.1:1234
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1234 using TCP
-INFO:root:Connected to 127.0.0.1:1234
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1234 using TCP
-INFO:root:Connected to 127.0.0.1:1234
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1234 using TCP
-INFO:root:Connected to 127.0.0.1:1234
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1234 using TCP
-INFO:root:Connected to 127.0.0.1:1234
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1234 using TCP
-INFO:root:Connected to 127.0.0.1:1234
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1234 using TCP
-INFO:root:Connected to 127.0.0.1:1234
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1234 using TCP
-INFO:root:Connected to 127.0.0.1:1234
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1234 using TCP
-INFO:root:Connected to 127.0.0.1:1234
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1234 using TCP
-INFO:root:Connected to 127.0.0.1:1234
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1234 using TCP
-INFO:root:Connected to 127.0.0.1:1234
-DEBUG:root:Sending message to server: {"type": "connect"}
-INFO:root:Received data from server: Hello from server!
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1234 using TCP
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1234 using TCP
-INFO:root:Connected to 127.0.0.1:1234
-DEBUG:root:Sending message to server: {"type": "connect"}
-INFO:root:Received data from server: Hello from server!
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1234 using TCP
-INFO:root:Connected to 127.0.0.1:1234
-DEBUG:root:Sending message to server: {"type": "connect"}
-INFO:root:Received data from server: Hello from server!
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1234 using TCP
-INFO:root:Connected to 127.0.0.1:1234
-DEBUG:root:Sending message to server: {"type": "connect"}
-INFO:root:Received data from server: Hello from server!
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1234 using TCP
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1234 using TCP
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using UDP
 INFO:root:Connected to 127.0.0.1:1234
 DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: Hello from server!
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1234 using TCP
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using UDP
 INFO:root:Connected to 127.0.0.1:1234
 DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: Hello from server!
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1234 using TCP
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using UDP
 INFO:root:Connected to 127.0.0.1:1234
 DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: Hello from server!
-INFO:root:Starting server on port 1234
-INFO:root:TCP Server listening on 127.0.0.1:1234
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1234 using TCP
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using UDP
 INFO:root:Connected to 127.0.0.1:1234
 DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:New connection from ('127.0.0.1', 60350)
-INFO:root:Received data from client: {"type": "connect", "status": "try"}
-INFO:root:Connected to client
-DEBUG:root:Sending message to client: {"type": "connect", "status": "ok"}
-INFO:root:Received data from server: {"type": "connect", "status": "ok"}
-INFO:root:Starting server on port 1234
-INFO:root:TCP Server listening on 127.0.0.1:1234
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1234 using TCP
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
 INFO:root:Connected to 127.0.0.1:1234
 DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:New connection from ('127.0.0.1', 60364)
-INFO:root:Received data from client: {"type": "connect", "status": "try"}
-INFO:root:Connected to client
-DEBUG:root:Sending message to client: {"type": "connect", "status": "ok"}
-INFO:root:Received data from server: {"type": "connect", "status": "ok"}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1234 using TCP
-INFO:root:Connected to 127.0.0.1:1234
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:New connection from ('127.0.0.1', 60404)
-INFO:root:Received data from client: {"type": "connect", "status": "try"}
-INFO:root:Connected to client
-DEBUG:root:Sending message to client: {"type": "connect", "status": "ok"}
-INFO:root:Received data from server: {"type": "connect", "status": "ok"}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1234 using TCP
-INFO:root:Connected to 127.0.0.1:1234
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:New connection from ('127.0.0.1', 60447)
-INFO:root:Received data from client: {"type": "connect", "status": "try"}
-INFO:root:Connected to client
-DEBUG:root:Sending message to client: {"type": "connect", "status": "ok"}
-INFO:root:Received data from server: {"type": "connect", "status": "ok"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
 INFO:root:Connected to server
-INFO:root:Starting server on port 1234
-INFO:root:TCP Server listening on 127.0.0.1:1234
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1234 using TCP
-INFO:root:Connected to 127.0.0.1:1234
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:New connection from ('127.0.0.1', 60450)
-INFO:root:Received data from client: {"type": "connect", "status": "try"}
-INFO:root:Connected to client
-DEBUG:root:Sending message to client: {"type": "connect", "status": "ok"}
-INFO:root:Received data from server: {"type": "connect", "status": "ok"}
-INFO:root:Connected to server
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1234 using TCP
-INFO:root:Connected to 127.0.0.1:1234
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:New connection from ('127.0.0.1', 60453)
-INFO:root:Received data from client: {"type": "connect", "status": "try"}
-INFO:root:Connected to client
-DEBUG:root:Sending message to client: {"type": "connect", "status": "ok"}
-INFO:root:Received data from server: {"type": "connect", "status": "ok"}
-INFO:root:Connected to server
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1234 using TCP
-INFO:root:Connected to 127.0.0.1:1234
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:New connection from ('127.0.0.1', 60456)
-INFO:root:Received data from client: {"type": "connect", "status": "try"}
-INFO:root:Connected to client
-DEBUG:root:Sending message to client: {"type": "connect", "status": "ok"}
-INFO:root:Received data from server: {"type": "connect", "status": "ok"}
-INFO:root:Connected to server
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1234 using TCP
-INFO:root:Connected to 127.0.0.1:1234
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:New connection from ('127.0.0.1', 60457)
-INFO:root:Received data from client: {"type": "connect", "status": "try"}
-INFO:root:Connected to client
-DEBUG:root:Sending message to client: {"type": "connect", "status": "ok"}
-INFO:root:Received data from server: {"type": "connect", "status": "ok"}
-INFO:root:Connected to server
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1234 using TCP
-INFO:root:Connected to 127.0.0.1:1234
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:New connection from ('127.0.0.1', 60458)
-INFO:root:Received data from client: {"type": "connect", "status": "try"}
-INFO:root:Connected to client
-DEBUG:root:Sending message to client: {"type": "connect", "status": "ok"}
-INFO:root:Received data from server: {"type": "connect", "status": "ok"}
-INFO:root:Connected to server
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1234 using TCP
-INFO:root:Connected to 127.0.0.1:1234
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:New connection from ('127.0.0.1', 60459)
-INFO:root:Received data from client: {"type": "connect", "status": "try"}
-INFO:root:Connected to client
-DEBUG:root:Sending message to client: {"type": "connect", "status": "ok"}
-INFO:root:Received data from server: {"type": "connect", "status": "ok"}
-INFO:root:Connected to server
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1234 using TCP
-INFO:root:Connected to 127.0.0.1:1234
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:New connection from ('127.0.0.1', 60460)
-INFO:root:Received data from client: {"type": "connect", "status": "try"}
-INFO:root:Connected to client
-DEBUG:root:Sending message to client: {"type": "connect", "status": "ok"}
-INFO:root:Received data from server: {"type": "connect", "status": "ok"}
-INFO:root:Connected to server
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1234 using TCP
-INFO:root:Connected to 127.0.0.1:1234
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:New connection from ('127.0.0.1', 60463)
-INFO:root:Received data from client: {"type": "connect", "status": "try"}
-INFO:root:Connected to client
-DEBUG:root:Sending message to client: {"type": "connect", "status": "ok"}
-INFO:root:Received data from server: {"type": "connect", "status": "ok"}
-INFO:root:Connected to server
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1234 using TCP
-INFO:root:Connected to 127.0.0.1:1234
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:New connection from ('127.0.0.1', 60464)
-INFO:root:Received data from client: {"type": "connect", "status": "try"}
-INFO:root:Connected to client
-DEBUG:root:Sending message to client: {"type": "connect", "status": "ok"}
-INFO:root:Received data from server: {"type": "connect", "status": "ok"}
-INFO:root:Connected to server
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1234 using TCP
-INFO:root:Connected to 127.0.0.1:1234
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:New connection from ('127.0.0.1', 60465)
-INFO:root:Received data from client: {"type": "connect", "status": "try"}
-INFO:root:Connected to client
-DEBUG:root:Sending message to client: {"type": "connect", "status": "ok"}
-INFO:root:Received data from server: {"type": "connect", "status": "ok"}
-INFO:root:Connected to server
-INFO:root:Starting server on port 1234
-INFO:root:TCP Server listening on 127.0.0.1:1234
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1234 using TCP
-INFO:root:Connected to 127.0.0.1:1234
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:New connection from ('127.0.0.1', 60867)
-INFO:root:Received data from client: {"type": "connect", "status": "try"}
-INFO:root:Connected to client
-DEBUG:root:Sending message to client: {"type": "connect", "status": "ok"}
-INFO:root:Received data from server: {"type": "connect", "status": "ok"}
-INFO:root:Connected to server
-INFO:root:Starting server on port 1234
-INFO:root:TCP Server listening on 127.0.0.1:1234
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1234 using TCP
-INFO:root:Connected to 127.0.0.1:1234
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:New connection from ('127.0.0.1', 60898)
-INFO:root:Received data from client: {"type": "connect", "status": "try"}
-INFO:root:Connected to client
-DEBUG:root:Sending message to client: {"type": "connect", "status": "ok"}
-INFO:root:Received data from server: {"type": "connect", "status": "ok"}
-INFO:root:Connected to server
-DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "nathan", "password": "123"}
-INFO:root:Starting server on port 1234
-INFO:root:TCP Server listening on 127.0.0.1:1234
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1234 using TCP
-INFO:root:Connected to 127.0.0.1:1234
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:New connection from ('127.0.0.1', 61211)
-INFO:root:Received data from client: {"type": "connect", "status": "try"}
-INFO:root:Connected to client
-DEBUG:root:Sending message to client: {"type": "connect", "status": "ok"}
-INFO:root:Received data from server: {"type": "connect", "status": "ok"}
-INFO:root:Connected to server
-DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "nathan", "password": "123"}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1234 using TCP
-INFO:root:Connected to 127.0.0.1:1234
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {"type": "connect", "status": "ok"}
-INFO:root:Connected to server
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1234 using TCP
-INFO:root:Connected to 127.0.0.1:1234
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {"type": "connect", "status": "ok"}
-INFO:root:Connected to server
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1234 using TCP
-INFO:root:Connected to 127.0.0.1:1234
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {"type": "connect", "status": "ok"}
-INFO:root:Connected to server
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1234 using TCP
-INFO:root:Connected to 127.0.0.1:1234
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {"type": "connect", "status": "ok"}
-INFO:root:Connected to server
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1234 using TCP
-INFO:root:Connected to 127.0.0.1:1234
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {"type": "connect", "status": "ok"}
-INFO:root:Connected to server
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1234 using TCP
-INFO:root:Connected to 127.0.0.1:1234
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {"type": "connect", "status": "ok"}
-INFO:root:Connected to server
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1234 using TCP
-INFO:root:Connected to 127.0.0.1:1234
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {"type": "connect", "status": "ok"}
-INFO:root:Connected to server
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1234 using TCP
-INFO:root:Connected to 127.0.0.1:1234
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {"type": "connect", "status": "ok"}
-INFO:root:Connected to server
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1234 using TCP
-INFO:root:Connected to 127.0.0.1:1234
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {"type": "connect", "status": "ok"}
-INFO:root:Connected to server
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1234 using TCP
-INFO:root:Connected to 127.0.0.1:1234
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {"type": "connect", "status": "ok"}
-INFO:root:Connected to server
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1234 using TCP
-INFO:root:Connected to 127.0.0.1:1234
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: 
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using TCP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using TCP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using TCP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using TCP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using TCP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using TCP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using TCP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {"type": "connect", "status": "ok"}
-INFO:root:Connected to server
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using TCP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using TCP
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using TCP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using TCP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using TCP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using TCP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using TCP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using TCP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using TCP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using TCP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using TCP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: 
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1234 using TCP
-INFO:root:Connected to 127.0.0.1:1234
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1234 using TCP
-INFO:root:Connected to 127.0.0.1:1234
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: 
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using TCP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using TCP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using TCP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using TCP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using TCP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using TCP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {"type": "connect", "status": "ok"}
-INFO:root:Connected to server
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using TCP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {"type": "connect", "status": "ok"}
-INFO:root:Connected to server
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using TCP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using TCP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {"type": "connect", "status": "ok"}
-INFO:root:Connected to server
-DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "nathan", "password": "123"}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using TCP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {"type": "connect", "status": "ok"}
-INFO:root:Connected to server
-DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "nathan", "password": "123"}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using TCP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {"type": "connect", "status": "ok"}
-INFO:root:Connected to server
-DEBUG:root:Sending message to server: b'{"type": "create_user", "status": "try", "username": "nathan", "password": "123"}'
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using TCP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using TCP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {"type": "connect", "status": "ok"}
-INFO:root:Connected to server
-DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "nathan", "password": "123"}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using TCP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {"type": "connect", "status": "ok"}
-INFO:root:Connected to server
-DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "nathan", "password": "123"}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using TCP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {"type": "connect", "status": "ok"}
-INFO:root:Connected to server
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using TCP
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using TCP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {"type": "connect", "status": "ok"}
-INFO:root:Connected to server
-DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "nathan", "password": "123"}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using TCP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {"type": "connect", "status": "ok"}
-INFO:root:Connected to server
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using TCP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {"type": "connect", "status": "ok"}
-INFO:root:Connected to server
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using TCP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {"type": "connect", "status": "ok"}
-INFO:root:Connected to server
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {"type": "connect", "status": "ok"}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using TCP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {"type": "connect", "status": "ok"}
-INFO:root:Connected to server
+DEBUG:root:NOT_LOGGED_IN
 DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "nathan", "password": "123"}
 INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using TCP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using TCP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using TCP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {"type": "connect", "status": "ok"}
-INFO:root:Connected to server
-DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "nathan", "password": "123"}
-INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using TCP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {"type": "connect", "status": "ok"}
-INFO:root:Connected to server
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using TCP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {"type": "connect", "status": "ok"}
-INFO:root:Connected to server
-DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "nathan", "password": "123"}
-INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using TCP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {"type": "connect", "status": "ok"}
-INFO:root:Connected to server
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using TCP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {"type": "connect", "status": "ok"}
-INFO:root:Connected to server
-DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "nathan", "password": "123"}
-INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
-DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "nathan1", "password": "123"}
-INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using TCP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {"type": "connect", "status": "ok"}
-INFO:root:Connected to server
-DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan", "password": "12"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan", "password": "23"}
 INFO:root:Received data from server: {"type": "login", "status": "error: wrong password"}
-DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "natha", "password": "123"}
-INFO:root:Received data from server: {"type": "login", "status": "error: username does not exist"}
+DEBUG:root:NOT_LOGGED_IN
 DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
 INFO:root:Received data from server: {"type": "login", "status": "ok"}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using TCP
-INFO:root:Connected to 127.0.0.1:1236
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "logout", "status": "try"}
+INFO:root:Received data from server: {"type": "logout", "status": "ok"}
+DEBUG:root:NOT_LOGGED_IN
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using UDP
+INFO:root:Connected to 127.0.0.1:1234
 DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {"type": "connect", "status": "ok"}
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using UDP
+INFO:root:Connected to 127.0.0.1:1234
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using UDP
+INFO:root:Connected to 127.0.0.1:1234
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using UDP
+INFO:root:Connected to 127.0.0.1:1234
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using UDP
+INFO:root:Connected to 127.0.0.1:1234
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using UDP
+INFO:root:Connected to 127.0.0.1:1234
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 44491]}
 INFO:root:Connected to server
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using UDP
+INFO:root:Connected to 127.0.0.1:1234
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 4998]}
+INFO:root:Connected to server
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using UDP
+INFO:root:Connected to 127.0.0.1:1234
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 33414]}
+INFO:root:Connected to server
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using UDP
+INFO:root:Connected to 127.0.0.1:1234
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 31099]}
+INFO:root:Connected to server
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using UDP
+INFO:root:Connected to 127.0.0.1:1234
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 42527]}
+INFO:root:Connected to server
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using UDP
+INFO:root:Connected to 127.0.0.1:1234
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 11220]}
+INFO:root:Connected to server
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
+INFO:root:Connected to 127.0.0.1:1234
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
+INFO:root:Connected to server
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
+INFO:root:Received data from server: 
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
+INFO:root:Connected to 127.0.0.1:1234
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
+INFO:root:Connected to server
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
+INFO:root:Received data from server: {"type": "login", "status": "error: username does not exist"}
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
+INFO:root:Connected to 127.0.0.1:1234
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
+INFO:root:Connected to server
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
+INFO:root:Received data from server: {"type": "login", "status": "error: username does not exist"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "nathan", "password": "123"}
+INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan", "password": "12314"}
+INFO:root:Received data from server: {"type": "login", "status": "error: wrong password"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
+INFO:root:Received data from server: {"type": "login", "status": "ok"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "change_password", "status": "try", "old_password": "1234", "new_password": "123"}
+INFO:root:Received data from server: {"type": "change_password", "status": "error: wrong password"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "change_password", "status": "try", "old_password": "12", "new_password": "1234"}
+INFO:root:Received data from server: {"type": "change_password", "status": "error: wrong password"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "change_password", "status": "try", "old_password": "123", "new_password": "1234"}
+INFO:root:Received data from server: {"type": "change_password", "status": "ok"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "logout", "status": "try"}
+INFO:root:Received data from server: {"type": "logout", "status": "ok"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan", "password": "1234"}
+INFO:root:Received data from server: {"type": "login", "status": "ok"}
+DEBUG:root:LOGGED_IN
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
+INFO:root:Connected to 127.0.0.1:1234
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
+INFO:root:Connected to server
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "nathan", "password": "123"}
+INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
+INFO:root:Received data from server: {"type": "login", "status": "ok"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "get_online_users", "status": "try"}
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
+INFO:root:Connected to 127.0.0.1:1234
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
+INFO:root:Connected to server
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
+INFO:root:Received data from server: {"type": "login", "status": "error: username does not exist"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "nathan", "password": "123"}
+INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
+INFO:root:Received data from server: {"type": "login", "status": "ok"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "get_online_users", "status": "try"}
+INFO:root:Received data from server: {"type": "get_online_users", "status": "ok", "online_users": {"null": {"status": "Logged In"}}}
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
+INFO:root:Connected to 127.0.0.1:1234
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
+INFO:root:Connected to server
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "nathan", "password": "123"}
+INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
+INFO:root:Received data from server: {"type": "login", "status": "ok"}
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
+INFO:root:Connected to 127.0.0.1:1234
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
+INFO:root:Connected to server
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "1", "password": "1"}
+INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "1", "password": "1"}
+INFO:root:Received data from server: {"type": "login", "status": "ok"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "get_online_users", "status": "try"}
+INFO:root:Received data from server: {"type": "get_online_users", "status": "ok", "online_users": {"1": {"status": "Logged In"}}}
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
+INFO:root:Connected to 127.0.0.1:1234
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
+INFO:root:Connected to server
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
+INFO:root:Connected to 127.0.0.1:1234
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
+INFO:root:Connected to server
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
+INFO:root:Connected to 127.0.0.1:1234
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
+INFO:root:Connected to server
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
+INFO:root:Received data from server: {"type": "login", "status": "error: username does not exist"}
 DEBUG:root:NOT_LOGGED_IN
 DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "nathan", "password": "123"}
 INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
@@ -490,399 +207,195 @@ INFO:root:Received data from server: {"type": "login", "status": "error: usernam
 DEBUG:root:NOT_LOGGED_IN
 DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
 INFO:root:Received data from server: {"type": "login", "status": "ok"}
-DEBUG:root:LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "change_password", "status": "try", "old_password": "123", "new_password": "123"}
-INFO:root:Received data from server: {"type": "change_password", "status": "ok"}
-DEBUG:root:LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "change_password", "status": "try", "old_password": "12", "new_password": "123"}
-INFO:root:Received data from server: {"type": "change_password", "status": "error: wrong password"}
-DEBUG:root:LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "change_password", "status": "try", "old_password": "123", "new_password": "1234"}
-INFO:root:Received data from server: {"type": "change_password", "status": "ok"}
-DEBUG:root:LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "change_password", "status": "try", "old_password": "123", "new_password": "123"}
-INFO:root:Received data from server: {"type": "change_password", "status": "error: wrong password"}
-DEBUG:root:LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "change_password", "status": "try", "old_password": "1234", "new_password": "s123"}
-INFO:root:Received data from server: {"type": "change_password", "status": "ok"}
-DEBUG:root:LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "change_password", "status": "try", "old_password": "s123", "new_password": "1234"}
-INFO:root:Received data from server: {"type": "change_password", "status": "ok"}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using TCP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {"type": "connect", "status": "ok"}
-INFO:root:Connected to server
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "nathan", "password": "123"}
-INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
 DEBUG:root:NOT_LOGGED_IN
 DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
+INFO:root:Received data from server: {"type": "login", "status": "error: user already logged in"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "123", "password": "123"}
+INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "123", "password": "123"}
 INFO:root:Received data from server: {"type": "login", "status": "ok"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "get_online_users", "status": "try"}
+INFO:root:Received data from server: {"type": "get_online_users", "status": "ok", "online_users": {"nathan": {"status": "Logged In"}, "123": {"status": "Logged In"}}}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "get_online_users", "status": "try"}
+INFO:root:Received data from server: {"type": "get_online_users", "status": "ok", "online_users": {"nathan": {"status": "Logged In"}, "123": {"status": "Logged In"}}}
 DEBUG:root:LOGGED_IN
 DEBUG:root:Sending message to server: {"type": "logout", "status": "try"}
 INFO:root:Received data from server: {"type": "logout", "status": "ok"}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using TCP
-INFO:root:Connected to 127.0.0.1:1236
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "get_online_users", "status": "try"}
+INFO:root:Received data from server: {"type": "get_online_users", "status": "ok", "online_users": {"nathan": {"status": "Logged In"}}}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "get_online_users", "status": "try"}
+INFO:root:Received data from server: {"type": "get_online_users", "status": "ok", "online_users": {"nathan": {"status": "Logged In"}}}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "123", "password": "12"}
+INFO:root:Received data from server: {"type": "login", "status": "error: wrong password"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "123", "password": "123"}
+INFO:root:Received data from server: {"type": "login", "status": "ok"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "get_online_users", "status": "try"}
+INFO:root:Received data from server: {"type": "get_online_users", "status": "ok", "online_users": {"nathan": {"status": "Logged In"}, "123": {"status": "Logged In"}}}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "tchau", "status": "try"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "get_online_users", "status": "try"}
+INFO:root:Received data from server: {"type": "get_online_users", "status": "ok", "online_users": {"nathan": {"status": "Logged In"}}}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "get_online_users", "status": "try"}
+INFO:root:Received data from server: {"type": "get_online_users", "status": "ok", "online_users": {"nathan": {"status": "Logged In"}}}
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
+INFO:root:Connected to 127.0.0.1:1234
 DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {"type": "connect", "status": "ok"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
 INFO:root:Connected to server
 DEBUG:root:NOT_LOGGED_IN
 DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
+INFO:root:Received data from server: {"type": "login", "status": "error: user already logged in"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan1", "password": "123"}
+INFO:root:Received data from server: {"type": "login", "status": "error: username does not exist"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "natahn", "password": "123"}
+INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "natahn", "password": "123"}
+INFO:root:Received data from server: {"type": "login", "status": "ok"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "get_online_users", "status": "try"}
+INFO:root:Received data from server: {"type": "get_online_users", "status": "ok", "online_users": {"nathan": {"status": "Logged In"}, "natahn": {"status": "Logged In"}}}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "get_online_users", "status": "try"}
+INFO:root:Received data from server: {"type": "get_online_users", "status": "ok", "online_users": {"nathan": {"status": "Logged In"}, "natahn": {"status": "Logged In"}}}
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
+INFO:root:Connected to 127.0.0.1:1234
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
+INFO:root:Connected to server
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
+INFO:root:Connected to 127.0.0.1:1234
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
+INFO:root:Connected to server
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathn", "password": "123"}
 INFO:root:Received data from server: {"type": "login", "status": "error: username does not exist"}
 DEBUG:root:NOT_LOGGED_IN
 DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "nathan", "password": "123"}
 INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
 DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "nathan", "password": "1234"}
-INFO:root:Received data from server: {"type": "create_user", "status": "error: username already exists"}
-DEBUG:root:NOT_LOGGED_IN
 DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
 INFO:root:Received data from server: {"type": "login", "status": "ok"}
 DEBUG:root:LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "change_password", "status": "try", "old_password": "nathan", "new_password": "1234"}
-INFO:root:Received data from server: {"type": "change_password", "status": "error: wrong password"}
+DEBUG:root:Sending message to server: {"type": "change_password", "status": "try", "old_password": "123", "new_password": "123"}
+INFO:root:Received data from server: {"type": "change_password", "status": "ok"}
 DEBUG:root:LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "change_password", "status": "try", "old_password": "123", "new_password": "1234"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "change_password", "status": "try", "old_password": "123", "new_password": "123"}
 INFO:root:Received data from server: {"type": "change_password", "status": "ok"}
 DEBUG:root:LOGGED_IN
 DEBUG:root:Sending message to server: {"type": "change_password", "status": "try", "old_password": "1234", "new_password": "123"}
-INFO:root:Received data from server: {"type": "change_password", "status": "ok"}
+INFO:root:Received data from server: {"type": "change_password", "status": "error: wrong password"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "change_password", "status": "try", "old_password": "1234", "new_password": "123"}
+INFO:root:Received data from server: {"type": "change_password", "status": "error: wrong password"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "change_password", "status": "try", "old_password": "1234", "new_password": "123"}
+INFO:root:Received data from server: {"type": "change_password", "status": "error: wrong password"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "change_password", "status": "try", "old_password": "1234", "new_password": "123"}
+INFO:root:Received data from server: {"type": "change_password", "status": "error: wrong password"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:LOGGED_IN
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "get_online_users", "status": "try"}
+INFO:root:Received data from server: {"type": "get_online_users", "status": "ok", "online_users": {"nathan": "Online"}}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
+INFO:root:Received data from server: {"type": "login", "status": "error: user already logged in"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "nat", "password": "123"}
+INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nat", "password": "123"}
+INFO:root:Received data from server: {"type": "login", "status": "ok"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "get_online_users", "status": "try"}
+INFO:root:Received data from server: {"type": "get_online_users", "status": "ok", "online_users": {"nathan": "Online", "nat": "Online"}}
 DEBUG:root:LOGGED_IN
 DEBUG:root:Sending message to server: {"type": "logout", "status": "try"}
 INFO:root:Received data from server: {"type": "logout", "status": "ok"}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using TCP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {"type": "connect", "status": "ok"}
-INFO:root:Connected to server
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using TCP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {"type": "connect", "status": "ok"}
-INFO:root:Connected to server
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "get_online_users", "status": "try"}
+INFO:root:Received data from server: {"type": "get_online_users", "status": "ok", "online_users": {"nathan": "Online"}}
 DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "nathan", "password": "123"}
-INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "nathan1", "password": "1234"}
-INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using TCP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {"type": "connect", "status": "ok"}
-INFO:root:Connected to server
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "nathan2", "password": "123213"}
-INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using TCP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {"type": "connect", "status": "ok"}
-INFO:root:Connected to server
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "nathan", "password": "123"}
-INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nat", "password": "123"}
 INFO:root:Received data from server: {"type": "login", "status": "ok"}
 DEBUG:root:LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "get_leaderboard", "status": "try"}
-INFO:root:Received data from server: {"type": "get_leaderboard", "status": "ok", "leaderboard": {"nathan": "10", "joao": "5", "maria": "3"}}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using TCP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {"type": "connect", "status": "ok"}
-INFO:root:Connected to server
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
-INFO:root:Received data from server: {"type": "login", "status": "ok"}
+DEBUG:root:Sending message to server: {"type": "tchau", "status": "try"}
 DEBUG:root:LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "get_leaderboard", "status": "try"}
-INFO:root:Received data from server: {"type": "get_leaderboard", "status": "ok", "leaderboard": {"nathan": "10", "joao": "5", "maria": "3"}}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using TCP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {"type": "connect", "status": "ok"}
-INFO:root:Connected to server
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
-INFO:root:Received data from server: {"type": "login", "status": "ok"}
+DEBUG:root:Sending message to server: {"type": "get_online_users", "status": "try"}
+INFO:root:Received data from server: {"type": "get_online_users", "status": "ok", "online_users": {"nathan": "Online"}}
 DEBUG:root:LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "get_leaderboard", "status": "try"}
-INFO:root:Received data from server: {"type": "get_leaderboard", "status": "ok", "leaderboard": {"nathan": "10", "joao": "5", "maria": "3"}}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using TCP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {"type": "connect", "status": "ok"}
-INFO:root:Connected to server
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
-INFO:root:Received data from server: {"type": "login", "status": "ok"}
-DEBUG:root:LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "get_leaderboard", "status": "try"}
-INFO:root:Received data from server: {"type": "get_leaderboard", "status": "ok", "leaderboard": {"nathan": "10", "joao": "5", "maria": "3"}}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using TCP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {"type": "connect", "status": "ok"}
-INFO:root:Connected to server
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
-INFO:root:Received data from server: {"type": "login", "status": "ok"}
-DEBUG:root:LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "get_leaderboard", "status": "try"}
-INFO:root:Received data from server: {"type": "get_leaderboard", "status": "ok", "leaderboard": {"nathan": "10", "joao": "5", "maria": "3"}}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using TCP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {"type": "connect", "status": "ok"}
-INFO:root:Connected to server
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
-INFO:root:Received data from server: {"type": "login", "status": "ok"}
-DEBUG:root:LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "get_leaderboard", "status": "try"}
-INFO:root:Received data from server: {"type": "get_leaderboard", "status": "ok", "leaderboard": {"nathan": "10", "joao": "5", "maria": "3"}}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using TCP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {"type": "connect", "status": "ok"}
-INFO:root:Connected to server
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
-INFO:root:Received data from server: {"type": "login", "status": "ok"}
-DEBUG:root:LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "get_leaderboard", "status": "try"}
-INFO:root:Received data from server: {"type": "get_leaderboard", "status": "ok", "leaderboard": {"nathan": "10", "joao": "5", "maria": "3"}}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using TCP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {"type": "connect", "status": "ok"}
-INFO:root:Connected to server
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:NOT_LOGGED_IN
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using TCP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {"type": "connect", "status": "ok"}
-INFO:root:Connected to server
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "nathan", "password": "123"}
-INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "nathan", "password": "1234"}
-INFO:root:Received data from server: {"type": "create_user", "status": "error: username already exists"}
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "nathan", "password": "n123"}
-INFO:root:Received data from server: {"type": "create_user", "status": "error: username already exists"}
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
-INFO:root:Received data from server: {"type": "login", "status": "ok"}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using TCP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {"type": "connect", "status": "ok"}
-INFO:root:Connected to server
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using TCP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {"type": "connect", "status": "ok"}
-INFO:root:Connected to server
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using TCP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {"type": "connect", "status": "ok"}
-INFO:root:Connected to server
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using TCP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {"type": "connect", "status": "ok"}
-INFO:root:Connected to server
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using TCP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {"type": "connect", "status": "ok"}
-INFO:root:Connected to server
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using TCP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {"type": "connect", "status": "ok"}
-INFO:root:Connected to server
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using TCP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {"type": "connect", "status": "ok"}
-INFO:root:Connected to server
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
-INFO:root:Received data from server: {"type": "login", "status": "error: username does not exist"}
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "nathan", "password": "123"}
-INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
-INFO:root:Received data from server: {"type": "login", "status": "ok"}
-DEBUG:root:LOGGED_IN
-DEBUG:root:LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "change_password", "status": "try", "old_password": "124", "new_password": "123"}
-INFO:root:Received data from server: {"type": "change_password", "status": "error: wrong password"}
-DEBUG:root:LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "change_password", "status": "try", "old_password": "123", "new_password": "123"}
-INFO:root:Received data from server: {"type": "change_password", "status": "ok"}
+DEBUG:root:Sending message to server: {"type": "get_online_users", "status": "try"}
+INFO:root:Received data from server: {"type": "get_online_users", "status": "ok", "online_users": {"nathan": "Online"}}
 DEBUG:root:LOGGED_IN
 DEBUG:root:Sending message to server: {"type": "get_leaderboard", "status": "try"}
 INFO:root:Received data from server: {"type": "get_leaderboard", "status": "ok", "leaderboard": {}}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using TCP
-INFO:root:Connected to 127.0.0.1:1236
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
+INFO:root:Connected to 127.0.0.1:1234
 DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {"type": "connect", "status": "ok"}
-INFO:root:Connected to server
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using UDP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using UDP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using UDP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using UDP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using UDP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using UDP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using UDP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using UDP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using UDP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using UDP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using UDP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using UDP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using UDP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using UDP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using UDP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using UDP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using UDP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using UDP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using UDP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using UDP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using UDP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using UDP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using UDP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using UDP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using UDP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using UDP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using UDP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using UDP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'adress': ['127.0.0.1', 18384]}
-INFO:root:Connected to server
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "nathan", "password": "123"}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using UDP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using UDP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'adress': ['127.0.0.1', 7704]}
-INFO:root:Connected to server
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using UDP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'adress': ['127.0.0.1', 48777]}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
 INFO:root:Connected to server
 DEBUG:root:NOT_LOGGED_IN
 DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "nathan", "password": "123"}
 INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
 DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "nathan", "password": "12312"}
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
+INFO:root:Received data from server: {"type": "login", "status": "ok"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "get_online_users", "status": "try"}
+INFO:root:Received data from server: {"type": "get_online_users", "status": "ok", "online_users": {"nathan": "Online"}}
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
+INFO:root:Connected to 127.0.0.1:1234
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
+INFO:root:Connected to server
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
+INFO:root:Received data from server: {"type": "login", "status": "error: user already logged in"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "nathan", "password": "123"}
 INFO:root:Received data from server: {"type": "create_user", "status": "error: username already exists"}
 DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "nat123", "password": "123"}
+DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "123", "password": "213"}
 INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
 DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
-INFO:root:Received data from server: {"type": "login", "status": "ok"}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using TCP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'adress': ['127.0.0.1', 1236]}
-INFO:root:Connected to server
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nat123", "password": "123"}
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "123", "password": "213"}
 INFO:root:Received data from server: {"type": "login", "status": "ok"}
 DEBUG:root:LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "logout", "status": "try"}
-INFO:root:Received data from server: {"type": "logout", "status": "ok"}
-DEBUG:root:NOT_LOGGED_IN
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using UDP
-INFO:root:Connected to 127.0.0.1:1236
+DEBUG:root:Sending message to server: {"type": "get_online_users", "status": "try"}
+INFO:root:Received data from server: {"type": "get_online_users", "status": "ok", "online_users": {"nathan": "Online", "123": "Online"}}
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
+INFO:root:Connected to 127.0.0.1:1234
 DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'adress': ['127.0.0.1', 23123]}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
 INFO:root:Connected to server
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nat1", "password": "123"}
-INFO:root:Received data from server: {"type": "login", "status": "error: username does not exist"}
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nat123", "password": "1234"}
-INFO:root:Received data from server: {"type": "login", "status": "error: wrong password"}
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nat123", "password": "123"}
-INFO:root:Received data from server: {"type": "login", "status": "ok"}
-DEBUG:root:LOGGED_IN
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using UDP
-INFO:root:Connected to 127.0.0.1:1236
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
+INFO:root:Connected to 127.0.0.1:1234
 DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'adress': ['127.0.0.1', 17821]}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
 INFO:root:Connected to server
 DEBUG:root:NOT_LOGGED_IN
 DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "nathan", "password": "123"}
@@ -890,56 +403,80 @@ INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
 DEBUG:root:NOT_LOGGED_IN
 DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
 INFO:root:Received data from server: {"type": "login", "status": "ok"}
-DEBUG:root:LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "logout", "status": "try"}
-INFO:root:Received data from server: {"type": "logout", "status": "ok"}
 DEBUG:root:NOT_LOGGED_IN
 DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
+INFO:root:Received data from server: {"type": "login", "status": "error: user already logged in"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "213", "password": "123"}
+INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "123", "password": "123"}
+INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "123", "password": "123"}
 INFO:root:Received data from server: {"type": "login", "status": "ok"}
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using UDP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'adress': ['127.0.0.1', 31775]}
-INFO:root:Connected to server
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using TCP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'adress': ['127.0.0.1', 1236]}
-INFO:root:Connected to server
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using TCP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'adress': ['127.0.0.1', 1236]}
-INFO:root:Connected to server
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using TCP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'adress': ['127.0.0.1', 1236]}
-INFO:root:Connected to server
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1236 using TCP
-INFO:root:Connected to 127.0.0.1:1236
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'adress': ['127.0.0.1', 1236]}
-INFO:root:Connected to server
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1234 using TCP
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "get_online_users", "status": "try"}
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
 INFO:root:Connected to 127.0.0.1:1234
 DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'adress': ['127.0.0.1', 1234]}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
 INFO:root:Connected to server
-INFO:root:Starting client on port 1235. It is connecting to 127.0.0.1:1234 using TCP
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
 INFO:root:Connected to 127.0.0.1:1234
 DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'adress': ['127.0.0.1', 1234]}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
 INFO:root:Connected to server
 DEBUG:root:NOT_LOGGED_IN
 DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "nathan", "password": "123"}
 INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
 DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "natahn", "password": "123"}
-INFO:root:Received data from server: {"type": "login", "status": "error: username does not exist"}
-DEBUG:root:NOT_LOGGED_IN
 DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
 INFO:root:Received data from server: {"type": "login", "status": "ok"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "123", "password": "123"}
+INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "213", "password": "123"}
+INFO:root:Received data from server: {"type": "login", "status": "error: username does not exist"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "123", "password": "123"}
+INFO:root:Received data from server: {"type": "login", "status": "ok"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "get_online_users", "status": "try"}
+INFO:root:Received data from server: {"type": "get_online_users", "status": "ok", "online_users": {"nathan": "Online", "123": "Online"}}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "get_online_users", "status": "try"}
+INFO:root:Received data from server: {"type": "get_online_users", "status": "ok", "online_users": {"nathan": "Online", "123": "Online"}}
 DEBUG:root:LOGGED_IN
 DEBUG:root:Sending message to server: {"type": "logout", "status": "try"}
 INFO:root:Received data from server: {"type": "logout", "status": "ok"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "get_online_users", "status": "try"}
+INFO:root:Received data from server: {"type": "get_online_users", "status": "ok", "online_users": {"nathan": "Online"}}
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
+INFO:root:Connected to 127.0.0.1:1234
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
+INFO:root:Connected to server
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "nathan", "password": "12"}
+INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan", "password": "12"}
+INFO:root:Received data from server: {"type": "login", "status": "ok"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "start_game", "status": "try", "host_port": 21818}
+INFO:root:Received data from server: {"type": "start_game", "status": "ok"}
+DEBUG:root:IN_GAME
+DEBUG:root:IN_GAME
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
+INFO:root:Connected to 127.0.0.1:1234
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
+INFO:root:Connected to server
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
+INFO:root:Connected to 127.0.0.1:1234
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
+INFO:root:Connected to server

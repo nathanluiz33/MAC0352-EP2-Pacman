@@ -1,3 +1,12 @@
+import socket
+import random
+
+def get_open_port ():
+    while True:
+        new_port = int(random.uniform(2000, 50000))
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            if s.connect_ex(('localhost', new_port)) != 0:
+                return new_port
 class Protocol:
     def __init__ (self, protocol, this_socket, otherside_address=None):
         self.protocol = protocol

@@ -9,8 +9,11 @@ import asyncio
 from communication.protocol import Protocol
 logging.basicConfig(filename='../communication/server.log', encoding='utf-8', level=logging.DEBUG)
 
-usersDatabase = {}
-leaderboard = {}
+from communication.server_database import ServerDataBase
+from communication.game_manager import GameManager
+
+server_database = ServerDataBase()
+game_manager = GameManager()
 
 class ServerCommunication:
     def __init__ (self, protocol, client_socket, otherside_address=None):
@@ -18,7 +21,7 @@ class ServerCommunication:
         self.account_logged = None
 
     def connect_to_client (self):
-        package = {'type': 'connect', 'status': 'ok', 'adress': self.general_socket.this_socket.getsockname()}
+        package = {'type': 'connect', 'status': 'ok', 'address': self.general_socket.this_socket.getsockname()}
         message = json.dumps(package)
         
         logging.debug(f"Sending message to client: {message}")
@@ -28,26 +31,30 @@ class ServerCommunication:
         logging.info(f"Creating user with username {username} and password {password}")
 
         # verificamos se ja tem um user com esse login e senha
-        if username in usersDatabase:
+        if server_database.create_user(username, password) == False:
             package = {'type': 'create_user', 'status': 'error: username already exists'}
             message = json.dumps(package)
             logging.debug(f"Sending message to client: {message}")
             self.general_socket.send_message(message)
         else:
-            usersDatabase[username] = password
             package = {'type': 'create_user', 'status': 'ok'}
             message = json.dumps(package)
             logging.debug(f"Sending message to client: {message}")
             self.general_socket.send_message(message)
     
     def login (self, username, password):
-        if not (username in usersDatabase):
+        if not server_database.find_user(username):
             package = {'type': 'login', 'status': 'error: username does not exist'}
             message = json.dumps(package)
             logging.debug(f"Sending message to client: {message}")
             self.general_socket.send_message(message)
-        elif usersDatabase[username] != password:
+        elif not server_database.check_password(username, password):
             package = {'type': 'login', 'status': 'error: wrong password'}
+            message = json.dumps(package)
+            logging.debug(f"Sending message to client: {message}")
+            self.general_socket.send_message(message)
+        elif server_database.is_online(username):
+            package = {'type': 'login', 'status': 'error: user already logged in'}
             message = json.dumps(package)
             logging.debug(f"Sending message to client: {message}")
             self.general_socket.send_message(message)
@@ -58,9 +65,13 @@ class ServerCommunication:
             logging.debug(f"Sending message to client: {message}")
             self.general_socket.send_message(message)
 
+            server_database.add_online_user(username, 'Online', self.general_socket)
+
+
     def change_password (self, old_password, new_password):
-        if usersDatabase[self.account_logged] == old_password:
-            usersDatabase[self.account_logged] = new_password
+        if server_database.check_password (self.account_logged, old_password):
+            server_database.new_password(self.account_logged, new_password)
+
             package = {'type': 'change_password', 'status': 'ok'}
             message = json.dumps(package)
             logging.debug(f"Sending message to client: {message}")
@@ -72,6 +83,8 @@ class ServerCommunication:
             self.general_socket.send_message(message)
 
     def logout (self):
+        server_database.logout(self.account_logged)
+
         self.account_logged = None
         package = {'type': 'logout', 'status': 'ok'}
         message = json.dumps(package)
@@ -79,15 +92,30 @@ class ServerCommunication:
         self.general_socket.send_message(message)
 
     def get_leaderboard (self):
-        package = {'type': 'get_leaderboard', 'status': 'ok', 'leaderboard': leaderboard}
+        package = {'type': 'get_leaderboard', 'status': 'ok', 'leaderboard': server_database.leaderboard}
+        message = json.dumps(package)
+        logging.debug(f"Sending message to client: {message}")
+        self.general_socket.send_message(message)
+
+    def get_online_users (self):
+        package = {'type': 'get_online_users', 'status': 'ok', 'online_users': server_database.onlineUsersStatus}
+        message = json.dumps(package)
+        logging.debug(f"Sending message to client: {message}")
+        self.general_socket.send_message(message)
+
+    def tchau (self):
+        server_database.logout(self.account_logged)
+    
+    def start_game (self, host_port):
+        game_manager.create_game(self.account_logged, host_port)
+
+        package = {'type': 'start_game', 'status': 'ok'}
         message = json.dumps(package)
         logging.debug(f"Sending message to client: {message}")
         self.general_socket.send_message(message)
 
     def parse_client (self, initial_data = None):
         while True:
-            logging.debug (usersDatabase)
-            logging.debug (leaderboard)
             logging.info ("Waiting for data from client")
 
             if initial_data == None:
@@ -116,6 +144,13 @@ class ServerCommunication:
                 self.logout()
             elif data['type'] == 'get_leaderboard' and data['status'] == 'try':
                 self.get_leaderboard()
+            elif data['type'] == 'get_online_users' and data['status'] == 'try':
+                self.get_online_users()
+            elif data['type'] == 'tchau' and data['status'] == 'try':
+                self.tchau()
+                break
+            elif data['type'] == 'start_game' and data['status'] == 'try':
+                self.start_game(data['host_port'])
             else:
                 package = {'type': 'error', 'status': 'error'}
                 message = json.dumps(package)
