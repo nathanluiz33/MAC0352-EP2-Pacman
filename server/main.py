@@ -21,7 +21,7 @@ logging.basicConfig(filename='../communication/server.log', encoding='utf-8', le
 
 def handle_connection_tcp (client_socket, client_address):
     logging.info (f"New connection from {client_address}")
-    client_communication = ServerCommunication('TCP', client_socket)
+    client_communication = ServerCommunication('TCP', client_socket, client_address)
     client_communication.parse_client()
 
 def tcp_server(port):
