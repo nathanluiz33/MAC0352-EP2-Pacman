@@ -16,29 +16,35 @@ from communication.client_communication import ClientCommunication
 from communication.game import Game
 from communication.protocol import get_open_port
 from communication.game import Pacman
+from communication.game import Ghost
 
 logging.basicConfig(filename='../communication/client.log', encoding='utf-8', level=logging.DEBUG)
 
 def receive_players (listen_port, pacman):
     # inicializamos um socket que ira ouvir quem entra na sala
+    print ("AQUIIIIIIIIIIIII", pacman)
     receive_players_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     receive_players_socket.bind(('127.0.0.1', listen_port))
     receive_players_socket.listen()
 
+
     logging.info (f"TCP Server listening on 127.0.0.1:{listen_port}")
     while True:
         ghost_socket, ghost_address = receive_players_socket.accept()
-        
+
         recv_data = ghost_socket.recv(1024)
         recv_data = recv_data.decode('ascii')
         recv_data = json.loads(recv_data)
+        logging.info (f"Received data from {ghost_address}: {recv_data}")
+
         ghost_socket.close()
 
         ghost_name = recv_data['username']
         ghost_port = recv_data['port']
 
         # TODO: add mutex
-        pacman.add_incoming_player((ghost_name, ghost_address[0], ghost_port))
+        print (ghost_name, ghost_address[0], ghost_port)
+        pacman.add_incoming_player(ghost_name, ghost_address[0], ghost_port)
 
 
 
@@ -66,6 +72,7 @@ if __name__ == "__main__":
     cur_username = None
     game = None
     pacman = None
+    ghost = None
 
     while True:
         line = input("Pac-Man> ")
@@ -88,7 +95,6 @@ if __name__ == "__main__":
                     password = commands[2]
                     create_user_ok, create_user_error = server_communication.create_user(username, password)
                     if create_user_ok:
-                        cur_username = username
                         print("Usuario criado com sucesso")
                     else:
                         print (create_user_error)
@@ -101,6 +107,7 @@ if __name__ == "__main__":
 
                     login_ok, login_error = server_communication.login(username, password)
                     if login_ok:
+                        cur_username = username
                         print("Login realizado com sucesso")
                         state = 'LOGGED_IN'
                     else:
@@ -143,16 +150,25 @@ if __name__ == "__main__":
                 game = Game (cur_username)
 
                 listen_port = get_open_port()
-                server_communication.start_game(listen_port)
-
+                print ("listen_port: ", listen_port)
+                server_communication.start_game(server_communication.general_socket.this_socket.getsockname ()[0], listen_port)
                 pacman = Pacman(cur_username)
+                threading.Thread(target=receive_players, args=(listen_port, pacman)).start()
+                pacman.start_game()
 
-                receive_players_thread = threading.Thread(target=receive_players, daemon=True, args=(listen_port, pacman))
             elif commands[0] == 'desafio':
                 if len(commands) != 2:
                     print("Comando errado. Apresente o usuario como argumento.")
                 else:
                     user = commands[1]
+
+                    pacman_host, error = server_communication.challenge(user)
+                    if pacman_host == None:
+                        print(error)
+                    else:
+                        print("Desafio aceito!")
+                        ghost = Ghost (cur_username, pacman_host[0], pacman_host[1], get_open_port ())
+
                     # TODO: implementar challenge
                     # challenge_ok, challenge_error = server_communication.challenge(user)
                     # if challenge_ok:

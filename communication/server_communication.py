@@ -106,13 +106,27 @@ class ServerCommunication:
     def tchau (self):
         server_database.logout(self.account_logged)
     
-    def start_game (self, host_port):
-        game_manager.create_game(self.account_logged, host_port)
+    def start_game (self, host_ip, host_port):
+        game_manager.create_game(self.account_logged, host_ip, host_port)
 
         package = {'type': 'start_game', 'status': 'ok'}
         message = json.dumps(package)
         logging.debug(f"Sending message to client: {message}")
         self.general_socket.send_message(message)
+
+    def challenge (self, username):
+        # precisamos desafiar o username
+        if game_manager.join_game (username, self.account_logged):
+            # se existe um jogo com esse username, entao o desafio foi aceito
+            package = {'type': 'challenge', 'status': 'ok', 'host': game_manager.get_game_port(username)}
+            message = json.dumps(package)
+            logging.debug(f"Sending message to client: {message}")
+            self.general_socket.send_message(message)
+        else:
+            package = {'type': 'challenge', 'status': 'error: user is not in-game or something else happened'}
+            message = json.dumps(package)
+            logging.debug(f"Sending message to client: {message}")
+            self.general_socket.send_message(message)
 
     def parse_client (self, initial_data = None):
         while True:
@@ -146,11 +160,13 @@ class ServerCommunication:
                 self.get_leaderboard()
             elif data['type'] == 'get_online_users' and data['status'] == 'try':
                 self.get_online_users()
+            elif data['type'] == 'start_game' and data['status'] == 'try':
+                self.start_game(data['host_ip'], data['host_port'])
+            elif data['type'] == 'challenge' and data['status'] == 'try':
+                self.challenge(data['username'])
             elif data['type'] == 'tchau' and data['status'] == 'try':
                 self.tchau()
                 break
-            elif data['type'] == 'start_game' and data['status'] == 'try':
-                self.start_game(data['host_port'])
             else:
                 package = {'type': 'error', 'status': 'error'}
                 message = json.dumps(package)

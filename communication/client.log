@@ -1,383 +1,37 @@
-INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using UDP
-INFO:root:Connected to 127.0.0.1:1234
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using UDP
-INFO:root:Connected to 127.0.0.1:1234
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using UDP
-INFO:root:Connected to 127.0.0.1:1234
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using UDP
-INFO:root:Connected to 127.0.0.1:1234
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
 INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
 INFO:root:Connected to 127.0.0.1:1234
 DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
 INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
 INFO:root:Connected to server
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "nathan", "password": "123"}
-INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan", "password": "23"}
-INFO:root:Received data from server: {"type": "login", "status": "error: wrong password"}
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
-INFO:root:Received data from server: {"type": "login", "status": "ok"}
-DEBUG:root:LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "logout", "status": "try"}
-INFO:root:Received data from server: {"type": "logout", "status": "ok"}
-DEBUG:root:NOT_LOGGED_IN
-INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using UDP
-INFO:root:Connected to 127.0.0.1:1234
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using UDP
-INFO:root:Connected to 127.0.0.1:1234
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using UDP
-INFO:root:Connected to 127.0.0.1:1234
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using UDP
-INFO:root:Connected to 127.0.0.1:1234
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using UDP
-INFO:root:Connected to 127.0.0.1:1234
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using UDP
-INFO:root:Connected to 127.0.0.1:1234
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 44491]}
-INFO:root:Connected to server
-INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using UDP
-INFO:root:Connected to 127.0.0.1:1234
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 4998]}
-INFO:root:Connected to server
-INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using UDP
-INFO:root:Connected to 127.0.0.1:1234
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 33414]}
-INFO:root:Connected to server
-INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using UDP
-INFO:root:Connected to 127.0.0.1:1234
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 31099]}
-INFO:root:Connected to server
-INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using UDP
-INFO:root:Connected to 127.0.0.1:1234
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 42527]}
-INFO:root:Connected to server
-INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using UDP
-INFO:root:Connected to 127.0.0.1:1234
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 11220]}
-INFO:root:Connected to server
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
-INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
-INFO:root:Connected to 127.0.0.1:1234
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
-INFO:root:Connected to server
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
-INFO:root:Received data from server: 
-INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
-INFO:root:Connected to 127.0.0.1:1234
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
-INFO:root:Connected to server
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
-INFO:root:Received data from server: {"type": "login", "status": "error: username does not exist"}
-INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
-INFO:root:Connected to 127.0.0.1:1234
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
-INFO:root:Connected to server
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
-INFO:root:Received data from server: {"type": "login", "status": "error: username does not exist"}
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "nathan", "password": "123"}
-INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan", "password": "12314"}
-INFO:root:Received data from server: {"type": "login", "status": "error: wrong password"}
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
-INFO:root:Received data from server: {"type": "login", "status": "ok"}
-DEBUG:root:LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "change_password", "status": "try", "old_password": "1234", "new_password": "123"}
-INFO:root:Received data from server: {"type": "change_password", "status": "error: wrong password"}
-DEBUG:root:LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "change_password", "status": "try", "old_password": "12", "new_password": "1234"}
-INFO:root:Received data from server: {"type": "change_password", "status": "error: wrong password"}
-DEBUG:root:LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "change_password", "status": "try", "old_password": "123", "new_password": "1234"}
-INFO:root:Received data from server: {"type": "change_password", "status": "ok"}
-DEBUG:root:LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "logout", "status": "try"}
-INFO:root:Received data from server: {"type": "logout", "status": "ok"}
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan", "password": "1234"}
-INFO:root:Received data from server: {"type": "login", "status": "ok"}
-DEBUG:root:LOGGED_IN
-INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
-INFO:root:Connected to 127.0.0.1:1234
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
-INFO:root:Connected to server
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "nathan", "password": "123"}
-INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
-INFO:root:Received data from server: {"type": "login", "status": "ok"}
-DEBUG:root:LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "get_online_users", "status": "try"}
-INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
-INFO:root:Connected to 127.0.0.1:1234
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
-INFO:root:Connected to server
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
-INFO:root:Received data from server: {"type": "login", "status": "error: username does not exist"}
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "nathan", "password": "123"}
-INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
-INFO:root:Received data from server: {"type": "login", "status": "ok"}
-DEBUG:root:LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "get_online_users", "status": "try"}
-INFO:root:Received data from server: {"type": "get_online_users", "status": "ok", "online_users": {"null": {"status": "Logged In"}}}
-INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
-INFO:root:Connected to 127.0.0.1:1234
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
-INFO:root:Connected to server
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "nathan", "password": "123"}
-INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
-INFO:root:Received data from server: {"type": "login", "status": "ok"}
-INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
-INFO:root:Connected to 127.0.0.1:1234
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
-INFO:root:Connected to server
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "1", "password": "1"}
-INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "1", "password": "1"}
-INFO:root:Received data from server: {"type": "login", "status": "ok"}
-DEBUG:root:LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "get_online_users", "status": "try"}
-INFO:root:Received data from server: {"type": "get_online_users", "status": "ok", "online_users": {"1": {"status": "Logged In"}}}
-INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
-INFO:root:Connected to 127.0.0.1:1234
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
-INFO:root:Connected to server
-INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
-INFO:root:Connected to 127.0.0.1:1234
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
-INFO:root:Connected to server
-INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
-INFO:root:Connected to 127.0.0.1:1234
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
-INFO:root:Connected to server
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
-INFO:root:Received data from server: {"type": "login", "status": "error: username does not exist"}
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "nathan", "password": "123"}
-INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "natahn", "password": "123"}
-INFO:root:Received data from server: {"type": "login", "status": "error: username does not exist"}
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
-INFO:root:Received data from server: {"type": "login", "status": "ok"}
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
-INFO:root:Received data from server: {"type": "login", "status": "error: user already logged in"}
 DEBUG:root:NOT_LOGGED_IN
 DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "123", "password": "123"}
 INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
 DEBUG:root:NOT_LOGGED_IN
 DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "123", "password": "123"}
 INFO:root:Received data from server: {"type": "login", "status": "ok"}
-DEBUG:root:LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "get_online_users", "status": "try"}
-INFO:root:Received data from server: {"type": "get_online_users", "status": "ok", "online_users": {"nathan": {"status": "Logged In"}, "123": {"status": "Logged In"}}}
-DEBUG:root:LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "get_online_users", "status": "try"}
-INFO:root:Received data from server: {"type": "get_online_users", "status": "ok", "online_users": {"nathan": {"status": "Logged In"}, "123": {"status": "Logged In"}}}
-DEBUG:root:LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "logout", "status": "try"}
-INFO:root:Received data from server: {"type": "logout", "status": "ok"}
-DEBUG:root:LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "get_online_users", "status": "try"}
-INFO:root:Received data from server: {"type": "get_online_users", "status": "ok", "online_users": {"nathan": {"status": "Logged In"}}}
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "get_online_users", "status": "try"}
-INFO:root:Received data from server: {"type": "get_online_users", "status": "ok", "online_users": {"nathan": {"status": "Logged In"}}}
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "123", "password": "12"}
-INFO:root:Received data from server: {"type": "login", "status": "error: wrong password"}
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "123", "password": "123"}
-INFO:root:Received data from server: {"type": "login", "status": "ok"}
-DEBUG:root:LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "get_online_users", "status": "try"}
-INFO:root:Received data from server: {"type": "get_online_users", "status": "ok", "online_users": {"nathan": {"status": "Logged In"}, "123": {"status": "Logged In"}}}
-DEBUG:root:LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "tchau", "status": "try"}
-DEBUG:root:LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "get_online_users", "status": "try"}
-INFO:root:Received data from server: {"type": "get_online_users", "status": "ok", "online_users": {"nathan": {"status": "Logged In"}}}
-DEBUG:root:LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "get_online_users", "status": "try"}
-INFO:root:Received data from server: {"type": "get_online_users", "status": "ok", "online_users": {"nathan": {"status": "Logged In"}}}
 INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
 INFO:root:Connected to 127.0.0.1:1234
 DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
 INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
 INFO:root:Connected to server
 DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
-INFO:root:Received data from server: {"type": "login", "status": "error: user already logged in"}
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan1", "password": "123"}
-INFO:root:Received data from server: {"type": "login", "status": "error: username does not exist"}
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "natahn", "password": "123"}
+DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "12", "password": "12"}
 INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
 DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "natahn", "password": "123"}
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "12", "password": "12"}
 INFO:root:Received data from server: {"type": "login", "status": "ok"}
 DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "start_game", "status": "try", "host_ip": "127.0.0.1", "host_port": 25173}
+INFO:root:Received data from server: {"type": "start_game", "status": "ok"}
 DEBUG:root:LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "get_online_users", "status": "try"}
-INFO:root:Received data from server: {"type": "get_online_users", "status": "ok", "online_users": {"nathan": {"status": "Logged In"}, "natahn": {"status": "Logged In"}}}
-DEBUG:root:LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "get_online_users", "status": "try"}
-INFO:root:Received data from server: {"type": "get_online_users", "status": "ok", "online_users": {"nathan": {"status": "Logged In"}, "natahn": {"status": "Logged In"}}}
+DEBUG:root:Sending message to server: {"type": "challenge", "status": "try", "username": "123"}
+INFO:root:Received data from server: {"type": "challenge", "status": "ok", "host": ["127.0.0.1", 25173]}
+DEBUG:root:Ghost 12 connecting to 127.0.0.1:25173 asking to connect on port 24283
 INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
 INFO:root:Connected to 127.0.0.1:1234
 DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
 INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
 INFO:root:Connected to server
-INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
-INFO:root:Connected to 127.0.0.1:1234
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
-INFO:root:Connected to server
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathn", "password": "123"}
-INFO:root:Received data from server: {"type": "login", "status": "error: username does not exist"}
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "nathan", "password": "123"}
-INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
-INFO:root:Received data from server: {"type": "login", "status": "ok"}
-DEBUG:root:LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "change_password", "status": "try", "old_password": "123", "new_password": "123"}
-INFO:root:Received data from server: {"type": "change_password", "status": "ok"}
-DEBUG:root:LOGGED_IN
-DEBUG:root:LOGGED_IN
-DEBUG:root:LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "change_password", "status": "try", "old_password": "123", "new_password": "123"}
-INFO:root:Received data from server: {"type": "change_password", "status": "ok"}
-DEBUG:root:LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "change_password", "status": "try", "old_password": "1234", "new_password": "123"}
-INFO:root:Received data from server: {"type": "change_password", "status": "error: wrong password"}
-DEBUG:root:LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "change_password", "status": "try", "old_password": "1234", "new_password": "123"}
-INFO:root:Received data from server: {"type": "change_password", "status": "error: wrong password"}
-DEBUG:root:LOGGED_IN
-DEBUG:root:LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "change_password", "status": "try", "old_password": "1234", "new_password": "123"}
-INFO:root:Received data from server: {"type": "change_password", "status": "error: wrong password"}
-DEBUG:root:LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "change_password", "status": "try", "old_password": "1234", "new_password": "123"}
-INFO:root:Received data from server: {"type": "change_password", "status": "error: wrong password"}
-DEBUG:root:LOGGED_IN
-DEBUG:root:LOGGED_IN
-DEBUG:root:LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "get_online_users", "status": "try"}
-INFO:root:Received data from server: {"type": "get_online_users", "status": "ok", "online_users": {"nathan": "Online"}}
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
-INFO:root:Received data from server: {"type": "login", "status": "error: user already logged in"}
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "nat", "password": "123"}
-INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nat", "password": "123"}
-INFO:root:Received data from server: {"type": "login", "status": "ok"}
-DEBUG:root:LOGGED_IN
-DEBUG:root:LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "get_online_users", "status": "try"}
-INFO:root:Received data from server: {"type": "get_online_users", "status": "ok", "online_users": {"nathan": "Online", "nat": "Online"}}
-DEBUG:root:LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "logout", "status": "try"}
-INFO:root:Received data from server: {"type": "logout", "status": "ok"}
-DEBUG:root:LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "get_online_users", "status": "try"}
-INFO:root:Received data from server: {"type": "get_online_users", "status": "ok", "online_users": {"nathan": "Online"}}
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nat", "password": "123"}
-INFO:root:Received data from server: {"type": "login", "status": "ok"}
-DEBUG:root:LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "tchau", "status": "try"}
-DEBUG:root:LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "get_online_users", "status": "try"}
-INFO:root:Received data from server: {"type": "get_online_users", "status": "ok", "online_users": {"nathan": "Online"}}
-DEBUG:root:LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "get_online_users", "status": "try"}
-INFO:root:Received data from server: {"type": "get_online_users", "status": "ok", "online_users": {"nathan": "Online"}}
-DEBUG:root:LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "get_leaderboard", "status": "try"}
-INFO:root:Received data from server: {"type": "get_leaderboard", "status": "ok", "leaderboard": {}}
-INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
-INFO:root:Connected to 127.0.0.1:1234
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
-INFO:root:Connected to server
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "nathan", "password": "123"}
-INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
-INFO:root:Received data from server: {"type": "login", "status": "ok"}
-DEBUG:root:LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "get_online_users", "status": "try"}
-INFO:root:Received data from server: {"type": "get_online_users", "status": "ok", "online_users": {"nathan": "Online"}}
-INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
-INFO:root:Connected to 127.0.0.1:1234
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
-INFO:root:Connected to server
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
-INFO:root:Received data from server: {"type": "login", "status": "error: user already logged in"}
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "nathan", "password": "123"}
-INFO:root:Received data from server: {"type": "create_user", "status": "error: username already exists"}
 DEBUG:root:NOT_LOGGED_IN
 DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "123", "password": "213"}
 INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
@@ -385,91 +39,209 @@ DEBUG:root:NOT_LOGGED_IN
 DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "123", "password": "213"}
 INFO:root:Received data from server: {"type": "login", "status": "ok"}
 DEBUG:root:LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "get_online_users", "status": "try"}
-INFO:root:Received data from server: {"type": "get_online_users", "status": "ok", "online_users": {"nathan": "Online", "123": "Online"}}
-INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
-INFO:root:Connected to 127.0.0.1:1234
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
-INFO:root:Connected to server
-INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
-INFO:root:Connected to 127.0.0.1:1234
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
-INFO:root:Connected to server
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "nathan", "password": "123"}
-INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
-INFO:root:Received data from server: {"type": "login", "status": "ok"}
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
-INFO:root:Received data from server: {"type": "login", "status": "error: user already logged in"}
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "213", "password": "123"}
-INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "123", "password": "123"}
-INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "123", "password": "123"}
-INFO:root:Received data from server: {"type": "login", "status": "ok"}
-DEBUG:root:LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "get_online_users", "status": "try"}
-INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
-INFO:root:Connected to 127.0.0.1:1234
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
-INFO:root:Connected to server
-INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
-INFO:root:Connected to 127.0.0.1:1234
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
-INFO:root:Connected to server
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "nathan", "password": "123"}
-INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
-INFO:root:Received data from server: {"type": "login", "status": "ok"}
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "123", "password": "123"}
-INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "213", "password": "123"}
-INFO:root:Received data from server: {"type": "login", "status": "error: username does not exist"}
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "123", "password": "123"}
-INFO:root:Received data from server: {"type": "login", "status": "ok"}
-DEBUG:root:LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "get_online_users", "status": "try"}
-INFO:root:Received data from server: {"type": "get_online_users", "status": "ok", "online_users": {"nathan": "Online", "123": "Online"}}
-DEBUG:root:LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "get_online_users", "status": "try"}
-INFO:root:Received data from server: {"type": "get_online_users", "status": "ok", "online_users": {"nathan": "Online", "123": "Online"}}
-DEBUG:root:LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "logout", "status": "try"}
-INFO:root:Received data from server: {"type": "logout", "status": "ok"}
-DEBUG:root:LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "get_online_users", "status": "try"}
-INFO:root:Received data from server: {"type": "get_online_users", "status": "ok", "online_users": {"nathan": "Online"}}
-INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
-INFO:root:Connected to 127.0.0.1:1234
-DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
-INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
-INFO:root:Connected to server
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "nathan", "password": "12"}
-INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
-DEBUG:root:NOT_LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan", "password": "12"}
-INFO:root:Received data from server: {"type": "login", "status": "ok"}
-DEBUG:root:LOGGED_IN
-DEBUG:root:Sending message to server: {"type": "start_game", "status": "try", "host_port": 21818}
+DEBUG:root:Sending message to server: {"type": "start_game", "status": "try", "host_ip": "127.0.0.1", "host_port": 23242}
 INFO:root:Received data from server: {"type": "start_game", "status": "ok"}
-DEBUG:root:IN_GAME
-DEBUG:root:IN_GAME
+INFO:root:TCP Server listening on 127.0.0.1:23242
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
+INFO:root:Connected to 127.0.0.1:1234
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
+INFO:root:Connected to server
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "123", "password": "123"}
+INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "123", "password": "123"}
+INFO:root:Received data from server: {"type": "login", "status": "ok"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "start_game", "status": "try", "host_ip": "127.0.0.1", "host_port": 47240}
+INFO:root:Received data from server: {"type": "start_game", "status": "ok"}
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
+INFO:root:Connected to 127.0.0.1:1234
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
+INFO:root:Connected to server
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "123", "password": "123"}
+INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "123", "password": "123"}
+INFO:root:Received data from server: {"type": "login", "status": "ok"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "start_game", "status": "try", "host_ip": "127.0.0.1", "host_port": 4153}
+INFO:root:Received data from server: {"type": "start_game", "status": "ok"}
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
+INFO:root:Connected to 127.0.0.1:1234
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
+INFO:root:Connected to server
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "123", "password": "123"}
+INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "123", "password": "123"}
+INFO:root:Received data from server: {"type": "login", "status": "ok"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "start_game", "status": "try", "host_ip": "127.0.0.1", "host_port": 47556}
+INFO:root:Received data from server: {"type": "start_game", "status": "ok"}
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
+INFO:root:Connected to 127.0.0.1:1234
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
+INFO:root:Connected to server
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "123", "password": "123"}
+INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "123", "password": "123"}
+INFO:root:Received data from server: {"type": "login", "status": "ok"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "start_game", "status": "try", "host_ip": "127.0.0.1", "host_port": 44265}
+INFO:root:Received data from server: {"type": "start_game", "status": "ok"}
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
+INFO:root:Connected to 127.0.0.1:1234
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
+INFO:root:Connected to server
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "12", "password": "12"}
+INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "12", "password": "12"}
+INFO:root:Received data from server: {"type": "login", "status": "ok"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "challenge", "status": "try", "username": "123"}
+INFO:root:Received data from server: {"type": "challenge", "status": "ok", "host": ["127.0.0.1", 44265]}
+DEBUG:root:Ghost 12 connecting to 127.0.0.1:44265 asking to connect on port 3164
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
+INFO:root:Connected to 127.0.0.1:1234
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
+INFO:root:Connected to server
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "123", "password": "123"}
+INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "123", "password": "123"}
+INFO:root:Received data from server: {"type": "login", "status": "ok"}
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
+INFO:root:Connected to 127.0.0.1:1234
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
+INFO:root:Connected to server
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "12", "password": "12"}
+INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "12", "password": "12"}
+INFO:root:Received data from server: {"type": "login", "status": "ok"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "start_game", "status": "try", "host_ip": "127.0.0.1", "host_port": 7856}
+INFO:root:Received data from server: {"type": "start_game", "status": "ok"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "challenge", "status": "try", "username": "123"}
+INFO:root:Received data from server: {"type": "challenge", "status": "ok", "host": ["127.0.0.1", 7856]}
+DEBUG:root:Ghost 12 connecting to 127.0.0.1:7856 asking to connect on port 11512
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
+INFO:root:Connected to 127.0.0.1:1234
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
+INFO:root:Connected to server
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "123", "password": "123"}
+INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "123", "password": "123"}
+INFO:root:Received data from server: {"type": "login", "status": "ok"}
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
+INFO:root:Connected to 127.0.0.1:1234
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
+INFO:root:Connected to server
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "12", "password": "12"}
+INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "12", "password": "12"}
+INFO:root:Received data from server: {"type": "login", "status": "ok"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "start_game", "status": "try", "host_ip": "127.0.0.1", "host_port": 18323}
+INFO:root:Received data from server: {"type": "start_game", "status": "ok"}
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
+INFO:root:Connected to 127.0.0.1:1234
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
+INFO:root:Connected to server
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "123", "password": "213"}
+INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "123", "password": "213"}
+INFO:root:Received data from server: {"type": "login", "status": "ok"}
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
+INFO:root:Connected to 127.0.0.1:1234
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
+INFO:root:Connected to server
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "12", "password": "12"}
+INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "12", "password": "12"}
+INFO:root:Received data from server: {"type": "login", "status": "ok"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "challenge", "status": "try", "username": "123"}
+INFO:root:Received data from server: {"type": "challenge", "status": "error: user is not in-game or something else happened"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "challenge", "status": "try", "username": "123"}
+INFO:root:Received data from server: {"type": "challenge", "status": "error: user is not in-game or something else happened"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "challenge", "status": "try", "username": "123"}
+INFO:root:Received data from server: {"type": "challenge", "status": "error: user is not in-game or something else happened"}
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
+INFO:root:Connected to 127.0.0.1:1234
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
+INFO:root:Connected to server
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "123", "password": "123"}
+INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "123", "password": "123"}
+INFO:root:Received data from server: {"type": "login", "status": "ok"}
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
+INFO:root:Connected to 127.0.0.1:1234
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
+INFO:root:Connected to server
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "12", "password": "12"}
+INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "12", "password": "12"}
+INFO:root:Received data from server: {"type": "login", "status": "ok"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "start_game", "status": "try", "host_ip": "127.0.0.1", "host_port": 33764}
+INFO:root:Received data from server: {"type": "start_game", "status": "ok"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "challenge", "status": "try", "username": "123"}
+INFO:root:Received data from server: {"type": "challenge", "status": "ok", "host": ["127.0.0.1", 33764]}
+DEBUG:root:Ghost 12 connecting to 127.0.0.1:33764 asking to connect on port 30585
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
+INFO:root:Connected to 127.0.0.1:1234
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
+INFO:root:Connected to server
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "123", "password": "123"}
+INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "123", "password": "123"}
+INFO:root:Received data from server: {"type": "login", "status": "ok"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "start_game", "status": "try", "host_ip": "127.0.0.1", "host_port": 45041}
+INFO:root:Received data from server: {"type": "start_game", "status": "ok"}
 INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
 INFO:root:Connected to 127.0.0.1:1234
 DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
@@ -480,3 +252,286 @@ INFO:root:Connected to 127.0.0.1:1234
 DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
 INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
 INFO:root:Connected to server
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "123", "password": "123"}
+INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "123", "password": "123"}
+INFO:root:Received data from server: {"type": "login", "status": "ok"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "start_game", "status": "try", "host_ip": "127.0.0.1", "host_port": 17368}
+INFO:root:Received data from server: {"type": "start_game", "status": "ok"}
+INFO:root:TCP Server listening on 127.0.0.1:17368
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "12", "password": "12"}
+INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "12", "password": "12"}
+INFO:root:Received data from server: {"type": "login", "status": "ok"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "challenge", "status": "try", "username": "12"}
+INFO:root:Received data from server: {"type": "challenge", "status": "error: user is not in-game or something else happened"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "challenge", "status": "try", "username": "123"}
+INFO:root:Received data from server: {"type": "challenge", "status": "ok", "host": ["127.0.0.1", 17368]}
+DEBUG:root:Ghost 12 connecting to 127.0.0.1:17368 asking to connect on port 8293
+INFO:root:Waiting for 12 move on ('127.0.0.1', 8293)
+INFO:root:Received data from ('127.0.0.1', 54902): {'username': '12', 'host': '127.0.0.1', 'port': 8293}
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
+INFO:root:Connected to 127.0.0.1:1234
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
+INFO:root:Connected to server
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "123", "password": "123"}
+INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "123", "password": "123"}
+INFO:root:Received data from server: {"type": "login", "status": "ok"}
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
+INFO:root:Connected to 127.0.0.1:1234
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
+INFO:root:Connected to server
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "12", "password": "12"}
+INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "12", "password": "12"}
+INFO:root:Received data from server: {"type": "login", "status": "ok"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "start_game", "status": "try", "host_ip": "127.0.0.1", "host_port": 37475}
+INFO:root:Received data from server: {"type": "start_game", "status": "ok"}
+INFO:root:TCP Server listening on 127.0.0.1:37475
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "challenge", "status": "try", "username": "123"}
+INFO:root:Received data from server: {"type": "challenge", "status": "ok", "host": ["127.0.0.1", 37475]}
+DEBUG:root:Ghost 12 connecting to 127.0.0.1:37475 asking to connect on port 9245
+INFO:root:Waiting for 12 move on ('127.0.0.1', 9245)
+INFO:root:Received data from ('127.0.0.1', 62231): {'username': '12', 'host': '127.0.0.1', 'port': 9245}
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
+INFO:root:Connected to 127.0.0.1:1234
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
+INFO:root:Connected to server
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "123", "password": "123"}
+INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "123", "password": "123"}
+INFO:root:Received data from server: {"type": "login", "status": "ok"}
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
+INFO:root:Connected to 127.0.0.1:1234
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
+INFO:root:Connected to server
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "12", "password": "12"}
+INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "12", "password": "12"}
+INFO:root:Received data from server: {"type": "login", "status": "ok"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "start_game", "status": "try", "host_ip": "127.0.0.1", "host_port": 48905}
+INFO:root:Received data from server: {"type": "start_game", "status": "ok"}
+INFO:root:TCP Server listening on 127.0.0.1:48905
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
+INFO:root:Connected to 127.0.0.1:1234
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
+INFO:root:Connected to server
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "123", "password": "123"}
+INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "123", "password": "123"}
+INFO:root:Received data from server: {"type": "login", "status": "ok"}
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
+INFO:root:Connected to 127.0.0.1:1234
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
+INFO:root:Connected to server
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "12", "password": "12"}
+INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "12", "password": "12"}
+INFO:root:Received data from server: {"type": "login", "status": "ok"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "start_game", "status": "try", "host_ip": "127.0.0.1", "host_port": 34321}
+INFO:root:Received data from server: {"type": "start_game", "status": "ok"}
+INFO:root:TCP Server listening on 127.0.0.1:34321
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "challenge", "status": "try", "username": "123"}
+INFO:root:Received data from server: {"type": "challenge", "status": "ok", "host": ["127.0.0.1", 34321]}
+DEBUG:root:Ghost 12 connecting to 127.0.0.1:34321 asking to connect on port 24966
+INFO:root:Waiting for 12 move on ('127.0.0.1', 24966)
+INFO:root:Received data from ('127.0.0.1', 62983): {'username': '12', 'host': '127.0.0.1', 'port': 24966}
+DEBUG:root:Adding incoming player: 12, 127.0.0.1, 24966
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
+INFO:root:Connected to 127.0.0.1:1234
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
+INFO:root:Connected to server
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "123", "password": "123"}
+INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
+INFO:root:Connected to 127.0.0.1:1234
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
+INFO:root:Connected to server
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "12", "password": "12"}
+INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "123", "password": "123"}
+INFO:root:Received data from server: {"type": "login", "status": "ok"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "12", "password": "12"}
+INFO:root:Received data from server: {"type": "login", "status": "ok"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "start_game", "status": "try", "host_ip": "127.0.0.1", "host_port": 45682}
+INFO:root:Received data from server: {"type": "start_game", "status": "ok"}
+INFO:root:TCP Server listening on 127.0.0.1:45682
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "challenge", "status": "try", "username": "123"}
+INFO:root:Received data from server: {"type": "challenge", "status": "ok", "host": ["127.0.0.1", 45682]}
+DEBUG:root:Ghost 12 connecting to 127.0.0.1:45682 asking to connect on port 12292
+INFO:root:Waiting for 12 move on ('127.0.0.1', 12292)
+INFO:root:Received data from ('127.0.0.1', 63984): {'username': '12', 'host': '127.0.0.1', 'port': 12292}
+DEBUG:root:Adding incoming player: 12, 127.0.0.1, 12292
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
+INFO:root:Connected to 127.0.0.1:1234
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
+INFO:root:Connected to server
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "123", "password": "123"}
+INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "123", "password": "123"}
+INFO:root:Received data from server: {"type": "login", "status": "ok"}
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
+INFO:root:Connected to 127.0.0.1:1234
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
+INFO:root:Connected to server
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "12", "password": "12"}
+INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "12", "password": "12"}
+INFO:root:Received data from server: {"type": "login", "status": "ok"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "start_game", "status": "try", "host_ip": "127.0.0.1", "host_port": 4353}
+INFO:root:Received data from server: {"type": "start_game", "status": "ok"}
+INFO:root:TCP Server listening on 127.0.0.1:4353
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "challenge", "status": "try", "username": "123"}
+INFO:root:Received data from server: {"type": "challenge", "status": "ok", "host": ["127.0.0.1", 4353]}
+DEBUG:root:Ghost 12 connecting to 127.0.0.1:4353 asking to connect on port 22629
+INFO:root:Waiting for 12 move on ('127.0.0.1', 22629)
+INFO:root:Received data from ('127.0.0.1', 64515): {'username': '12', 'host': '127.0.0.1', 'port': 22629}
+DEBUG:root:Adding incoming player: 12, 127.0.0.1, 22629
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
+INFO:root:Connected to 127.0.0.1:1234
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
+INFO:root:Connected to server
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "123", "password": "123"}
+INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "123", "password": "123"}
+INFO:root:Received data from server: {"type": "login", "status": "ok"}
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
+INFO:root:Connected to 127.0.0.1:1234
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
+INFO:root:Connected to server
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "12", "password": "12"}
+INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "12", "password": "12"}
+INFO:root:Received data from server: {"type": "login", "status": "ok"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "start_game", "status": "try", "host_ip": "127.0.0.1", "host_port": 41506}
+INFO:root:Received data from server: {"type": "start_game", "status": "ok"}
+INFO:root:TCP Server listening on 127.0.0.1:41506
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "challenge", "status": "try", "username": "123"}
+INFO:root:Received data from server: {"type": "challenge", "status": "ok", "host": ["127.0.0.1", 41506]}
+DEBUG:root:Ghost 12 connecting to 127.0.0.1:41506 asking to connect on port 37370
+INFO:root:Waiting for 12 move on ('127.0.0.1', 37370)
+INFO:root:Received data from ('127.0.0.1', 64848): {'username': '12', 'host': '127.0.0.1', 'port': 37370}
+DEBUG:root:Adding incoming player: 12, 127.0.0.1, 37370
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
+INFO:root:Connected to 127.0.0.1:1234
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
+INFO:root:Connected to server
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "123", "password": "123"}
+INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "123", "password": "123"}
+INFO:root:Received data from server: {"type": "login", "status": "ok"}
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
+INFO:root:Connected to 127.0.0.1:1234
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
+INFO:root:Connected to server
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "12", "password": "12"}
+INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "12", "password": "12"}
+INFO:root:Received data from server: {"type": "login", "status": "ok"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "start_game", "status": "try", "host_ip": "127.0.0.1", "host_port": 43520}
+INFO:root:Received data from server: {"type": "start_game", "status": "ok"}
+INFO:root:TCP Server listening on 127.0.0.1:43520
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "challenge", "status": "try", "username": "123"}
+INFO:root:Received data from server: {"type": "challenge", "status": "ok", "host": ["127.0.0.1", 43520]}
+DEBUG:root:Ghost 12 connecting to 127.0.0.1:43520 asking to connect on port 26564
+INFO:root:Waiting for 12 move on ('127.0.0.1', 26564)
+INFO:root:Received data from ('127.0.0.1', 52717): {'username': '12', 'host': '127.0.0.1', 'port': 26564}
+DEBUG:root:Adding incoming player: 12, 127.0.0.1, 26564
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
+INFO:root:Connected to 127.0.0.1:1234
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
+INFO:root:Connected to server
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "123", "password": "123"}
+INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "123", "password": "123"}
+INFO:root:Received data from server: {"type": "login", "status": "ok"}
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
+INFO:root:Connected to 127.0.0.1:1234
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
+INFO:root:Connected to server
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "12", "password": "12"}
+INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "12", "password": "12"}
+INFO:root:Received data from server: {"type": "login", "status": "ok"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "start_game", "status": "try", "host_ip": "127.0.0.1", "host_port": 14148}
+INFO:root:Received data from server: {"type": "start_game", "status": "ok"}
+INFO:root:TCP Server listening on 127.0.0.1:14148
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "challenge", "status": "try", "username": "123"}
+INFO:root:Received data from server: {"type": "challenge", "status": "ok", "host": ["127.0.0.1", 14148]}
+DEBUG:root:Ghost 12 connecting to 127.0.0.1:14148 asking to connect on port 26544
+INFO:root:Waiting for 12 move on ('127.0.0.1', 26544)
+INFO:root:Received data from ('127.0.0.1', 53631): {'username': '12', 'host': '127.0.0.1', 'port': 26544}
+DEBUG:root:Adding incoming player: 12, 127.0.0.1, 26544

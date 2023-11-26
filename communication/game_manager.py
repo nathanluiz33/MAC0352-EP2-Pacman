@@ -9,19 +9,23 @@ logging.basicConfig(filename='../communication/game_manager.log', encoding='utf-
 
 class GameManager:
     def __init__ (self):
-        self.hostPort = {}
+        self.port = {}
         self.players = {}
 
-    def create_game (self, username_host, hostPort):
-        self.hostPort[username_host] = hostPort
+    def create_game (self, username_host, host_ip, host_port):
+        self.port[username_host] = (host_ip, host_port)
+        self.players[username_host] = [username_host]
 
     def join_game (self, username_host, username):
-        if username_host not in self.players:
-            return False
-        else:
+        if username_host in self.players:
             self.players[username_host].append(username)
             return True
+        else:
+            return False
+    
+    def get_game_port (self, username_host):
+        return self.port[username_host]
 
     def end_game (self, username_host):
-        self.hostPort.pop(username_host)
+        self.port.pop(username_host)
         self.players.pop(username_host)

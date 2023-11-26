@@ -142,8 +142,8 @@ class ClientCommunication:
         logging.debug(f"Sending message to server: {message}")
         self.general_socket.send_message(message)
 
-    def start_game (self, host_port):
-        package = {'type': 'start_game', 'status': 'try', 'host_port': host_port}
+    def start_game (self, host_ip, host_port):
+        package = {'type': 'start_game', 'status': 'try', 'host_ip': host_ip, 'host_port': host_port}
         message = json.dumps(package)
 
         logging.debug(f"Sending message to server: {message}")
@@ -156,3 +156,21 @@ class ClientCommunication:
         data = json.loads(data)
 
         return data['type'] == 'start_game' and data['status'] == 'ok'
+    
+    def challenge (self, username):
+        package = {'type': 'challenge', 'status': 'try', 'username': username}
+        message = json.dumps(package)
+
+        logging.debug(f"Sending message to server: {message}")
+        self.general_socket.send_message(message)
+
+        data = self.general_socket.receive_message()
+        data = data.decode('ascii')
+        logging.info(f"Received data from server: {data}")
+
+        data = json.loads(data)
+
+        if data['type'] == 'challenge' and data['status'] == 'ok':
+            return data['host'], data['status']
+        else:
+            return None, data['status']

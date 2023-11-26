@@ -1,561 +1,7 @@
 INFO:root:Starting server on port 1234
-INFO:root:TCP Server listening on 127.0.0.1:1234
-INFO:root:UDP Server listening on 127.0.0.1:1234
-INFO:root:Received data from ('127.0.0.1', 61668): b'{"type": "connect", "status": "try"}'
-INFO:root:Received data from ('127.0.0.1', 49395): b'{"type": "connect", "status": "try"}'
-INFO:root:Received data from ('127.0.0.1', 54564): b'{"type": "connect", "status": "try"}'
-INFO:root:Starting server on port 1234
-INFO:root:TCP Server listening on 127.0.0.1:1234
-INFO:root:UDP Server listening on 127.0.0.1:1234
-INFO:root:Received data from ('127.0.0.1', 50192): b'{"type": "connect", "status": "try"}'
-INFO:root:Starting server on port 1234
 INFO:root:UDP Server listening on 127.0.0.1:1234
 INFO:root:TCP Server listening on 127.0.0.1:1234
-INFO:root:New connection from ('127.0.0.1', 52526)
-DEBUG:root:{}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "connect", "status": "try"}
-DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
-DEBUG:root:{}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "nathan", "password": "123"}
-INFO:root:Creating user with username nathan and password 123
-DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
-DEBUG:root:{'nathan': '123'}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "login", "status": "try", "username": "nathan", "password": "23"}
-DEBUG:root:Sending message to client: {"type": "login", "status": "error: wrong password"}
-DEBUG:root:{'nathan': '123'}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
-DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
-DEBUG:root:{'nathan': '123'}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "logout", "status": "try"}
-DEBUG:root:Sending message to client: {"type": "logout", "status": "ok"}
-DEBUG:root:{'nathan': '123'}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Received data from ('127.0.0.1', 65437): b'{"type": "connect", "status": "try"}'
-INFO:root:Starting server on port 1234
-INFO:root:UDP Server listening on 127.0.0.1:1234
-INFO:root:TCP Server listening on 127.0.0.1:1234
-INFO:root:Received data from ('127.0.0.1', 50253): b'{"type": "connect", "status": "try"}'
-INFO:root:Starting server on port 1234
-INFO:root:UDP Server listening on 127.0.0.1:1234
-INFO:root:TCP Server listening on 127.0.0.1:1234
-INFO:root:Received data from ('127.0.0.1', 63404): b'{"type": "connect", "status": "try"}'
-INFO:root:Starting server on port 1234
-INFO:root:TCP Server listening on 127.0.0.1:1234
-INFO:root:UDP Server listening on 127.0.0.1:1234
-INFO:root:Received data from ('127.0.0.1', 63336): b'{"type": "connect", "status": "try"}'
-INFO:root:Starting server on port 1234
-INFO:root:TCP Server listening on 127.0.0.1:1234
-INFO:root:UDP Server listening on 127.0.0.1:1234
-INFO:root:Received data from ('127.0.0.1', 53444): b'{"type": "connect", "status": "try"}'
-INFO:root:Starting server on port 1234
-INFO:root:UDP Server listening on 127.0.0.1:1234
-INFO:root:TCP Server listening on 127.0.0.1:1234
-INFO:root:Received data from ('127.0.0.1', 53083): b'{"type": "connect", "status": "try"}'
-DEBUG:root:{}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "connect", "status": "try"}
-DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 44491]}
-DEBUG:root:{}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Starting server on port 1234
-INFO:root:UDP Server listening on 127.0.0.1:1234
-INFO:root:TCP Server listening on 127.0.0.1:1234
-INFO:root:Received data from ('127.0.0.1', 49970): b'{"type": "connect", "status": "try"}'
-DEBUG:root:{}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "connect", "status": "try"}
-DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 4998]}
-DEBUG:root:{}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Received data from ('127.0.0.1', 61225): b'{"type": "connect", "status": "try"}'
-DEBUG:root:{}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "connect", "status": "try"}
-DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 33414]}
-DEBUG:root:{}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Received data from ('127.0.0.1', 54158): b'{"type": "connect", "status": "try"}'
-DEBUG:root:{}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "connect", "status": "try"}
-DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 31099]}
-DEBUG:root:{}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Received data from ('127.0.0.1', 52235): b'{"type": "connect", "status": "try"}'
-DEBUG:root:{}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "connect", "status": "try"}
-DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 42527]}
-DEBUG:root:{}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Starting server on port 1234
-INFO:root:UDP Server listening on 127.0.0.1:1234
-INFO:root:TCP Server listening on 127.0.0.1:1234
-INFO:root:Received data from ('127.0.0.1', 56025): b'{"type": "connect", "status": "try"}'
-DEBUG:root:{}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "connect", "status": "try"}
-DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 11220]}
-DEBUG:root:{}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Starting server on port 1234
-INFO:root:UDP Server listening on 127.0.0.1:1234
-INFO:root:TCP Server listening on 127.0.0.1:1234
-INFO:root:New connection from ('127.0.0.1', 61148)
-DEBUG:root:{}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "connect", "status": "try"}
-DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
-DEBUG:root:{}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Starting server on port 1234
-INFO:root:UDP Server listening on 127.0.0.1:1234
-INFO:root:TCP Server listening on 127.0.0.1:1234
-INFO:root:New connection from ('127.0.0.1', 61287)
-DEBUG:root:{}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "connect", "status": "try"}
-DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
-DEBUG:root:{}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
-DEBUG:root:Sending message to client: {"type": "login", "status": "error: username does not exist"}
-DEBUG:root:{}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Starting server on port 1234
-INFO:root:TCP Server listening on 127.0.0.1:1234
-INFO:root:UDP Server listening on 127.0.0.1:1234
-INFO:root:New connection from ('127.0.0.1', 52372)
-DEBUG:root:{}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "connect", "status": "try"}
-DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
-DEBUG:root:{}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
-DEBUG:root:Sending message to client: {"type": "login", "status": "error: username does not exist"}
-DEBUG:root:{}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "nathan", "password": "123"}
-INFO:root:Creating user with username nathan and password 123
-DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
-DEBUG:root:{'nathan': '123'}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "login", "status": "try", "username": "nathan", "password": "12314"}
-DEBUG:root:Sending message to client: {"type": "login", "status": "error: wrong password"}
-DEBUG:root:{'nathan': '123'}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
-DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
-DEBUG:root:{'nathan': '123'}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "change_password", "status": "try", "old_password": "1234", "new_password": "123"}
-DEBUG:root:Sending message to client: {"type": "change_password", "status": "error: wrong password"}
-DEBUG:root:{'nathan': '123'}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "change_password", "status": "try", "old_password": "12", "new_password": "1234"}
-DEBUG:root:Sending message to client: {"type": "change_password", "status": "error: wrong password"}
-DEBUG:root:{'nathan': '123'}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "change_password", "status": "try", "old_password": "123", "new_password": "1234"}
-DEBUG:root:Sending message to client: {"type": "change_password", "status": "ok"}
-DEBUG:root:{'nathan': '1234'}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "logout", "status": "try"}
-DEBUG:root:Sending message to client: {"type": "logout", "status": "ok"}
-DEBUG:root:{'nathan': '1234'}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "login", "status": "try", "username": "nathan", "password": "1234"}
-DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
-DEBUG:root:{'nathan': '1234'}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Starting server on port 1234
-INFO:root:UDP Server listening on 127.0.0.1:1234
-INFO:root:TCP Server listening on 127.0.0.1:1234
-INFO:root:New connection from ('127.0.0.1', 57969)
-DEBUG:root:{}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "connect", "status": "try"}
-DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
-DEBUG:root:{}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "nathan", "password": "123"}
-INFO:root:Creating user with username nathan and password 123
-DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
-DEBUG:root:{'nathan': '123'}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
-DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
-DEBUG:root:{'nathan': '123'}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "get_online_users", "status": "try"}
-INFO:root:Starting server on port 1234
-INFO:root:UDP Server listening on 127.0.0.1:1234
-INFO:root:TCP Server listening on 127.0.0.1:1234
-INFO:root:New connection from ('127.0.0.1', 58299)
-DEBUG:root:{}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "connect", "status": "try"}
-DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
-DEBUG:root:{}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
-DEBUG:root:Sending message to client: {"type": "login", "status": "error: username does not exist"}
-DEBUG:root:{}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "nathan", "password": "123"}
-INFO:root:Creating user with username nathan and password 123
-DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
-DEBUG:root:{'nathan': '123'}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
-DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
-DEBUG:root:{'nathan': '123'}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "get_online_users", "status": "try"}
-DEBUG:root:Sending message to client: {"type": "get_online_users", "status": "ok", "online_users": {"null": {"status": "Logged In"}}}
-DEBUG:root:{'nathan': '123'}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Starting server on port 1234
-INFO:root:TCP Server listening on 127.0.0.1:1234
-INFO:root:UDP Server listening on 127.0.0.1:1234
-INFO:root:New connection from ('127.0.0.1', 58684)
-DEBUG:root:{}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "connect", "status": "try"}
-DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
-DEBUG:root:{}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "nathan", "password": "123"}
-INFO:root:Creating user with username nathan and password 123
-DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
-DEBUG:root:{'nathan': '123'}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
-DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
-DEBUG:root:{'nathan': '123'}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Starting server on port 1234
-INFO:root:UDP Server listening on 127.0.0.1:1234
-INFO:root:TCP Server listening on 127.0.0.1:1234
-INFO:root:New connection from ('127.0.0.1', 58816)
-DEBUG:root:{}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "connect", "status": "try"}
-DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
-DEBUG:root:{}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "1", "password": "1"}
-INFO:root:Creating user with username 1 and password 1
-DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
-DEBUG:root:{'1': '1'}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "login", "status": "try", "username": "1", "password": "1"}
-DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
-DEBUG:root:{'1': '1'}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "get_online_users", "status": "try"}
-DEBUG:root:Sending message to client: {"type": "get_online_users", "status": "ok", "online_users": {"1": {"status": "Logged In"}}}
-DEBUG:root:{'1': '1'}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:New connection from ('127.0.0.1', 61056)
-DEBUG:root:{'1': '1'}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "connect", "status": "try"}
-DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
-DEBUG:root:{'1': '1'}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Starting server on port 1234
-INFO:root:TCP Server listening on 127.0.0.1:1234
-INFO:root:UDP Server listening on 127.0.0.1:1234
-INFO:root:New connection from ('127.0.0.1', 61258)
-DEBUG:root:{}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "connect", "status": "try"}
-DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
-DEBUG:root:{}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:New connection from ('127.0.0.1', 61269)
-DEBUG:root:{}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "connect", "status": "try"}
-DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
-DEBUG:root:{}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
-DEBUG:root:Sending message to client: {"type": "login", "status": "error: username does not exist"}
-DEBUG:root:{}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "nathan", "password": "123"}
-INFO:root:Creating user with username nathan and password 123
-DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
-DEBUG:root:{'nathan': '123'}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "login", "status": "try", "username": "natahn", "password": "123"}
-DEBUG:root:Sending message to client: {"type": "login", "status": "error: username does not exist"}
-DEBUG:root:{'nathan': '123'}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
-DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
-DEBUG:root:{'nathan': '123'}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
-DEBUG:root:Sending message to client: {"type": "login", "status": "error: user already logged in"}
-DEBUG:root:{'nathan': '123'}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "123", "password": "123"}
-INFO:root:Creating user with username 123 and password 123
-DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
-DEBUG:root:{'nathan': '123', '123': '123'}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "login", "status": "try", "username": "123", "password": "123"}
-DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
-DEBUG:root:{'nathan': '123', '123': '123'}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "get_online_users", "status": "try"}
-DEBUG:root:Sending message to client: {"type": "get_online_users", "status": "ok", "online_users": {"nathan": {"status": "Logged In"}, "123": {"status": "Logged In"}}}
-DEBUG:root:{'nathan': '123', '123': '123'}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "get_online_users", "status": "try"}
-DEBUG:root:Sending message to client: {"type": "get_online_users", "status": "ok", "online_users": {"nathan": {"status": "Logged In"}, "123": {"status": "Logged In"}}}
-DEBUG:root:{'nathan': '123', '123': '123'}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "logout", "status": "try"}
-DEBUG:root:Sending message to client: {"type": "logout", "status": "ok"}
-DEBUG:root:{'nathan': '123', '123': '123'}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "get_online_users", "status": "try"}
-DEBUG:root:Sending message to client: {"type": "get_online_users", "status": "ok", "online_users": {"nathan": {"status": "Logged In"}}}
-DEBUG:root:{'nathan': '123', '123': '123'}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "get_online_users", "status": "try"}
-DEBUG:root:Sending message to client: {"type": "get_online_users", "status": "ok", "online_users": {"nathan": {"status": "Logged In"}}}
-DEBUG:root:{'nathan': '123', '123': '123'}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "login", "status": "try", "username": "123", "password": "12"}
-DEBUG:root:Sending message to client: {"type": "login", "status": "error: wrong password"}
-DEBUG:root:{'nathan': '123', '123': '123'}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "login", "status": "try", "username": "123", "password": "123"}
-DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
-DEBUG:root:{'nathan': '123', '123': '123'}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "get_online_users", "status": "try"}
-DEBUG:root:Sending message to client: {"type": "get_online_users", "status": "ok", "online_users": {"nathan": {"status": "Logged In"}, "123": {"status": "Logged In"}}}
-DEBUG:root:{'nathan': '123', '123': '123'}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "tchau", "status": "try"}
-INFO:root:Received data from client: {"type": "get_online_users", "status": "try"}
-DEBUG:root:Sending message to client: {"type": "get_online_users", "status": "ok", "online_users": {"nathan": {"status": "Logged In"}}}
-DEBUG:root:{'nathan': '123', '123': '123'}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "get_online_users", "status": "try"}
-DEBUG:root:Sending message to client: {"type": "get_online_users", "status": "ok", "online_users": {"nathan": {"status": "Logged In"}}}
-DEBUG:root:{'nathan': '123', '123': '123'}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:New connection from ('127.0.0.1', 55366)
-DEBUG:root:{'nathan': '123', '123': '123'}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "connect", "status": "try"}
-DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
-DEBUG:root:{'nathan': '123', '123': '123'}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
-DEBUG:root:Sending message to client: {"type": "login", "status": "error: user already logged in"}
-DEBUG:root:{'nathan': '123', '123': '123'}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "login", "status": "try", "username": "nathan1", "password": "123"}
-DEBUG:root:Sending message to client: {"type": "login", "status": "error: username does not exist"}
-DEBUG:root:{'nathan': '123', '123': '123'}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "natahn", "password": "123"}
-INFO:root:Creating user with username natahn and password 123
-DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
-DEBUG:root:{'nathan': '123', '123': '123', 'natahn': '123'}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "login", "status": "try", "username": "natahn", "password": "123"}
-DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
-DEBUG:root:{'nathan': '123', '123': '123', 'natahn': '123'}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "get_online_users", "status": "try"}
-DEBUG:root:Sending message to client: {"type": "get_online_users", "status": "ok", "online_users": {"nathan": {"status": "Logged In"}, "natahn": {"status": "Logged In"}}}
-DEBUG:root:{'nathan': '123', '123': '123', 'natahn': '123'}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "get_online_users", "status": "try"}
-DEBUG:root:Sending message to client: {"type": "get_online_users", "status": "ok", "online_users": {"nathan": {"status": "Logged In"}, "natahn": {"status": "Logged In"}}}
-DEBUG:root:{'nathan': '123', '123': '123', 'natahn': '123'}
-DEBUG:root:{}
-INFO:root:Waiting for data from client
-INFO:root:Starting server on port 1234
-INFO:root:TCP Server listening on 127.0.0.1:1234
-INFO:root:UDP Server listening on 127.0.0.1:1234
-INFO:root:New connection from ('127.0.0.1', 60574)
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "connect", "status": "try"}
-DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
-INFO:root:Waiting for data from client
-INFO:root:New connection from ('127.0.0.1', 60586)
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "connect", "status": "try"}
-DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "login", "status": "try", "username": "nathn", "password": "123"}
-DEBUG:root:Sending message to client: {"type": "login", "status": "error: username does not exist"}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "nathan", "password": "123"}
-INFO:root:Creating user with username nathan and password 123
-INFO:root:Created user with username nathan and password 123
-DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
-DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "change_password", "status": "try", "old_password": "123", "new_password": "123"}
-DEBUG:root:Sending message to client: {"type": "change_password", "status": "ok"}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "change_password", "status": "try", "old_password": "123", "new_password": "123"}
-DEBUG:root:Sending message to client: {"type": "change_password", "status": "ok"}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "change_password", "status": "try", "old_password": "1234", "new_password": "123"}
-DEBUG:root:Sending message to client: {"type": "change_password", "status": "error: wrong password"}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "change_password", "status": "try", "old_password": "1234", "new_password": "123"}
-DEBUG:root:Sending message to client: {"type": "change_password", "status": "error: wrong password"}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "change_password", "status": "try", "old_password": "1234", "new_password": "123"}
-DEBUG:root:Sending message to client: {"type": "change_password", "status": "error: wrong password"}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "change_password", "status": "try", "old_password": "1234", "new_password": "123"}
-DEBUG:root:Sending message to client: {"type": "change_password", "status": "error: wrong password"}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "get_online_users", "status": "try"}
-DEBUG:root:Sending message to client: {"type": "get_online_users", "status": "ok", "online_users": {"nathan": "Online"}}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
-DEBUG:root:Sending message to client: {"type": "login", "status": "error: user already logged in"}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "nat", "password": "123"}
-INFO:root:Creating user with username nat and password 123
-INFO:root:Created user with username nat and password 123
-DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "login", "status": "try", "username": "nat", "password": "123"}
-DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "get_online_users", "status": "try"}
-DEBUG:root:Sending message to client: {"type": "get_online_users", "status": "ok", "online_users": {"nathan": "Online", "nat": "Online"}}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "logout", "status": "try"}
-DEBUG:root:Sending message to client: {"type": "logout", "status": "ok"}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "get_online_users", "status": "try"}
-DEBUG:root:Sending message to client: {"type": "get_online_users", "status": "ok", "online_users": {"nathan": "Online"}}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "login", "status": "try", "username": "nat", "password": "123"}
-DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "tchau", "status": "try"}
-INFO:root:Received data from client: {"type": "get_online_users", "status": "try"}
-DEBUG:root:Sending message to client: {"type": "get_online_users", "status": "ok", "online_users": {"nathan": "Online"}}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "get_online_users", "status": "try"}
-DEBUG:root:Sending message to client: {"type": "get_online_users", "status": "ok", "online_users": {"nathan": "Online"}}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "get_leaderboard", "status": "try"}
-DEBUG:root:Sending message to client: {"type": "get_leaderboard", "status": "ok", "leaderboard": {}}
-INFO:root:Waiting for data from client
-INFO:root:Starting server on port 1234
-INFO:root:UDP Server listening on 127.0.0.1:1234
-INFO:root:TCP Server listening on 127.0.0.1:1234
-INFO:root:New connection from ('127.0.0.1', 51675)
+INFO:root:New connection from ('127.0.0.1', 58049)
 INFO:root:Waiting for data from client
 INFO:root:Received data from client: {"type": "connect", "status": "try"}
 DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
@@ -568,119 +14,10 @@ INFO:root:Waiting for data from client
 INFO:root:Received data from client: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
 DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
 INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "get_online_users", "status": "try"}
-DEBUG:root:Sending message to client: {"type": "get_online_users", "status": "ok", "online_users": {"nathan": "Online"}}
-INFO:root:Waiting for data from client
-INFO:root:New connection from ('127.0.0.1', 52009)
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "connect", "status": "try"}
-DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
-DEBUG:root:Sending message to client: {"type": "login", "status": "error: user already logged in"}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "nathan", "password": "123"}
-INFO:root:Creating user with username nathan and password 123
-INFO:root:Username nathan already exists
-DEBUG:root:Sending message to client: {"type": "create_user", "status": "error: username already exists"}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "123", "password": "213"}
-INFO:root:Creating user with username 123 and password 213
-INFO:root:Created user with username 123 and password 213
-DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "login", "status": "try", "username": "123", "password": "213"}
-DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "get_online_users", "status": "try"}
-DEBUG:root:Sending message to client: {"type": "get_online_users", "status": "ok", "online_users": {"nathan": "Online", "123": "Online"}}
-INFO:root:Waiting for data from client
 INFO:root:Starting server on port 1234
 INFO:root:UDP Server listening on 127.0.0.1:1234
 INFO:root:TCP Server listening on 127.0.0.1:1234
-INFO:root:New connection from ('127.0.0.1', 54221)
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "connect", "status": "try"}
-DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
-INFO:root:Waiting for data from client
-INFO:root:New connection from ('127.0.0.1', 54228)
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "connect", "status": "try"}
-DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "nathan", "password": "123"}
-INFO:root:Creating user with username nathan and password 123
-INFO:root:Created user with username nathan and password 123
-DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
-DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
-DEBUG:root:Sending message to client: {"type": "login", "status": "error: user already logged in"}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "213", "password": "123"}
-INFO:root:Creating user with username 213 and password 123
-INFO:root:Created user with username 213 and password 123
-DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "123", "password": "123"}
-INFO:root:Creating user with username 123 and password 123
-INFO:root:Created user with username 123 and password 123
-DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "login", "status": "try", "username": "123", "password": "123"}
-DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "get_online_users", "status": "try"}
-INFO:root:Starting server on port 1234
-INFO:root:UDP Server listening on 127.0.0.1:1234
-INFO:root:TCP Server listening on 127.0.0.1:1234
-INFO:root:New connection from ('127.0.0.1', 54442)
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "connect", "status": "try"}
-DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
-INFO:root:Waiting for data from client
-INFO:root:New connection from ('127.0.0.1', 54447)
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "connect", "status": "try"}
-DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "nathan", "password": "123"}
-INFO:root:Creating user with username nathan and password 123
-INFO:root:Created user with username nathan and password 123
-DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
-DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "123", "password": "123"}
-INFO:root:Creating user with username 123 and password 123
-INFO:root:Created user with username 123 and password 123
-DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "login", "status": "try", "username": "213", "password": "123"}
-DEBUG:root:Sending message to client: {"type": "login", "status": "error: username does not exist"}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "login", "status": "try", "username": "123", "password": "123"}
-DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "get_online_users", "status": "try"}
-DEBUG:root:Sending message to client: {"type": "get_online_users", "status": "ok", "online_users": {"nathan": "Online", "123": "Online"}}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "get_online_users", "status": "try"}
-DEBUG:root:Sending message to client: {"type": "get_online_users", "status": "ok", "online_users": {"nathan": "Online", "123": "Online"}}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "logout", "status": "try"}
-DEBUG:root:Sending message to client: {"type": "logout", "status": "ok"}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "get_online_users", "status": "try"}
-DEBUG:root:Sending message to client: {"type": "get_online_users", "status": "ok", "online_users": {"nathan": "Online"}}
-INFO:root:Waiting for data from client
-INFO:root:Starting server on port 1234
-INFO:root:UDP Server listening on 127.0.0.1:1234
-INFO:root:TCP Server listening on 127.0.0.1:1234
-INFO:root:New connection from ('127.0.0.1', 51606)
+INFO:root:New connection from ('127.0.0.1', 58256)
 INFO:root:Waiting for data from client
 INFO:root:Received data from client: {"type": "connect", "status": "try"}
 DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
@@ -693,22 +30,1511 @@ INFO:root:Waiting for data from client
 INFO:root:Received data from client: {"type": "login", "status": "try", "username": "nathan", "password": "12"}
 DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
 INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "start_game", "status": "try", "host_port": 21818}
+INFO:root:Received data from client: {"type": "start_game", "status": "try", "host_ip": "127.0.0.1", "host_port": 14822}
+DEBUG:root:Sending message to client: {"type": "start_game", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:New connection from ('127.0.0.1', 58483)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "nat", "password": "123"}
+INFO:root:Creating user with username nat and password 123
+INFO:root:Created user with username nat and password 123
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "nat", "password": "123"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "challenge", "status": "try", "username": "nathan"}
+DEBUG:root:Sending message to client: {"type": "challenge", "status": "error: user is not in-game or something else happened"}
+INFO:root:Waiting for data from client
+INFO:root:Starting server on port 1234
+INFO:root:UDP Server listening on 127.0.0.1:1234
+INFO:root:TCP Server listening on 127.0.0.1:1234
+INFO:root:New connection from ('127.0.0.1', 59247)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "nathan", "password": "123"}
+INFO:root:Creating user with username nathan and password 123
+INFO:root:Created user with username nathan and password 123
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:New connection from ('127.0.0.1', 59282)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "nat", "password": "123"}
+INFO:root:Creating user with username nat and password 123
+INFO:root:Created user with username nat and password 123
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "nat", "password": "123"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "start_game", "status": "try", "host_ip": "127.0.0.1", "host_port": 45539}
+DEBUG:root:Sending message to client: {"type": "start_game", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "challenge", "status": "try", "username": "nat"}
+DEBUG:root:Sending message to client: {"type": "challenge", "status": "error: user is not in-game or something else happened"}
+INFO:root:Waiting for data from client
+INFO:root:Starting server on port 1234
+INFO:root:UDP Server listening on 127.0.0.1:1234
+INFO:root:TCP Server listening on 127.0.0.1:1234
+INFO:root:New connection from ('127.0.0.1', 59612)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
+INFO:root:Waiting for data from client
+INFO:root:New connection from ('127.0.0.1', 59613)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "natahn", "password": "123"}
+INFO:root:Creating user with username natahn and password 123
+INFO:root:Created user with username natahn and password 123
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "nahtan", "password": "123"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "error: username does not exist"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "natahn", "password": "123"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "nat", "password": "123"}
+INFO:root:Creating user with username nat and password 123
+INFO:root:Created user with username nat and password 123
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "nat", "password": "123"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "start_game", "status": "try", "host_ip": "127.0.0.1", "host_port": 49781}
+DEBUG:root:Sending message to client: {"type": "start_game", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "challenge", "status": "try", "username": "natahn"}
+DEBUG:root:Sending message to client: {"type": "challenge", "status": "error: user is not in-game or something else happened"}
+INFO:root:Waiting for data from client
+INFO:root:Starting server on port 1234
+INFO:root:UDP Server listening on 127.0.0.1:1234
+INFO:root:TCP Server listening on 127.0.0.1:1234
+INFO:root:New connection from ('127.0.0.1', 60049)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
+INFO:root:Waiting for data from client
+INFO:root:New connection from ('127.0.0.1', 60058)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "nathan", "password": "123"}
+INFO:root:Creating user with username nathan and password 123
+INFO:root:Created user with username nathan and password 123
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "123", "password": "123"}
+INFO:root:Creating user with username 123 and password 123
+INFO:root:Created user with username 123 and password 123
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "123", "password": "123"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "123", "password": "123"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "error: user already logged in"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "start_game", "status": "try", "host_ip": "127.0.0.1", "host_port": 17674}
+DEBUG:root:Sending message to client: {"type": "start_game", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "challenge", "status": "try", "username": "nathan"}
+DEBUG:root:Sending message to client: {"type": "challenge", "status": "ok", "host_port": ["127.0.0.1", 17674]}
+INFO:root:Waiting for data from client
+INFO:root:Starting server on port 1234
+INFO:root:TCP Server listening on 127.0.0.1:1234
+INFO:root:UDP Server listening on 127.0.0.1:1234
+INFO:root:New connection from ('127.0.0.1', 63348)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "123", "password": "123"}
+INFO:root:Creating user with username 123 and password 123
+INFO:root:Created user with username 123 and password 123
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "123", "password": "213"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "error: wrong password"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "123", "password": "123"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:New connection from ('127.0.0.1', 63415)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "12", "password": "21"}
+INFO:root:Creating user with username 12 and password 21
+INFO:root:Created user with username 12 and password 21
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "12", "password": "21"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "start_game", "status": "try", "host_ip": "127.0.0.1", "host_port": 44336}
+DEBUG:root:Sending message to client: {"type": "start_game", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "challenge", "status": "try", "username": "1213"}
+DEBUG:root:Sending message to client: {"type": "challenge", "status": "error: user is not in-game or something else happened"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "challenge", "status": "try", "username": "123"}
+DEBUG:root:Sending message to client: {"type": "challenge", "status": "ok", "host": ["127.0.0.1", 44336]}
+INFO:root:Waiting for data from client
+INFO:root:New connection from ('127.0.0.1', 64035)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "1234", "password": "1234"}
+INFO:root:Creating user with username 1234 and password 1234
+INFO:root:Created user with username 1234 and password 1234
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "1234", "password": "1234"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "challenge", "status": "try", "username": "123"}
+DEBUG:root:Sending message to client: {"type": "challenge", "status": "ok", "host": ["127.0.0.1", 44336]}
+INFO:root:Waiting for data from client
+INFO:root:Starting server on port 1234
+INFO:root:TCP Server listening on 127.0.0.1:1234
+INFO:root:UDP Server listening on 127.0.0.1:1234
+INFO:root:New connection from ('127.0.0.1', 64529)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
+INFO:root:Waiting for data from client
+INFO:root:New connection from ('127.0.0.1', 64536)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "123", "password": "123"}
+INFO:root:Creating user with username 123 and password 123
+INFO:root:Created user with username 123 and password 123
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "123", "password": "123"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "start_game", "status": "try", "host_ip": "127.0.0.1", "host_port": 15427}
 DEBUG:root:Sending message to client: {"type": "start_game", "status": "ok"}
 INFO:root:Waiting for data from client
 INFO:root:Starting server on port 1234
 INFO:root:UDP Server listening on 127.0.0.1:1234
 INFO:root:TCP Server listening on 127.0.0.1:1234
-INFO:root:New connection from ('127.0.0.1', 59917)
+INFO:root:New connection from ('127.0.0.1', 64697)
 INFO:root:Waiting for data from client
 INFO:root:Received data from client: {"type": "connect", "status": "try"}
 DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "123", "password": "123"}
+INFO:root:Creating user with username 123 and password 123
+INFO:root:Created user with username 123 and password 123
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "1231", "password": "23"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "error: username does not exist"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "123", "password": "123"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "start_game", "status": "try", "host_ip": "127.0.0.1", "host_port": 4428}
+DEBUG:root:Sending message to client: {"type": "start_game", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Starting server on port 1234
+INFO:root:TCP Server listening on 127.0.0.1:1234
+INFO:root:UDP Server listening on 127.0.0.1:1234
+INFO:root:New connection from ('127.0.0.1', 65021)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "123", "password": "123"}
+INFO:root:Creating user with username 123 and password 123
+INFO:root:Created user with username 123 and password 123
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "123", "password": "123"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "start_game", "status": "try", "host_ip": "127.0.0.1", "host_port": 34598}
+DEBUG:root:Sending message to client: {"type": "start_game", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Starting server on port 1234
+INFO:root:TCP Server listening on 127.0.0.1:1234
+INFO:root:UDP Server listening on 127.0.0.1:1234
+INFO:root:New connection from ('127.0.0.1', 65160)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "123", "password": "123"}
+INFO:root:Creating user with username 123 and password 123
+INFO:root:Created user with username 123 and password 123
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "123", "password": "123"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "start_game", "status": "try", "host_ip": "127.0.0.1", "host_port": 3297}
+DEBUG:root:Sending message to client: {"type": "start_game", "status": "ok"}
 INFO:root:Waiting for data from client
 INFO:root:Starting server on port 1234
 INFO:root:UDP Server listening on 127.0.0.1:1234
 INFO:root:TCP Server listening on 127.0.0.1:1234
-INFO:root:New connection from ('127.0.0.1', 60011)
+INFO:root:New connection from ('127.0.0.1', 65530)
 INFO:root:Waiting for data from client
 INFO:root:Received data from client: {"type": "connect", "status": "try"}
 DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "123", "password": "123"}
+INFO:root:Creating user with username 123 and password 123
+INFO:root:Created user with username 123 and password 123
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "123", "password": "123"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "start_game", "status": "try", "host_ip": "127.0.0.1", "host_port": 30786}
+DEBUG:root:Sending message to client: {"type": "start_game", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Starting server on port 1234
+INFO:root:UDP Server listening on 127.0.0.1:1234
+INFO:root:TCP Server listening on 127.0.0.1:1234
+INFO:root:New connection from ('127.0.0.1', 49273)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "123", "password": "123"}
+INFO:root:Creating user with username 123 and password 123
+INFO:root:Created user with username 123 and password 123
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "123", "password": "123"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "start_game", "status": "try", "host_ip": "127.0.0.1", "host_port": 33405}
+DEBUG:root:Sending message to client: {"type": "start_game", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:New connection from ('127.0.0.1', 50454)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "1234", "password": "1234"}
+INFO:root:Creating user with username 1234 and password 1234
+INFO:root:Created user with username 1234 and password 1234
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "1234", "password": "1234"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "challenge", "status": "try", "username": "123"}
+DEBUG:root:Sending message to client: {"type": "challenge", "status": "ok", "host": ["127.0.0.1", 33405]}
+INFO:root:Waiting for data from client
+INFO:root:Starting server on port 1234
+INFO:root:UDP Server listening on 127.0.0.1:1234
+INFO:root:Starting server on port 1234
+INFO:root:UDP Server listening on 127.0.0.1:1234
+INFO:root:Starting server on port 1235
+INFO:root:UDP Server listening on 127.0.0.1:1235
+INFO:root:TCP Server listening on 127.0.0.1:1235
+INFO:root:New connection from ('127.0.0.1', 52185)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1235]}
+INFO:root:Waiting for data from client
+INFO:root:New connection from ('127.0.0.1', 52199)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1235]}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "123", "password": "123"}
+INFO:root:Creating user with username 123 and password 123
+INFO:root:Created user with username 123 and password 123
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "123", "password": "123"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "1234", "password": "1234"}
+INFO:root:Creating user with username 1234 and password 1234
+INFO:root:Created user with username 1234 and password 1234
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "1234", "password": "1234"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "start_game", "status": "try", "host_ip": "127.0.0.1", "host_port": 2850}
+DEBUG:root:Sending message to client: {"type": "start_game", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "challenge", "status": "try", "username": "123"}
+DEBUG:root:Sending message to client: {"type": "challenge", "status": "ok", "host": ["127.0.0.1", 2850]}
+INFO:root:Waiting for data from client
+INFO:root:Starting server on port 1235
+INFO:root:UDP Server listening on 127.0.0.1:1235
+INFO:root:TCP Server listening on 127.0.0.1:1235
+INFO:root:New connection from ('127.0.0.1', 53104)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1235]}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "123", "password": "123"}
+INFO:root:Creating user with username 123 and password 123
+INFO:root:Created user with username 123 and password 123
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:New connection from ('127.0.0.1', 53117)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1235]}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "1234", "password": "1234"}
+INFO:root:Creating user with username 1234 and password 1234
+INFO:root:Created user with username 1234 and password 1234
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "123", "password": "123"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "1234", "password": "1234"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "start_game", "status": "try", "host_ip": "127.0.0.1", "host_port": 15228}
+DEBUG:root:Sending message to client: {"type": "start_game", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "challenge", "status": "try", "username": "123"}
+DEBUG:root:Sending message to client: {"type": "challenge", "status": "ok", "host": ["127.0.0.1", 15228]}
+INFO:root:Waiting for data from client
+INFO:root:Starting server on port 1235
+INFO:root:TCP Server listening on 127.0.0.1:1235
+INFO:root:UDP Server listening on 127.0.0.1:1235
+INFO:root:New connection from ('127.0.0.1', 53728)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1235]}
+INFO:root:Waiting for data from client
+INFO:root:New connection from ('127.0.0.1', 53733)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1235]}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "123", "password": "123"}
+INFO:root:Creating user with username 123 and password 123
+INFO:root:Created user with username 123 and password 123
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "123", "password": "123"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "1234", "password": "1234"}
+INFO:root:Creating user with username 1234 and password 1234
+INFO:root:Created user with username 1234 and password 1234
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "1234", "password": "1234"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "start_game", "status": "try", "host_ip": "127.0.0.1", "host_port": 16183}
+DEBUG:root:Sending message to client: {"type": "start_game", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "challenge", "status": "try", "username": "1234"}
+DEBUG:root:Sending message to client: {"type": "challenge", "status": "ok", "host": ["127.0.0.1", 16183]}
+INFO:root:Waiting for data from client
+INFO:root:Starting server on port 1235
+INFO:root:UDP Server listening on 127.0.0.1:1235
+INFO:root:Starting server on port 1234
+INFO:root:TCP Server listening on 127.0.0.1:1234
+INFO:root:UDP Server listening on 127.0.0.1:1234
+INFO:root:New connection from ('127.0.0.1', 54520)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
+INFO:root:Waiting for data from client
+INFO:root:New connection from ('127.0.0.1', 54537)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "123", "password": "123"}
+INFO:root:Creating user with username 123 and password 123
+INFO:root:Created user with username 123 and password 123
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "1234", "password": "1234"}
+INFO:root:Creating user with username 1234 and password 1234
+INFO:root:Created user with username 1234 and password 1234
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "123", "password": "123"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "123", "password": "123"}
+INFO:root:Creating user with username 123 and password 123
+INFO:root:Username 123 already exists
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "error: username already exists"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "1234", "password": "1234"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "start_game", "status": "try", "host_ip": "127.0.0.1", "host_port": 27387}
+DEBUG:root:Sending message to client: {"type": "start_game", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "challenge", "status": "try", "username": "1234"}
+DEBUG:root:Sending message to client: {"type": "challenge", "status": "error: user is not in-game or something else happened"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "challenge", "status": "try", "username": "123"}
+DEBUG:root:Sending message to client: {"type": "challenge", "status": "ok", "host": ["127.0.0.1", 27387]}
+INFO:root:Waiting for data from client
+INFO:root:Starting server on port 1234
+INFO:root:UDP Server listening on 127.0.0.1:1234
+INFO:root:Starting server on port 1234
+INFO:root:UDP Server listening on 127.0.0.1:1234
+INFO:root:Starting server on port 1235
+INFO:root:UDP Server listening on 127.0.0.1:1235
+INFO:root:TCP Server listening on 127.0.0.1:1235
+INFO:root:Starting server on port 1235
+INFO:root:UDP Server listening on 127.0.0.1:1235
+INFO:root:TCP Server listening on 127.0.0.1:1235
+INFO:root:New connection from ('127.0.0.1', 55921)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1235]}
+INFO:root:Waiting for data from client
+INFO:root:New connection from ('127.0.0.1', 55932)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1235]}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "123", "password": "123"}
+INFO:root:Creating user with username 123 and password 123
+INFO:root:Created user with username 123 and password 123
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "123", "password": "123"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "1234", "password": "1234"}
+INFO:root:Creating user with username 1234 and password 1234
+INFO:root:Created user with username 1234 and password 1234
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "1234", "password": "1234"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "start_game", "status": "try", "host_ip": "127.0.0.1", "host_port": 27455}
+DEBUG:root:Sending message to client: {"type": "start_game", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "challenge", "status": "try", "username": "123"}
+DEBUG:root:Sending message to client: {"type": "challenge", "status": "ok", "host": ["127.0.0.1", 27455]}
+INFO:root:Waiting for data from client
+INFO:root:New connection from ('127.0.0.1', 61539)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1235]}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "12", "password": "12"}
+INFO:root:Creating user with username 12 and password 12
+INFO:root:Created user with username 12 and password 12
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "12", "password": "12"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "challenge", "status": "try", "username": "123"}
+DEBUG:root:Sending message to client: {"type": "challenge", "status": "ok", "host": ["127.0.0.1", 27455]}
+INFO:root:Waiting for data from client
+INFO:root:Starting server on port 1235
+INFO:root:UDP Server listening on 127.0.0.1:1235
+INFO:root:Starting server on port 1234
+INFO:root:UDP Server listening on 127.0.0.1:1234
+INFO:root:TCP Server listening on 127.0.0.1:1234
+INFO:root:New connection from ('127.0.0.1', 62396)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
+INFO:root:Waiting for data from client
+INFO:root:New connection from ('127.0.0.1', 62411)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
+INFO:root:Waiting for data from client
+INFO:root:New connection from ('127.0.0.1', 62422)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "123", "password": "123"}
+INFO:root:Creating user with username 123 and password 123
+INFO:root:Created user with username 123 and password 123
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "123", "password": "123"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "12", "password": "12"}
+INFO:root:Creating user with username 12 and password 12
+INFO:root:Created user with username 12 and password 12
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "12", "password": "12"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "1", "password": "1"}
+INFO:root:Creating user with username 1 and password 1
+INFO:root:Created user with username 1 and password 1
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "1", "password": "1"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "start_game", "status": "try", "host_ip": "127.0.0.1", "host_port": 44356}
+DEBUG:root:Sending message to client: {"type": "start_game", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "challenge", "status": "try", "username": "1"}
+DEBUG:root:Sending message to client: {"type": "challenge", "status": "error: user is not in-game or something else happened"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "challenge", "status": "try", "username": "123"}
+DEBUG:root:Sending message to client: {"type": "challenge", "status": "ok", "host": ["127.0.0.1", 44356]}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "challenge", "status": "try", "username": "123"}
+DEBUG:root:Sending message to client: {"type": "challenge", "status": "ok", "host": ["127.0.0.1", 44356]}
+INFO:root:Waiting for data from client
+INFO:root:Starting server on port 1234
+INFO:root:TCP Server listening on 127.0.0.1:1234
+INFO:root:UDP Server listening on 127.0.0.1:1234
+INFO:root:New connection from ('127.0.0.1', 63207)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
+INFO:root:Waiting for data from client
+INFO:root:New connection from ('127.0.0.1', 63212)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
+INFO:root:Waiting for data from client
+INFO:root:New connection from ('127.0.0.1', 63219)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "123", "password": "123"}
+INFO:root:Creating user with username 123 and password 123
+INFO:root:Created user with username 123 and password 123
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "123", "password": "123"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "12", "password": "12"}
+INFO:root:Creating user with username 12 and password 12
+INFO:root:Created user with username 12 and password 12
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "12", "password": "12"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "1", "password": "1"}
+INFO:root:Creating user with username 1 and password 1
+INFO:root:Created user with username 1 and password 1
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "1", "password": "1"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "start_game", "status": "try", "host_ip": "127.0.0.1", "host_port": 43921}
+DEBUG:root:Sending message to client: {"type": "start_game", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "challenge", "status": "try", "username": "123"}
+DEBUG:root:Sending message to client: {"type": "challenge", "status": "ok", "host": ["127.0.0.1", 43921]}
+INFO:root:Waiting for data from client
+INFO:root:Starting server on port 1234
+INFO:root:UDP Server listening on 127.0.0.1:1234
+INFO:root:TCP Server listening on 127.0.0.1:1234
+INFO:root:New connection from ('127.0.0.1', 63873)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
+INFO:root:Waiting for data from client
+INFO:root:New connection from ('127.0.0.1', 63878)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
+INFO:root:Waiting for data from client
+INFO:root:New connection from ('127.0.0.1', 63885)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "123", "password": "123"}
+INFO:root:Creating user with username 123 and password 123
+INFO:root:Created user with username 123 and password 123
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "12", "password": "12"}
+INFO:root:Creating user with username 12 and password 12
+INFO:root:Created user with username 12 and password 12
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "12", "password": "12"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "1", "password": "1"}
+INFO:root:Creating user with username 1 and password 1
+INFO:root:Created user with username 1 and password 1
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "1", "password": "1"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "123", "password": "123"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "start_game", "status": "try", "host_ip": "127.0.0.1", "host_port": 2756}
+DEBUG:root:Sending message to client: {"type": "start_game", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "challenge", "status": "try", "username": "1123"}
+DEBUG:root:Sending message to client: {"type": "challenge", "status": "error: user is not in-game or something else happened"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "challenge", "status": "try", "username": "123"}
+DEBUG:root:Sending message to client: {"type": "challenge", "status": "ok", "host": ["127.0.0.1", 2756]}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "challenge", "status": "try", "username": "1"}
+DEBUG:root:Sending message to client: {"type": "challenge", "status": "error: user is not in-game or something else happened"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "challenge", "status": "try", "username": "123"}
+DEBUG:root:Sending message to client: {"type": "challenge", "status": "ok", "host": ["127.0.0.1", 2756]}
+INFO:root:Waiting for data from client
+INFO:root:New connection from ('127.0.0.1', 64635)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "123", "password": "123"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "error: user already logged in"}
+INFO:root:Waiting for data from client
+INFO:root:Starting server on port 1234
+INFO:root:TCP Server listening on 127.0.0.1:1234
+INFO:root:UDP Server listening on 127.0.0.1:1234
+INFO:root:New connection from ('127.0.0.1', 64685)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "123", "password": "123"}
+INFO:root:Creating user with username 123 and password 123
+INFO:root:Created user with username 123 and password 123
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "123", "password": "123"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:New connection from ('127.0.0.1', 64729)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "12", "password": "12"}
+INFO:root:Creating user with username 12 and password 12
+INFO:root:Created user with username 12 and password 12
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "12", "password": "12"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:New connection from ('127.0.0.1', 64758)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "1", "password": "1"}
+INFO:root:Creating user with username 1 and password 1
+INFO:root:Created user with username 1 and password 1
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "1", "password": "1"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "start_game", "status": "try", "host_ip": "127.0.0.1", "host_port": 21204}
+DEBUG:root:Sending message to client: {"type": "start_game", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "challenge", "status": "try", "username": "123"}
+DEBUG:root:Sending message to client: {"type": "challenge", "status": "ok", "host": ["127.0.0.1", 21204]}
+INFO:root:Waiting for data from client
+INFO:root:Starting server on port 1234
+INFO:root:UDP Server listening on 127.0.0.1:1234
+INFO:root:TCP Server listening on 127.0.0.1:1234
+INFO:root:New connection from ('127.0.0.1', 49304)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
+INFO:root:Waiting for data from client
+INFO:root:New connection from ('127.0.0.1', 49309)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
+INFO:root:Waiting for data from client
+INFO:root:New connection from ('127.0.0.1', 49316)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "123", "password": "213"}
+INFO:root:Creating user with username 123 and password 213
+INFO:root:Created user with username 123 and password 213
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "123", "password": "213"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "12", "password": "12"}
+INFO:root:Creating user with username 12 and password 12
+INFO:root:Created user with username 12 and password 12
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "12", "password": "12"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "1", "password": "1"}
+INFO:root:Creating user with username 1 and password 1
+INFO:root:Created user with username 1 and password 1
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "1", "password": "1"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "start_game", "status": "try", "host_ip": "127.0.0.1", "host_port": 26338}
+DEBUG:root:Sending message to client: {"type": "start_game", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "challenge", "status": "try", "username": "12"}
+DEBUG:root:Sending message to client: {"type": "challenge", "status": "error: user is not in-game or something else happened"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "challenge", "status": "try", "username": "123"}
+DEBUG:root:Sending message to client: {"type": "challenge", "status": "ok", "host": ["127.0.0.1", 26338]}
+INFO:root:Waiting for data from client
+INFO:root:Starting server on port 1234
+INFO:root:TCP Server listening on 127.0.0.1:1234
+INFO:root:UDP Server listening on 127.0.0.1:1234
+INFO:root:New connection from ('127.0.0.1', 49699)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "123", "password": "123"}
+INFO:root:Creating user with username 123 and password 123
+INFO:root:Created user with username 123 and password 123
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "123", "password": "123"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:New connection from ('127.0.0.1', 49724)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "12", "password": "12"}
+INFO:root:Creating user with username 12 and password 12
+INFO:root:Created user with username 12 and password 12
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "12", "password": "12"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:New connection from ('127.0.0.1', 49755)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "1", "password": "1"}
+INFO:root:Creating user with username 1 and password 1
+INFO:root:Created user with username 1 and password 1
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "1", "password": "1"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "start_game", "status": "try", "host_ip": "127.0.0.1", "host_port": 30601}
+DEBUG:root:Sending message to client: {"type": "start_game", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "challenge", "status": "try", "username": "123"}
+DEBUG:root:Sending message to client: {"type": "challenge", "status": "ok", "host": ["127.0.0.1", 30601]}
+INFO:root:Waiting for data from client
+INFO:root:Starting server on port 1234
+INFO:root:UDP Server listening on 127.0.0.1:1234
+INFO:root:TCP Server listening on 127.0.0.1:1234
+INFO:root:New connection from ('127.0.0.1', 50039)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
+INFO:root:Waiting for data from client
+INFO:root:New connection from ('127.0.0.1', 50052)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "123", "password": "123"}
+INFO:root:Creating user with username 123 and password 123
+INFO:root:Created user with username 123 and password 123
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "123", "password": "123"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "12", "password": "12"}
+INFO:root:Creating user with username 12 and password 12
+INFO:root:Created user with username 12 and password 12
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "12", "password": "12"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "start_game", "status": "try", "host_ip": "127.0.0.1", "host_port": 14021}
+DEBUG:root:Sending message to client: {"type": "start_game", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "challenge", "status": "try", "username": "123"}
+DEBUG:root:Sending message to client: {"type": "challenge", "status": "ok", "host": ["127.0.0.1", 14021]}
+INFO:root:Waiting for data from client
+INFO:root:Starting server on port 1234
+INFO:root:UDP Server listening on 127.0.0.1:1234
+INFO:root:TCP Server listening on 127.0.0.1:1234
+INFO:root:New connection from ('127.0.0.1', 51016)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "123", "password": "123"}
+INFO:root:Creating user with username 123 and password 123
+INFO:root:Created user with username 123 and password 123
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "123", "password": "123"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:New connection from ('127.0.0.1', 51047)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "12", "password": "12"}
+INFO:root:Creating user with username 12 and password 12
+INFO:root:Created user with username 12 and password 12
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "12", "password": "12"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "start_game", "status": "try", "host_ip": "127.0.0.1", "host_port": 25173}
+DEBUG:root:Sending message to client: {"type": "start_game", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "challenge", "status": "try", "username": "123"}
+DEBUG:root:Sending message to client: {"type": "challenge", "status": "ok", "host": ["127.0.0.1", 25173]}
+INFO:root:Waiting for data from client
+INFO:root:Starting server on port 1234
+INFO:root:UDP Server listening on 127.0.0.1:1234
+INFO:root:TCP Server listening on 127.0.0.1:1234
+INFO:root:New connection from ('127.0.0.1', 51636)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "123", "password": "213"}
+INFO:root:Creating user with username 123 and password 213
+INFO:root:Created user with username 123 and password 213
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "123", "password": "213"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "start_game", "status": "try", "host_ip": "127.0.0.1", "host_port": 23242}
+DEBUG:root:Sending message to client: {"type": "start_game", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Starting server on port 1234
+INFO:root:UDP Server listening on 127.0.0.1:1234
+INFO:root:TCP Server listening on 127.0.0.1:1234
+INFO:root:New connection from ('127.0.0.1', 51854)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "123", "password": "123"}
+INFO:root:Creating user with username 123 and password 123
+INFO:root:Created user with username 123 and password 123
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "123", "password": "123"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "start_game", "status": "try", "host_ip": "127.0.0.1", "host_port": 47240}
+DEBUG:root:Sending message to client: {"type": "start_game", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Starting server on port 1234
+INFO:root:UDP Server listening on 127.0.0.1:1234
+INFO:root:TCP Server listening on 127.0.0.1:1234
+INFO:root:New connection from ('127.0.0.1', 52040)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "123", "password": "123"}
+INFO:root:Creating user with username 123 and password 123
+INFO:root:Created user with username 123 and password 123
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "123", "password": "123"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "start_game", "status": "try", "host_ip": "127.0.0.1", "host_port": 4153}
+DEBUG:root:Sending message to client: {"type": "start_game", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Starting server on port 1234
+INFO:root:UDP Server listening on 127.0.0.1:1234
+INFO:root:TCP Server listening on 127.0.0.1:1234
+INFO:root:New connection from ('127.0.0.1', 52189)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "123", "password": "123"}
+INFO:root:Creating user with username 123 and password 123
+INFO:root:Created user with username 123 and password 123
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "123", "password": "123"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "start_game", "status": "try", "host_ip": "127.0.0.1", "host_port": 47556}
+DEBUG:root:Sending message to client: {"type": "start_game", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Starting server on port 1234
+INFO:root:UDP Server listening on 127.0.0.1:1234
+INFO:root:TCP Server listening on 127.0.0.1:1234
+INFO:root:New connection from ('127.0.0.1', 52379)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "123", "password": "123"}
+INFO:root:Creating user with username 123 and password 123
+INFO:root:Created user with username 123 and password 123
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "123", "password": "123"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "start_game", "status": "try", "host_ip": "127.0.0.1", "host_port": 44265}
+DEBUG:root:Sending message to client: {"type": "start_game", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:New connection from ('127.0.0.1', 52595)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "12", "password": "12"}
+INFO:root:Creating user with username 12 and password 12
+INFO:root:Created user with username 12 and password 12
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "12", "password": "12"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "challenge", "status": "try", "username": "123"}
+DEBUG:root:Sending message to client: {"type": "challenge", "status": "ok", "host": ["127.0.0.1", 44265]}
+INFO:root:Waiting for data from client
+INFO:root:Starting server on port 1234
+INFO:root:UDP Server listening on 127.0.0.1:1234
+INFO:root:TCP Server listening on 127.0.0.1:1234
+INFO:root:New connection from ('127.0.0.1', 53631)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "123", "password": "123"}
+INFO:root:Creating user with username 123 and password 123
+INFO:root:Created user with username 123 and password 123
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "123", "password": "123"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:New connection from ('127.0.0.1', 53668)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "12", "password": "12"}
+INFO:root:Creating user with username 12 and password 12
+INFO:root:Created user with username 12 and password 12
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "12", "password": "12"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "start_game", "status": "try", "host_ip": "127.0.0.1", "host_port": 7856}
+DEBUG:root:Sending message to client: {"type": "start_game", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "challenge", "status": "try", "username": "123"}
+DEBUG:root:Sending message to client: {"type": "challenge", "status": "ok", "host": ["127.0.0.1", 7856]}
+INFO:root:Waiting for data from client
+INFO:root:Starting server on port 1234
+INFO:root:TCP Server listening on 127.0.0.1:1234
+INFO:root:UDP Server listening on 127.0.0.1:1234
+INFO:root:New connection from ('127.0.0.1', 53855)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "123", "password": "123"}
+INFO:root:Creating user with username 123 and password 123
+INFO:root:Created user with username 123 and password 123
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "123", "password": "123"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:New connection from ('127.0.0.1', 53885)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "12", "password": "12"}
+INFO:root:Creating user with username 12 and password 12
+INFO:root:Created user with username 12 and password 12
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "12", "password": "12"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "start_game", "status": "try", "host_ip": "127.0.0.1", "host_port": 18323}
+DEBUG:root:Sending message to client: {"type": "start_game", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Starting server on port 1234
+INFO:root:UDP Server listening on 127.0.0.1:1234
+INFO:root:TCP Server listening on 127.0.0.1:1234
+INFO:root:New connection from ('127.0.0.1', 54075)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "123", "password": "213"}
+INFO:root:Creating user with username 123 and password 213
+INFO:root:Created user with username 123 and password 213
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "123", "password": "213"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:New connection from ('127.0.0.1', 54118)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "12", "password": "12"}
+INFO:root:Creating user with username 12 and password 12
+INFO:root:Created user with username 12 and password 12
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "12", "password": "12"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "challenge", "status": "try", "username": "123"}
+DEBUG:root:Sending message to client: {"type": "challenge", "status": "error: user is not in-game or something else happened"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "challenge", "status": "try", "username": "123"}
+DEBUG:root:Sending message to client: {"type": "challenge", "status": "error: user is not in-game or something else happened"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "challenge", "status": "try", "username": "123"}
+DEBUG:root:Sending message to client: {"type": "challenge", "status": "error: user is not in-game or something else happened"}
+INFO:root:Waiting for data from client
+INFO:root:Starting server on port 1234
+INFO:root:UDP Server listening on 127.0.0.1:1234
+INFO:root:TCP Server listening on 127.0.0.1:1234
+INFO:root:New connection from ('127.0.0.1', 54360)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "123", "password": "123"}
+INFO:root:Creating user with username 123 and password 123
+INFO:root:Created user with username 123 and password 123
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "123", "password": "123"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:New connection from ('127.0.0.1', 54383)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "12", "password": "12"}
+INFO:root:Creating user with username 12 and password 12
+INFO:root:Created user with username 12 and password 12
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "12", "password": "12"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "start_game", "status": "try", "host_ip": "127.0.0.1", "host_port": 33764}
+DEBUG:root:Sending message to client: {"type": "start_game", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "challenge", "status": "try", "username": "123"}
+DEBUG:root:Sending message to client: {"type": "challenge", "status": "ok", "host": ["127.0.0.1", 33764]}
+INFO:root:Waiting for data from client
+INFO:root:Starting server on port 1234
+INFO:root:UDP Server listening on 127.0.0.1:1234
+INFO:root:TCP Server listening on 127.0.0.1:1234
+INFO:root:New connection from ('127.0.0.1', 54575)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "123", "password": "123"}
+INFO:root:Creating user with username 123 and password 123
+INFO:root:Created user with username 123 and password 123
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "123", "password": "123"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "start_game", "status": "try", "host_ip": "127.0.0.1", "host_port": 45041}
+DEBUG:root:Sending message to client: {"type": "start_game", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Starting server on port 1234
+INFO:root:UDP Server listening on 127.0.0.1:1234
+INFO:root:TCP Server listening on 127.0.0.1:1234
+INFO:root:New connection from ('127.0.0.1', 54811)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
+INFO:root:Waiting for data from client
+INFO:root:New connection from ('127.0.0.1', 54816)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "123", "password": "123"}
+INFO:root:Creating user with username 123 and password 123
+INFO:root:Created user with username 123 and password 123
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "123", "password": "123"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "start_game", "status": "try", "host_ip": "127.0.0.1", "host_port": 17368}
+DEBUG:root:Sending message to client: {"type": "start_game", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "12", "password": "12"}
+INFO:root:Creating user with username 12 and password 12
+INFO:root:Created user with username 12 and password 12
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "12", "password": "12"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "challenge", "status": "try", "username": "12"}
+DEBUG:root:Sending message to client: {"type": "challenge", "status": "error: user is not in-game or something else happened"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "challenge", "status": "try", "username": "123"}
+DEBUG:root:Sending message to client: {"type": "challenge", "status": "ok", "host": ["127.0.0.1", 17368]}
+INFO:root:Waiting for data from client
+INFO:root:Starting server on port 1234
+INFO:root:TCP Server listening on 127.0.0.1:1234
+INFO:root:UDP Server listening on 127.0.0.1:1234
+INFO:root:New connection from ('127.0.0.1', 62139)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "123", "password": "123"}
+INFO:root:Creating user with username 123 and password 123
+INFO:root:Created user with username 123 and password 123
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "123", "password": "123"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:New connection from ('127.0.0.1', 62166)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "12", "password": "12"}
+INFO:root:Creating user with username 12 and password 12
+INFO:root:Created user with username 12 and password 12
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "12", "password": "12"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "start_game", "status": "try", "host_ip": "127.0.0.1", "host_port": 37475}
+DEBUG:root:Sending message to client: {"type": "start_game", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "challenge", "status": "try", "username": "123"}
+DEBUG:root:Sending message to client: {"type": "challenge", "status": "ok", "host": ["127.0.0.1", 37475]}
+INFO:root:Waiting for data from client
+INFO:root:Starting server on port 1234
+INFO:root:UDP Server listening on 127.0.0.1:1234
+INFO:root:TCP Server listening on 127.0.0.1:1234
+INFO:root:New connection from ('127.0.0.1', 62403)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "123", "password": "123"}
+INFO:root:Creating user with username 123 and password 123
+INFO:root:Created user with username 123 and password 123
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "123", "password": "123"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:New connection from ('127.0.0.1', 62430)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "12", "password": "12"}
+INFO:root:Creating user with username 12 and password 12
+INFO:root:Created user with username 12 and password 12
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "12", "password": "12"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "start_game", "status": "try", "host_ip": "127.0.0.1", "host_port": 48905}
+DEBUG:root:Sending message to client: {"type": "start_game", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Starting server on port 1234
+INFO:root:UDP Server listening on 127.0.0.1:1234
+INFO:root:TCP Server listening on 127.0.0.1:1234
+INFO:root:New connection from ('127.0.0.1', 62662)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "123", "password": "123"}
+INFO:root:Creating user with username 123 and password 123
+INFO:root:Created user with username 123 and password 123
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "123", "password": "123"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:New connection from ('127.0.0.1', 62689)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "12", "password": "12"}
+INFO:root:Creating user with username 12 and password 12
+INFO:root:Created user with username 12 and password 12
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "12", "password": "12"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "start_game", "status": "try", "host_ip": "127.0.0.1", "host_port": 34321}
+DEBUG:root:Sending message to client: {"type": "start_game", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "challenge", "status": "try", "username": "123"}
+DEBUG:root:Sending message to client: {"type": "challenge", "status": "ok", "host": ["127.0.0.1", 34321]}
+INFO:root:Waiting for data from client
+INFO:root:Starting server on port 1234
+INFO:root:UDP Server listening on 127.0.0.1:1234
+INFO:root:TCP Server listening on 127.0.0.1:1234
+INFO:root:New connection from ('127.0.0.1', 63588)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "123", "password": "123"}
+INFO:root:Creating user with username 123 and password 123
+INFO:root:Created user with username 123 and password 123
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:New connection from ('127.0.0.1', 63607)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "12", "password": "12"}
+INFO:root:Creating user with username 12 and password 12
+INFO:root:Created user with username 12 and password 12
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "123", "password": "123"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "12", "password": "12"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "start_game", "status": "try", "host_ip": "127.0.0.1", "host_port": 45682}
+DEBUG:root:Sending message to client: {"type": "start_game", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "challenge", "status": "try", "username": "123"}
+DEBUG:root:Sending message to client: {"type": "challenge", "status": "ok", "host": ["127.0.0.1", 45682]}
+INFO:root:Waiting for data from client
+INFO:root:Starting server on port 1234
+INFO:root:TCP Server listening on 127.0.0.1:1234
+INFO:root:UDP Server listening on 127.0.0.1:1234
+INFO:root:New connection from ('127.0.0.1', 64425)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "123", "password": "123"}
+INFO:root:Creating user with username 123 and password 123
+INFO:root:Created user with username 123 and password 123
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "123", "password": "123"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:New connection from ('127.0.0.1', 64472)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "12", "password": "12"}
+INFO:root:Creating user with username 12 and password 12
+INFO:root:Created user with username 12 and password 12
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "12", "password": "12"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "start_game", "status": "try", "host_ip": "127.0.0.1", "host_port": 4353}
+DEBUG:root:Sending message to client: {"type": "start_game", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "challenge", "status": "try", "username": "123"}
+DEBUG:root:Sending message to client: {"type": "challenge", "status": "ok", "host": ["127.0.0.1", 4353]}
+INFO:root:Waiting for data from client
+INFO:root:Starting server on port 1234
+INFO:root:UDP Server listening on 127.0.0.1:1234
+INFO:root:TCP Server listening on 127.0.0.1:1234
+INFO:root:New connection from ('127.0.0.1', 64764)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "123", "password": "123"}
+INFO:root:Creating user with username 123 and password 123
+INFO:root:Created user with username 123 and password 123
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "123", "password": "123"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:New connection from ('127.0.0.1', 64787)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "12", "password": "12"}
+INFO:root:Creating user with username 12 and password 12
+INFO:root:Created user with username 12 and password 12
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "12", "password": "12"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "start_game", "status": "try", "host_ip": "127.0.0.1", "host_port": 41506}
+DEBUG:root:Sending message to client: {"type": "start_game", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "challenge", "status": "try", "username": "123"}
+DEBUG:root:Sending message to client: {"type": "challenge", "status": "ok", "host": ["127.0.0.1", 41506]}
+INFO:root:Waiting for data from client
+INFO:root:Starting server on port 1234
+INFO:root:TCP Server listening on 127.0.0.1:1234
+INFO:root:UDP Server listening on 127.0.0.1:1234
+INFO:root:New connection from ('127.0.0.1', 52438)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "123", "password": "123"}
+INFO:root:Creating user with username 123 and password 123
+INFO:root:Created user with username 123 and password 123
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "123", "password": "123"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:New connection from ('127.0.0.1', 52481)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "12", "password": "12"}
+INFO:root:Creating user with username 12 and password 12
+INFO:root:Created user with username 12 and password 12
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "12", "password": "12"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "start_game", "status": "try", "host_ip": "127.0.0.1", "host_port": 43520}
+DEBUG:root:Sending message to client: {"type": "start_game", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "challenge", "status": "try", "username": "123"}
+DEBUG:root:Sending message to client: {"type": "challenge", "status": "ok", "host": ["127.0.0.1", 43520]}
+INFO:root:Waiting for data from client
+INFO:root:Starting server on port 1234
+INFO:root:UDP Server listening on 127.0.0.1:1234
+INFO:root:TCP Server listening on 127.0.0.1:1234
+INFO:root:New connection from ('127.0.0.1', 53530)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "123", "password": "123"}
+INFO:root:Creating user with username 123 and password 123
+INFO:root:Created user with username 123 and password 123
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "123", "password": "123"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:New connection from ('127.0.0.1', 53582)
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "connect", "status": "try"}
+DEBUG:root:Sending message to client: {"type": "connect", "status": "ok", "address": ["127.0.0.1", 1234]}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "12", "password": "12"}
+INFO:root:Creating user with username 12 and password 12
+INFO:root:Created user with username 12 and password 12
+DEBUG:root:Sending message to client: {"type": "create_user", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "login", "status": "try", "username": "12", "password": "12"}
+DEBUG:root:Sending message to client: {"type": "login", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "start_game", "status": "try", "host_ip": "127.0.0.1", "host_port": 14148}
+DEBUG:root:Sending message to client: {"type": "start_game", "status": "ok"}
+INFO:root:Waiting for data from client
+INFO:root:Received data from client: {"type": "challenge", "status": "try", "username": "123"}
+DEBUG:root:Sending message to client: {"type": "challenge", "status": "ok", "host": ["127.0.0.1", 14148]}
 INFO:root:Waiting for data from client
