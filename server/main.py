@@ -55,18 +55,22 @@ def udp_server(port):
         threading.Thread(target=handle_connection_udp, args=(client_address, data), daemon=True).start()
 
 if __name__ == "__main__":
-    if len(sys.argv) != 2:
-        print("Comando errado. Apresente o numero da porta como argumento.")
+    try:
+        if len(sys.argv) != 2:
+            print("Comando errado. Apresente o numero da porta como argumento.")
+            sys.exit(1)
+
+        port = int(sys.argv[1])
+        logging.info(f'Starting server on localhost on port {port}')
+
+        tcp_thread = threading.Thread(target=tcp_server, daemon=True, args=(port,))
+        udp_thread = threading.Thread(target=udp_server, daemon=True, args=(port,))
+
+        tcp_thread.start()
+        udp_thread.start()
+
+        while True:
+            pass
+    except:
+        logging.info("Server stopped.")
         sys.exit(1)
-
-    port = int(sys.argv[1])
-    logging.info(f'Starting server on localhost on port {port}')
-
-    tcp_thread = threading.Thread(target=tcp_server, daemon=True, args=(port,))
-    udp_thread = threading.Thread(target=udp_server, daemon=True, args=(port,))
-
-    tcp_thread.start()
-    udp_thread.start()
-
-    while True:
-        pass

@@ -7,7 +7,7 @@ import json
 
 from communication.protocol import Protocol
 
-logging.basicConfig(filename='../communication/client.log', encoding='utf-8', level=logging.DEBUG)
+logging.basicConfig(filename='../communication/client.log', encoding='utf-8', level=logging.INFO)
 
 class ClientCommunication:
     def __init__ (self, server_ip, server_port, protocol):

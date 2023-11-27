@@ -129,6 +129,7 @@ class ServerCommunication:
         # precisamos desafiar o username
         if game_manager.join_game (username, self.account_logged):
             # se existe um jogo com esse username, entao o desafio foi aceito
+            logging.info(f"User from {self.general_socket.otherside_address} with account {self.account_logged} challenged {username} and was accepted")
             package = {'type': 'challenge', 'status': 'ok', 'host': game_manager.get_game_port(username)}
             message = json.dumps(package)
             logging.debug(f"Sending message to client: {message}")
@@ -140,6 +141,7 @@ class ServerCommunication:
             self.general_socket.send_message(message)
 
     def send_score (self, user, score):
+        logging.info(f"Game finished. User from {self.general_socket.otherside_address} with account {self.account_logged} sent a score of {score} to {user}")
         server_database.update_leaderboard(user, score)
 
         package = {'type': 'send_score', 'status': 'ok'}

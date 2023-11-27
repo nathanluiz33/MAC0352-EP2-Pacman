@@ -5,7 +5,7 @@ import socket
 import time
 import json
 
-logging.basicConfig(filename='../communication/game_manager.log', encoding='utf-8', level=logging.DEBUG)
+logging.basicConfig(filename='../communication/game_manager.log', encoding='utf-8', level=logging.INFO)
 
 class GameManager:
     def __init__ (self):

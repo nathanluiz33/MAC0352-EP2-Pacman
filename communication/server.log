@@ -1,108 +1,50 @@
-INFO:root:Starting server on localhost on port 1235
-INFO:root:New TCP connection from ('127.0.0.1', 61119)
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "connect", "status": "try"}
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "create_user", "status": "try", "username": "123", "password": "123"}
-INFO:root:Creating user with username 123 and password 123
-INFO:root:Created user with username 123 and password 123
-INFO:root:Waiting for data from client
-INFO:root:Received data from client: {"type": "login", "status": "try", "username": "123", "password": "123"}
-INFO:root:User from ('127.0.0.1', 61119) logged in on 123
-INFO:root:Waiting for data from client
-INFO:root:Starting server on localhost on port 1235
-INFO:root:New TCP connection from ('127.0.0.1', 61666)
-INFO:root:Creating user with username 123 and password 123
-INFO:root:Created user with username 123 and password 123
-INFO:root:User from ('127.0.0.1', 61666) logged in on 123
-INFO:root:User from ('127.0.0.1', 61666) could not login on 123
-INFO:root:User from ('127.0.0.1', 61666) logged in on 123
-INFO:root:User form ('127.0.0.1', 61666) started a game on 123 account
-INFO:root:Starting server on localhost on port 1235
-INFO:root:New TCP connection from ('127.0.0.1', 49420)
-INFO:root:Creating user with username 123 and password 123
-INFO:root:Created user with username 123 and password 123
-INFO:root:User from ('127.0.0.1', 49420) logged in on 123
-INFO:root:User form ('127.0.0.1', 49420) started a game on account 123
-INFO:root:New TCP connection from ('127.0.0.1', 49501)
-INFO:root:Creating user with username 12 and password 12
-INFO:root:Created user with username 12 and password 12
-INFO:root:User from ('127.0.0.1', 49501) logged in on 12
-INFO:root:Starting server on localhost on port 1235
-INFO:root:New TCP connection from ('127.0.0.1', 50217)
-INFO:root:Creating user with username 123 and password 123
-INFO:root:Created user with username 123 and password 123
-INFO:root:User from ('127.0.0.1', 50217) logged in on 123
-INFO:root:New TCP connection from ('127.0.0.1', 50253)
-INFO:root:Creating user with username 12 and password 12
-INFO:root:Created user with username 12 and password 12
-INFO:root:User from ('127.0.0.1', 50253) logged in on 12
-INFO:root:User form ('127.0.0.1', 50217) started a game on account 123
-INFO:root:Starting server on localhost on port 1235
-INFO:root:New TCP connection from ('127.0.0.1', 50972)
-INFO:root:Creating user with username 123 and password 123
-INFO:root:Created user with username 123 and password 123
-INFO:root:User from ('127.0.0.1', 50972) logged in on 123
-INFO:root:User form ('127.0.0.1', 50972) started a game on account 123
-INFO:root:New TCP connection from ('127.0.0.1', 51002)
-INFO:root:Creating user with username 12 and password 12
-INFO:root:Created user with username 12 and password 12
-INFO:root:User from ('127.0.0.1', 51002) logged in on 12
-INFO:root:Starting server on localhost on port 1235
-INFO:root:New TCP connection from ('127.0.0.1', 54253)
-INFO:root:Creating user with username 123 and password 123
-INFO:root:Starting server on localhost on port 1235
-INFO:root:New TCP connection from ('127.0.0.1', 57018)
-INFO:root:Creating user with username 123 and password 123
-INFO:root:Starting server on localhost on port 1235
-INFO:root:New TCP connection from ('127.0.0.1', 57254)
-INFO:root:Creating user with username 123 and password 213
-INFO:root:Created user with username 123 and password 213
-INFO:root:User ('127.0.0.1', 57254) disconnected
-INFO:root:New TCP connection from ('127.0.0.1', 57347)
-INFO:root:Creating user with username 123 and password 123
-ERROR:root:Error creating user: UNIQUE constraint failed: users.username
-INFO:root:Starting server on localhost on port 1235
-INFO:root:New TCP connection from ('127.0.0.1', 57401)
-INFO:root:Creating user with username 123 and password 123
-ERROR:root:Error creating user: UNIQUE constraint failed: users.username
-INFO:root:Starting server on localhost on port 1235
-INFO:root:New TCP connection from ('127.0.0.1', 57965)
-INFO:root:Creating user with username 123 and password 123
-ERROR:root:Error creating user: UNIQUE constraint failed: users.username
-INFO:root:User from ('127.0.0.1', 57965) could not login on 123
-INFO:root:User ('127.0.0.1', 57965) disconnected
-INFO:root:New TCP connection from ('127.0.0.1', 58032)
-INFO:root:Creating user with username 123 and password 123
-ERROR:root:Error creating user: UNIQUE constraint failed: users.username
-INFO:root:User from ('127.0.0.1', 58032) could not login on 123
-INFO:root:Starting server on localhost on port 1235
-INFO:root:New TCP connection from ('127.0.0.1', 58183)
-INFO:root:Creating user with username 123 and password 123
-ERROR:root:Error creating user: UNIQUE constraint failed: users.username
-INFO:root:User from ('127.0.0.1', 58183) could not login on 123
-INFO:root:User from ('127.0.0.1', 58183) logged in on 123
-INFO:root:User form ('127.0.0.1', 58183) started a game on account 123
-INFO:root:Starting server on localhost on port 1235
-INFO:root:New TCP connection from ('127.0.0.1', 58929)
-INFO:root:Creating user with username 123 and password 123
-ERROR:root:Error creating user: UNIQUE constraint failed: users.username
-INFO:root:User from ('127.0.0.1', 58929) logged in on 123
-INFO:root:New TCP connection from ('127.0.0.1', 59247)
-INFO:root:User from ('127.0.0.1', 59247) could not login on 123
-INFO:root:Creating user with username 12 and password 12
-INFO:root:Created user with username 12 and password 12
-INFO:root:User from ('127.0.0.1', 59247) logged in on 12
-INFO:root:New TCP connection from ('127.0.0.1', 59536)
-INFO:root:Creating user with username 1 and password 1
-INFO:root:Created user with username 1 and password 1
-INFO:root:User from ('127.0.0.1', 59536) logged in on 1
-INFO:root:User form ('127.0.0.1', 59536) started a game on account 1
-INFO:root:User form ('127.0.0.1', 59536) started a game on account 1
-INFO:root:Starting server on localhost on port 1235
-INFO:root:New TCP connection from ('127.0.0.1', 60106)
-INFO:root:User from ('127.0.0.1', 60106) logged in on 123
-INFO:root:Starting server on localhost on port 1235
-INFO:root:New TCP connection from ('127.0.0.1', 60248)
-INFO:root:User from ('127.0.0.1', 60248) could not login on 123
-INFO:root:User from ('127.0.0.1', 60248) logged in on 123
+INFO:root:Starting server on localhost on port 1234
+INFO:root:New TCP connection from ('127.0.0.1', 49667)
+INFO:root:User from ('127.0.0.1', 49667) could not login on daniel
+INFO:root:User from ('127.0.0.1', 49667) logged in on daniel
+INFO:root:User ('127.0.0.1', 49667) disconnected
+INFO:root:New TCP connection from ('127.0.0.1', 49670)
+INFO:root:User from ('127.0.0.1', 49670) logged in on daniel
+INFO:root:User ('127.0.0.1', 49670) disconnected
+INFO:root:New TCP connection from ('127.0.0.1', 49677)
+INFO:root:User from ('127.0.0.1', 49677) logged in on daniel
+INFO:root:User form ('127.0.0.1', 49677) started a game on account daniel
+INFO:root:New UDP connection from ('127.0.0.1', 64012)
+INFO:root:User from ('127.0.0.1', 64012) could not login on nathan1
+INFO:root:User from ('127.0.0.1', 64012) logged in on 123
+INFO:root:Starting server on localhost on port 1234
+INFO:root:New TCP connection from ('127.0.0.1', 49695)
+INFO:root:User from ('127.0.0.1', 49695) could not login on daniel
+INFO:root:User from ('127.0.0.1', 49695) logged in on daniel
+INFO:root:User form ('127.0.0.1', 49695) started a game on account daniel
+INFO:root:New UDP connection from ('127.0.0.1', 53912)
+INFO:root:User from ('127.0.0.1', 53912) logged in on 123
+INFO:root:User form ('127.0.0.1', 53912) started a game on account 123
+INFO:root:User from ('127.0.0.1', 53912) with account 123 challenged daniel and was accepted
+INFO:root:Starting server on localhost on port 1234
+INFO:root:New TCP connection from ('127.0.0.1', 49720)
+INFO:root:New UDP connection from ('127.0.0.1', 56030)
+INFO:root:User from ('127.0.0.1', 49720) logged in on daniel
+INFO:root:User from ('127.0.0.1', 56030) could not login on 123
+INFO:root:User from ('127.0.0.1', 56030) logged in on 123
+INFO:root:User form ('127.0.0.1', 49720) started a game on account daniel
+INFO:root:User from ('127.0.0.1', 56030) with account 123 challenged daniel and was accepted
+INFO:root:Game finished. User from ('127.0.0.1', 49720) with account daniel sent a score of 0 to daniel
+INFO:root:Starting server on localhost on port 1234
+INFO:root:New TCP connection from ('127.0.0.1', 49740)
+INFO:root:User from ('127.0.0.1', 49740) could not login on daniel
+INFO:root:User from ('127.0.0.1', 49740) logged in on daniel
+INFO:root:New UDP connection from ('127.0.0.1', 50314)
+INFO:root:User from ('127.0.0.1', 50314) could not login on daniel
+INFO:root:User from ('127.0.0.1', 50314) logged in on 123
+INFO:root:User form ('127.0.0.1', 49740) started a game on account daniel
+INFO:root:User from ('127.0.0.1', 50314) with account 123 challenged daniel and was accepted
+INFO:root:Game finished. User from ('127.0.0.1', 49740) with account daniel sent a score of 0 to daniel
+INFO:root:User form ('127.0.0.1', 49740) started a game on account daniel
+INFO:root:User from ('127.0.0.1', 50314) with account 123 challenged daniel and was accepted
+INFO:root:Game finished. User from ('127.0.0.1', 49740) with account daniel sent a score of 2 to daniel
+INFO:root:Starting server on localhost on port 1234
+INFO:root:New TCP connection from ('127.0.0.1', 49769)
+INFO:root:User from ('127.0.0.1', 49769) could not login on daniel
+INFO:root:User from ('127.0.0.1', 49769) logged in on daniel
+INFO:root:Server stopped.

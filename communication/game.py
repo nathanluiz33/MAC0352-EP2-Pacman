@@ -6,7 +6,7 @@ import time
 import json
 import random
 
-logging.basicConfig(filename='../communication/client.log', encoding='utf-8', level=logging.DEBUG)
+logging.basicConfig(filename='../communication/client.log', encoding='utf-8', level=logging.INFO)
 
 class Game:
     def __init__ (self, username_host):
@@ -135,9 +135,10 @@ class Pacman ():
         while continue_game:
             for user in self.game.players:
                 # updating boards
+                if not continue_game:
+                    break
                 
                 if self.game.update_board():
-                    self.end_game()
                     continue_game = False
                     print ("Game over")
                     break
@@ -175,7 +176,6 @@ class Pacman ():
                             self.game.move(user, dir)
                             break
                         elif line[0] == 'encerra':
-                            self.end_game()
                             continue_game = False
                             break
                         elif line[0] == 'atraso':
@@ -212,7 +212,6 @@ class Pacman ():
                                 self.game.move(user, dir)
                                 break
                             elif command == 'encerra':
-                                self.end_game()
                                 continue_game = False
                                 print ("Game ended")
                                 break
@@ -232,6 +231,9 @@ class Pacman ():
 
             time.sleep(1)
             self.flush_incoming_players()
+
+        self.flush_incoming_players()
+        self.end_game()
         self.game_ended = True
         print ("Game ended")
     
@@ -295,6 +297,8 @@ class Ghost ():
                         back_socket.sendall(json.dumps({'type': 'send_command', 'status': 'ok', 'command': 'move', 'direction': line[1]}).encode('ascii'))
                 elif line[0] == 'encerra':
                     back_socket.sendall(json.dumps({'type': 'send_command', 'status': 'ok', 'command': 'encerra'}).encode('ascii'))
+                elif line[0] == 'atraso':
+                    back_socket.sendall(json.dumps({'type': 'send_command', 'status': 'ok', 'command': 'atraso'}).encode('ascii'))
                 else:
                     back_socket.sendall(json.dumps({'type': 'send_command', 'status': 'error: invalid command'}).encode('ascii'))
             elif recv['type'] == 'end_game' and recv['status'] == 'ok':
@@ -302,6 +306,9 @@ class Ghost ():
                 break
             elif recv['type'] == 'ping':
                 back_socket.sendall(json.dumps({'type': 'ping'}).encode('ascii'))
+            elif recv['type'] == 'atraso' and recv['status'] == 'ok':
+                print (recv['atraso'])
+                back_socket.sendall(json.dumps({'type': 'atraso', 'status': 'ok'}).encode('ascii'))
             elif recv['type'] == 'update_board' and recv['status'] == 'ok':
                 self.board = recv['board']
                 print ("---------------------------")

@@ -18,7 +18,7 @@ from communication.protocol import get_open_port
 from communication.game import Pacman
 from communication.game import Ghost
 
-logging.basicConfig(filename='../communication/client.log', encoding='utf-8', level=logging.DEBUG)
+logging.basicConfig(filename='../communication/client.log', encoding='utf-8', level=logging.INFO)
 
 def receive_players (listen_port, pacman):
     # inicializamos um socket que ira ouvir quem entra na sala

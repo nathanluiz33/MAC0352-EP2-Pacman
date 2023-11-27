@@ -424,3 +424,964 @@ DEBUG:root:Received data from server: {"type": "login", "status": "error: wrong 
 DEBUG:root:NOT_LOGGED_IN
 DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "123", "password": "213"}
 DEBUG:root:Received data from server: {"type": "login", "status": "ok"}
+INFO:root:Starting client. It is connecting to 127.0.0.1:1235 using TCP
+INFO:root:Connected to 127.0.0.1:1235
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1235]}
+INFO:root:Connected to server
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "123", "password": "213"}
+DEBUG:root:Received data from server: {"type": "login", "status": "ok"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "change_password", "status": "try", "old_password": "213", "new_password": "123"}
+INFO:root:Received data from server: {"type": "change_password", "status": "ok"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "logout", "status": "try"}
+INFO:root:Received data from server: {"type": "logout", "status": "ok"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "123", "password": "123"}
+DEBUG:root:Received data from server: {"type": "login", "status": "ok"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "logout", "status": "try"}
+INFO:root:Received data from server: {"type": "logout", "status": "ok"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "tchau", "status": "try"}
+INFO:root:Starting client. It is connecting to 127.0.0.1:1235 using TCP
+INFO:root:Connected to 127.0.0.1:1235
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1235]}
+INFO:root:Connected to server
+INFO:root:Starting client. It is connecting to 127.0.0.1:1235 using UDP
+INFO:root:Connected to 127.0.0.1:1235
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 25977]}
+INFO:root:Connected to server
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "123", "password": "123"}
+DEBUG:root:Received data from server: {"type": "login", "status": "ok"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "logout", "status": "try"}
+INFO:root:Received data from server: {"type": "logout", "status": "ok"}
+INFO:root:Starting client. It is connecting to 127.0.0.1:1235 using TCP
+INFO:root:Connected to 127.0.0.1:1235
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1235]}
+INFO:root:Connected to server
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "nathan", "password": "123"}
+INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "nathan", "password": "123"}
+INFO:root:Received data from server: {"type": "create_user", "status": "error: username already exists"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
+DEBUG:root:Received data from server: {"type": "login", "status": "ok"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "change_status", "status": "try", "username": "nathan", "lstatus": "In-game"}
+INFO:root:Received data from server: {"type": "change_status", "status": "ok"}
+DEBUG:root:Adding player: nathan, C, 13, 2
+DEBUG:root:Adding player: local_ghost, F, 24, 3
+DEBUG:root:Sending message to server: {"type": "start_game", "status": "try", "host_ip": "127.0.0.1", "host_port": 37685}
+INFO:root:Received data from server: {"type": "start_game", "status": "ok"}
+DEBUG:root:Adding player: nathan, C, 13, 2
+DEBUG:root:Adding player: local_ghost, F, 24, 3
+DEBUG:root:TCP Server listening on 127.0.0.1:<socket.socket fd=5, family=2, type=1, proto=0, laddr=('127.0.0.1', 37685)>
+INFO:root:Starting client. It is connecting to 127.0.0.1:1235 using UDP
+INFO:root:Connected to 127.0.0.1:1235
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 2510]}
+INFO:root:Connected to server
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "nathan1", "password": "123"}
+INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
+DEBUG:root:Received data from server: {"type": "login", "status": "error: user already logged in"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan1", "password": "123"}
+DEBUG:root:Received data from server: {"type": "login", "status": "ok"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "challenge", "status": "try", "username": "nathan"}
+INFO:root:Received data from server: {"type": "challenge", "status": "ok", "host": ["127.0.0.1", 37685]}
+DEBUG:root:Sending message to server: {"type": "change_status", "status": "try", "username": "nathan1", "lstatus": "In-game"}
+INFO:root:Received data from server: {"type": "change_status", "status": "ok"}
+DEBUG:root:Ghost nathan1 connecting to 127.0.0.1:37685 asking to connect on port 28969
+INFO:root:Waiting for nathan1 move on ('127.0.0.1', 28969)
+DEBUG:root:Received data from ('127.0.0.1', 63952): {'username': 'nathan1', 'host': '127.0.0.1', 'port': 28969}
+DEBUG:root:Adding incoming player: nathan1, 127.0.0.1, 28969
+DEBUG:root:Adding player: nathan1, f, 12, 0
+DEBUG:root:Sending message to nathan1: {"type": "update_board", "status": "ok", "board": [["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", ".", ".", "f", ".", ".", ".", ".", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], [".", ".", ".", ".", ".", " ", ".", ".", ".", ".", "*", ".", ".", "C", ".", ".", "*", ".", ".", ".", ".", ".", ".", ".", "F", ".", "."], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"]]}
+DEBUG:root:Received data from nathan1: {"type": "update_board", "status": "ok", "board": [["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", ".", ".", "f", ".", ".", ".", ".", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], [".", ".", ".", ".", ".", " ", ".", ".", ".", ".", "*", ".", ".", "C", ".", ".", "*", ".", ".", ".", ".", ".", ".", ".", "F", ".", "."], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"]]}
+DEBUG:root:Received data from nathan1: {"type": "update_board", "status": "ok"}
+DEBUG:root:Sending message to ghost: {"type": "request_command", "status": "try"}
+DEBUG:root:Received data from nathan1: {"type": "request_command", "status": "try"}
+DEBUG:root:Received data from ghost: {"type": "send_command", "status": "ok", "command": "move", "direction": "w"}
+DEBUG:root:Sending message to nathan1: {"type": "update_board", "status": "ok", "board": [["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", ".", ".", " ", ".", ".", ".", ".", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], [".", ".", ".", ".", ".", " ", ".", ".", ".", ".", "*", ".", ".", "C", ".", ".", "*", ".", ".", ".", ".", ".", ".", ".", "F", ".", "."], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", "f", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"]]}
+DEBUG:root:Received data from nathan1: {"type": "update_board", "status": "ok", "board": [["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", ".", ".", " ", ".", ".", ".", ".", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], [".", ".", ".", ".", ".", " ", ".", ".", ".", ".", "*", ".", ".", "C", ".", ".", "*", ".", ".", ".", ".", ".", ".", ".", "F", ".", "."], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", "f", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"]]}
+DEBUG:root:Received data from nathan1: {"type": "update_board", "status": "ok"}
+DEBUG:root:Sending message to nathan1: {"type": "update_board", "status": "ok", "board": [["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", ".", ".", " ", ".", ".", ".", ".", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], [".", ".", ".", ".", ".", " ", ".", ".", ".", ".", "*", ".", ".", "C", ".", ".", "*", ".", ".", ".", ".", ".", ".", "F", ".", ".", "."], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", "f", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"]]}
+DEBUG:root:Received data from nathan1: {"type": "update_board", "status": "ok", "board": [["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", ".", ".", " ", ".", ".", ".", ".", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], [".", ".", ".", ".", ".", " ", ".", ".", ".", ".", "*", ".", ".", "C", ".", ".", "*", ".", ".", ".", ".", ".", ".", "F", ".", ".", "."], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", "f", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"]]}
+DEBUG:root:Received data from nathan1: {"type": "update_board", "status": "ok"}
+DEBUG:root:Sending message to nathan1: {"type": "update_board", "status": "ok", "board": [["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", ".", ".", " ", ".", ".", ".", ".", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], [".", ".", ".", ".", ".", " ", ".", ".", ".", ".", "*", ".", ".", " ", ".", ".", "*", ".", ".", ".", ".", ".", ".", "F", ".", ".", "."], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", "f", "C", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"]]}
+DEBUG:root:Received data from nathan1: {"type": "update_board", "status": "ok", "board": [["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", ".", ".", " ", ".", ".", ".", ".", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], [".", ".", ".", ".", ".", " ", ".", ".", ".", ".", "*", ".", ".", " ", ".", ".", "*", ".", ".", ".", ".", ".", ".", "F", ".", ".", "."], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", "f", "C", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"]]}
+DEBUG:root:Received data from nathan1: {"type": "update_board", "status": "ok"}
+DEBUG:root:Sending message to ghost: {"type": "request_command", "status": "try"}
+DEBUG:root:Received data from nathan1: {"type": "request_command", "status": "try"}
+DEBUG:root:Received data from ghost: {"type": "send_command", "status": "ok", "command": "move", "direction": "d"}
+DEBUG:root:Received data from nathan1: {"type": "end_game", "status": "ok"}
+DEBUG:root:Sending message to server: {"type": "change_status", "status": "try", "username": "nathan1", "lstatus": "Online"}
+INFO:root:Received data from server: {"type": "change_status", "status": "ok"}
+DEBUG:root:Sending message to server: {"type": "send_score", "status": "try", "user": "nathan", "score": 1}
+INFO:root:Received data from server: {"type": "send_score", "status": "ok"}
+DEBUG:root:Sending message to server: {"type": "change_status", "status": "try", "username": "nathan", "lstatus": "Online"}
+INFO:root:Received data from server: {"type": "change_status", "status": "ok"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "get_leaderboard", "status": "try"}
+INFO:root:Received data from server: {"type": "get_leaderboard", "status": "ok", "leaderboard": [["123", 3], ["1", 5], ["nathan", 1]]}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "get_online_users", "status": "try"}
+INFO:root:Received data from server: {"type": "get_online_users", "status": "ok", "online_users": {"nathan": "Online", "nathan1": "Online"}}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "change_status", "status": "try", "username": "nathan", "lstatus": "In-game"}
+INFO:root:Received data from server: {"type": "change_status", "status": "ok"}
+DEBUG:root:Adding player: nathan, C, 13, 2
+DEBUG:root:Adding player: local_ghost, F, 24, 3
+DEBUG:root:Sending message to server: {"type": "start_game", "status": "try", "host_ip": "127.0.0.1", "host_port": 28194}
+INFO:root:Received data from server: {"type": "start_game", "status": "ok"}
+DEBUG:root:Adding player: nathan, C, 13, 2
+DEBUG:root:Adding player: local_ghost, F, 24, 3
+DEBUG:root:TCP Server listening on 127.0.0.1:<socket.socket fd=5, family=2, type=1, proto=0, laddr=('127.0.0.1', 28194)>
+DEBUG:root:LOGGED_IN
+DEBUG:root:LOGGED_IN
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "get_online_users", "status": "try"}
+INFO:root:Received data from server: {"type": "get_online_users", "status": "ok", "online_users": {"nathan": "In-game", "nathan1": "Online"}}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "challenge", "status": "try", "username": "nathan"}
+INFO:root:Received data from server: {"type": "challenge", "status": "ok", "host": ["127.0.0.1", 28194]}
+DEBUG:root:Sending message to server: {"type": "change_status", "status": "try", "username": "nathan1", "lstatus": "In-game"}
+INFO:root:Received data from server: {"type": "change_status", "status": "ok"}
+DEBUG:root:Ghost nathan1 connecting to 127.0.0.1:28194 asking to connect on port 35831
+INFO:root:Waiting for nathan1 move on ('127.0.0.1', 35831)
+DEBUG:root:Received data from ('127.0.0.1', 64410): {'username': 'nathan1', 'host': '127.0.0.1', 'port': 35831}
+DEBUG:root:Adding incoming player: nathan1, 127.0.0.1, 35831
+DEBUG:root:Adding player: nathan1, f, 12, 0
+DEBUG:root:Sending message to nathan1: {"type": "update_board", "status": "ok", "board": [["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", ".", ".", "f", ".", ".", ".", ".", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], [".", ".", ".", ".", ".", " ", ".", ".", ".", ".", "*", ".", ".", "C", ".", ".", "*", ".", ".", ".", ".", ".", ".", ".", "F", ".", "."], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"]]}
+DEBUG:root:Received data from nathan1: {"type": "update_board", "status": "ok", "board": [["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", ".", ".", "f", ".", ".", ".", ".", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], [".", ".", ".", ".", ".", " ", ".", ".", ".", ".", "*", ".", ".", "C", ".", ".", "*", ".", ".", ".", ".", ".", ".", ".", "F", ".", "."], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"]]}
+DEBUG:root:Received data from nathan1: {"type": "update_board", "status": "ok"}
+DEBUG:root:Sending message to ghost: {"type": "request_command", "status": "try"}
+DEBUG:root:Received data from nathan1: {"type": "request_command", "status": "try"}
+DEBUG:root:Received data from ghost: {"type": "send_command", "status": "error: invalid command"}
+DEBUG:root:Sending message to ghost: {"type": "request_command", "status": "try"}
+DEBUG:root:Received data from nathan1: {"type": "request_command", "status": "try"}
+DEBUG:root:Received data from ghost: {"type": "send_command", "status": "ok", "command": "move", "direction": "s"}
+DEBUG:root:Sending message to nathan1: {"type": "update_board", "status": "ok", "board": [["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", ".", ".", "f", ".", ".", ".", ".", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], [".", ".", ".", ".", ".", " ", ".", ".", ".", ".", "*", ".", ".", "C", ".", ".", "*", ".", ".", ".", ".", ".", ".", ".", "F", ".", "."], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"]]}
+DEBUG:root:Received data from nathan1: {"type": "update_board", "status": "ok", "board": [["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", ".", ".", "f", ".", ".", ".", ".", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], [".", ".", ".", ".", ".", " ", ".", ".", ".", ".", "*", ".", ".", "C", ".", ".", "*", ".", ".", ".", ".", ".", ".", ".", "F", ".", "."], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"]]}
+DEBUG:root:Received data from nathan1: {"type": "update_board", "status": "ok"}
+DEBUG:root:Sending message to nathan1: {"type": "update_board", "status": "ok", "board": [["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", ".", ".", "f", ".", ".", ".", ".", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], [".", ".", ".", ".", ".", " ", ".", ".", ".", ".", "*", ".", ".", "C", ".", ".", "*", ".", ".", ".", ".", ".", ".", "F", ".", ".", "."], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"]]}
+DEBUG:root:Received data from nathan1: {"type": "update_board", "status": "ok", "board": [["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", ".", ".", "f", ".", ".", ".", ".", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], [".", ".", ".", ".", ".", " ", ".", ".", ".", ".", "*", ".", ".", "C", ".", ".", "*", ".", ".", ".", ".", ".", ".", "F", ".", ".", "."], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"]]}
+DEBUG:root:Received data from nathan1: {"type": "update_board", "status": "ok"}
+DEBUG:root:Received data from nathan1: {"type": "ping"}
+DEBUG:root:Received data from nathan1: {"type": "ping"}
+DEBUG:root:Received data from nathan1: {"type": "ping"}
+DEBUG:root:Sending message to nathan1: {"type": "update_board", "status": "ok", "board": [["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", ".", ".", "f", ".", ".", ".", ".", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], [".", ".", ".", ".", ".", " ", ".", ".", ".", ".", "*", ".", ".", " ", ".", ".", "*", ".", ".", ".", ".", ".", ".", "F", ".", ".", "."], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", "C", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"]]}
+DEBUG:root:Received data from nathan1: {"type": "update_board", "status": "ok", "board": [["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", ".", ".", "f", ".", ".", ".", ".", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], [".", ".", ".", ".", ".", " ", ".", ".", ".", ".", "*", ".", ".", " ", ".", ".", "*", ".", ".", ".", ".", ".", ".", "F", ".", ".", "."], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", "C", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"]]}
+DEBUG:root:Received data from nathan1: {"type": "update_board", "status": "ok"}
+DEBUG:root:Sending message to ghost: {"type": "request_command", "status": "try"}
+DEBUG:root:Received data from nathan1: {"type": "request_command", "status": "try"}
+DEBUG:root:Received data from ghost: {"type": "send_command", "status": "error: invalid command"}
+DEBUG:root:Sending message to ghost: {"type": "request_command", "status": "try"}
+DEBUG:root:Received data from nathan1: {"type": "request_command", "status": "try"}
+DEBUG:root:Received data from ghost: 
+INFO:root:Starting client. It is connecting to 127.0.0.1:1235 using TCP
+INFO:root:Connected to 127.0.0.1:1235
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1235]}
+INFO:root:Connected to server
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
+DEBUG:root:Received data from server: {"type": "login", "status": "ok"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "change_status", "status": "try", "username": "nathan", "lstatus": "In-game"}
+INFO:root:Received data from server: {"type": "change_status", "status": "ok"}
+DEBUG:root:Adding player: nathan, C, 13, 2
+DEBUG:root:Adding player: local_ghost, F, 24, 3
+DEBUG:root:Sending message to server: {"type": "start_game", "status": "try", "host_ip": "127.0.0.1", "host_port": 13729}
+INFO:root:Received data from server: {"type": "start_game", "status": "ok"}
+DEBUG:root:Adding player: nathan, C, 13, 2
+DEBUG:root:Adding player: local_ghost, F, 24, 3
+DEBUG:root:TCP Server listening on 127.0.0.1:<socket.socket fd=5, family=2, type=1, proto=0, laddr=('127.0.0.1', 13729)>
+INFO:root:Starting client. It is connecting to 127.0.0.1:1235 using UDP
+INFO:root:Connected to 127.0.0.1:1235
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 37215]}
+INFO:root:Connected to server
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan1", "password": "123"}
+DEBUG:root:Received data from server: {"type": "login", "status": "ok"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "challenge", "status": "try", "username": "nathan"}
+INFO:root:Received data from server: {"type": "challenge", "status": "ok", "host": ["127.0.0.1", 13729]}
+DEBUG:root:Sending message to server: {"type": "change_status", "status": "try", "username": "nathan1", "lstatus": "In-game"}
+INFO:root:Received data from server: {"type": "change_status", "status": "ok"}
+DEBUG:root:Ghost nathan1 connecting to 127.0.0.1:13729 asking to connect on port 13816
+INFO:root:Waiting for nathan1 move on ('127.0.0.1', 13816)
+DEBUG:root:Received data from ('127.0.0.1', 64951): {'username': 'nathan1', 'host': '127.0.0.1', 'port': 13816}
+DEBUG:root:Adding incoming player: nathan1, 127.0.0.1, 13816
+DEBUG:root:Adding player: nathan1, f, 12, 0
+DEBUG:root:Sending message to nathan1: {"type": "update_board", "status": "ok", "board": [["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", ".", ".", "f", ".", ".", ".", ".", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], [".", ".", ".", ".", ".", " ", ".", ".", ".", ".", "*", ".", ".", "C", ".", ".", "*", ".", ".", ".", ".", ".", ".", ".", "F", ".", "."], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"]]}
+DEBUG:root:Received data from nathan1: {"type": "update_board", "status": "ok", "board": [["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", ".", ".", "f", ".", ".", ".", ".", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], [".", ".", ".", ".", ".", " ", ".", ".", ".", ".", "*", ".", ".", "C", ".", ".", "*", ".", ".", ".", ".", ".", ".", ".", "F", ".", "."], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"]]}
+DEBUG:root:Received data from nathan1: {"type": "update_board", "status": "ok"}
+DEBUG:root:Sending message to ghost: {"type": "request_command", "status": "try"}
+DEBUG:root:Received data from nathan1: {"type": "request_command", "status": "try"}
+DEBUG:root:Received data from ghost: {"type": "send_command", "status": "ok", "command": "atraso"}
+DEBUG:root:Received data from nathan1: {"type": "ping"}
+DEBUG:root:Received data from nathan1: {"type": "ping"}
+DEBUG:root:Received data from nathan1: {"type": "ping"}
+DEBUG:root:Sending message to ghost: {"type": "atraso", "status": "ok", "atraso": [0.00019812583923339844, 0.00013589859008789062, 0.0001392364501953125]}
+DEBUG:root:Received data from nathan1: {"type": "atraso", "status": "ok", "atraso": [0.00019812583923339844, 0.00013589859008789062, 0.0001392364501953125]}
+DEBUG:root:Received data from ghost: 
+DEBUG:root:Sending message to ghost: {"type": "request_command", "status": "try"}
+DEBUG:root:Received data from ghost: 
+INFO:root:Starting client. It is connecting to 127.0.0.1:1235 using TCP
+INFO:root:Connected to 127.0.0.1:1235
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1235]}
+INFO:root:Connected to server
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
+DEBUG:root:Received data from server: {"type": "login", "status": "ok"}
+INFO:root:Starting client. It is connecting to 127.0.0.1:1235 using UDP
+INFO:root:Connected to 127.0.0.1:1235
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 35489]}
+INFO:root:Connected to server
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan1", "password": "123"}
+DEBUG:root:Received data from server: {"type": "login", "status": "ok"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "change_status", "status": "try", "username": "nathan", "lstatus": "In-game"}
+INFO:root:Received data from server: {"type": "change_status", "status": "ok"}
+DEBUG:root:Adding player: nathan, C, 13, 2
+DEBUG:root:Adding player: local_ghost, F, 24, 3
+DEBUG:root:Sending message to server: {"type": "start_game", "status": "try", "host_ip": "127.0.0.1", "host_port": 28942}
+INFO:root:Received data from server: {"type": "start_game", "status": "ok"}
+DEBUG:root:Adding player: nathan, C, 13, 2
+DEBUG:root:Adding player: local_ghost, F, 24, 3
+DEBUG:root:TCP Server listening on 127.0.0.1:<socket.socket fd=5, family=2, type=1, proto=0, laddr=('127.0.0.1', 28942)>
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "challenge", "status": "try", "username": "nathan"}
+INFO:root:Received data from server: {"type": "challenge", "status": "ok", "host": ["127.0.0.1", 28942]}
+DEBUG:root:Sending message to server: {"type": "change_status", "status": "try", "username": "nathan1", "lstatus": "In-game"}
+INFO:root:Received data from server: {"type": "change_status", "status": "ok"}
+DEBUG:root:Ghost nathan1 connecting to 127.0.0.1:28942 asking to connect on port 11913
+INFO:root:Waiting for nathan1 move on ('127.0.0.1', 11913)
+DEBUG:root:Received data from ('127.0.0.1', 49765): {'username': 'nathan1', 'host': '127.0.0.1', 'port': 11913}
+DEBUG:root:Adding incoming player: nathan1, 127.0.0.1, 11913
+DEBUG:root:Adding player: nathan1, f, 12, 0
+DEBUG:root:Sending message to nathan1: {"type": "update_board", "status": "ok", "board": [["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", ".", ".", "f", ".", ".", ".", ".", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], [".", ".", ".", ".", ".", " ", ".", ".", ".", ".", "*", ".", ".", "C", ".", ".", "*", ".", ".", ".", ".", ".", ".", ".", ".", "F", "."], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"]]}
+DEBUG:root:Received data from nathan1: {"type": "update_board", "status": "ok", "board": [["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", ".", ".", "f", ".", ".", ".", ".", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], [".", ".", ".", ".", ".", " ", ".", ".", ".", ".", "*", ".", ".", "C", ".", ".", "*", ".", ".", ".", ".", ".", ".", ".", ".", "F", "."], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"]]}
+DEBUG:root:Received data from nathan1: {"type": "update_board", "status": "ok"}
+DEBUG:root:Sending message to ghost: {"type": "request_command", "status": "try"}
+DEBUG:root:Received data from nathan1: {"type": "request_command", "status": "try"}
+DEBUG:root:Received data from ghost: {"type": "send_command", "status": "error: invalid command"}
+DEBUG:root:Sending message to ghost: {"type": "request_command", "status": "try"}
+DEBUG:root:Received data from nathan1: {"type": "request_command", "status": "try"}
+DEBUG:root:Received data from ghost: {"type": "send_command", "status": "ok", "command": "atraso"}
+DEBUG:root:Received data from nathan1: {"type": "ping"}
+DEBUG:root:Received data from nathan1: {"type": "ping"}
+DEBUG:root:Received data from nathan1: {"type": "ping"}
+DEBUG:root:Received data from nathan1: {"type": "ping"}
+DEBUG:root:Received data from nathan1: {"type": "ping"}
+DEBUG:root:Received data from nathan1: {"type": "ping"}
+DEBUG:root:Sending message to ghost: {"type": "atraso", "status": "ok", "atraso": [9.775161743164062e-05, 0.00010824203491210938, 0.00012087821960449219]}
+DEBUG:root:Received data from nathan1: {"type": "atraso", "status": "ok", "atraso": [9.775161743164062e-05, 0.00010824203491210938, 0.00012087821960449219]}
+DEBUG:root:Received data from ghost: 
+DEBUG:root:Sending message to ghost: {"type": "request_command", "status": "try"}
+DEBUG:root:Received data from ghost: 
+INFO:root:Starting client. It is connecting to 127.0.0.1:1235 using TCP
+INFO:root:Connected to 127.0.0.1:1235
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1235]}
+INFO:root:Connected to server
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
+DEBUG:root:Received data from server: {"type": "login", "status": "error: user already logged in"}
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
+INFO:root:Connected to 127.0.0.1:1234
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
+INFO:root:Connected to server
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
+DEBUG:root:Received data from server: {"type": "login", "status": "ok"}
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using UDP
+INFO:root:Connected to 127.0.0.1:1234
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 24905]}
+INFO:root:Connected to server
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan1", "password": "123"}
+DEBUG:root:Received data from server: {"type": "login", "status": "ok"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "change_status", "status": "try", "username": "nathan", "lstatus": "In-game"}
+INFO:root:Received data from server: {"type": "change_status", "status": "ok"}
+DEBUG:root:Adding player: nathan, C, 13, 2
+DEBUG:root:Adding player: local_ghost, F, 24, 3
+DEBUG:root:Sending message to server: {"type": "start_game", "status": "try", "host_ip": "127.0.0.1", "host_port": 46535}
+INFO:root:Received data from server: {"type": "start_game", "status": "ok"}
+DEBUG:root:Adding player: nathan, C, 13, 2
+DEBUG:root:Adding player: local_ghost, F, 24, 3
+DEBUG:root:TCP Server listening on 127.0.0.1:<socket.socket fd=5, family=2, type=1, proto=0, laddr=('127.0.0.1', 46535)>
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "challenge", "status": "try", "username": "nathan"}
+INFO:root:Received data from server: {"type": "challenge", "status": "ok", "host": ["127.0.0.1", 46535]}
+DEBUG:root:Sending message to server: {"type": "change_status", "status": "try", "username": "nathan1", "lstatus": "In-game"}
+INFO:root:Received data from server: {"type": "change_status", "status": "ok"}
+DEBUG:root:Ghost nathan1 connecting to 127.0.0.1:46535 asking to connect on port 46705
+INFO:root:Waiting for nathan1 move on ('127.0.0.1', 46705)
+DEBUG:root:Received data from ('127.0.0.1', 50238): {'username': 'nathan1', 'host': '127.0.0.1', 'port': 46705}
+DEBUG:root:Adding incoming player: nathan1, 127.0.0.1, 46705
+DEBUG:root:Adding player: nathan1, f, 12, 0
+DEBUG:root:Sending message to nathan1: {"type": "update_board", "status": "ok", "board": [["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", ".", ".", "f", ".", ".", ".", ".", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], [".", ".", ".", ".", ".", " ", ".", ".", ".", ".", "*", ".", ".", "C", ".", ".", "*", ".", ".", ".", ".", ".", ".", "F", ".", ".", "."], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"]]}
+DEBUG:root:Received data from nathan1: {"type": "update_board", "status": "ok", "board": [["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", ".", ".", "f", ".", ".", ".", ".", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], [".", ".", ".", ".", ".", " ", ".", ".", ".", ".", "*", ".", ".", "C", ".", ".", "*", ".", ".", ".", ".", ".", ".", "F", ".", ".", "."], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"]]}
+DEBUG:root:Received data from nathan1: {"type": "update_board", "status": "ok"}
+DEBUG:root:Sending message to ghost: {"type": "request_command", "status": "try"}
+DEBUG:root:Received data from nathan1: {"type": "request_command", "status": "try"}
+DEBUG:root:Received data from ghost: {"type": "send_command", "status": "ok", "command": "atraso"}
+DEBUG:root:Received data from nathan1: {"type": "ping"}
+DEBUG:root:Received data from nathan1: {"type": "ping"}
+DEBUG:root:Received data from nathan1: {"type": "ping"}
+DEBUG:root:Received data from nathan1: {"type": "ping"}
+DEBUG:root:Received data from nathan1: {"type": "ping"}
+DEBUG:root:Received data from nathan1: {"type": "ping"}
+DEBUG:root:Sending message to ghost: {"type": "atraso", "status": "ok", "atraso": [0.00013208389282226562, 0.00010704994201660156, 0.0001289844512939453]}
+DEBUG:root:Received data from nathan1: {"type": "atraso", "status": "ok", "atraso": [0.00013208389282226562, 0.00010704994201660156, 0.0001289844512939453]}
+DEBUG:root:Received data from ghost: {"type": "atraso", "status": "ok"}
+DEBUG:root:Sending message to ghost: {"type": "request_command", "status": "try"}
+DEBUG:root:Received data from nathan1: {"type": "request_command", "status": "try"}
+DEBUG:root:Received data from ghost: 
+INFO:root:Starting client. It is connecting to 127.0.0.1:1235 using TCP
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
+INFO:root:Connected to 127.0.0.1:1234
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
+INFO:root:Connected to server
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using UDP
+INFO:root:Connected to 127.0.0.1:1234
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 18341]}
+INFO:root:Connected to server
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "123", "password": "123"}
+INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "123", "password": "123"}
+DEBUG:root:Received data from server: {"type": "login", "status": "ok"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "tchau", "status": "try"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "12", "password": "12"}
+INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "12", "password": "12"}
+DEBUG:root:Received data from server: {"type": "login", "status": "ok"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "change_status", "status": "try", "username": "12", "lstatus": "In-game"}
+INFO:root:Received data from server: {"type": "change_status", "status": "ok"}
+DEBUG:root:Adding player: 12, C, 13, 2
+DEBUG:root:Adding player: local_ghost, F, 24, 3
+DEBUG:root:Sending message to server: {"type": "start_game", "status": "try", "host_ip": "0.0.0.0", "host_port": 22388}
+INFO:root:Received data from server: {"type": "start_game", "status": "ok"}
+DEBUG:root:Adding player: 12, C, 13, 2
+DEBUG:root:Adding player: local_ghost, F, 24, 3
+DEBUG:root:TCP Server listening on 127.0.0.1:<socket.socket fd=5, family=2, type=1, proto=0, laddr=('127.0.0.1', 22388)>
+DEBUG:root:Sending message to server: {"type": "send_score", "status": "try", "user": "12", "score": 7}
+INFO:root:Received data from server: {"type": "send_score", "status": "ok"}
+DEBUG:root:Sending message to server: {"type": "change_status", "status": "try", "username": "12", "lstatus": "Online"}
+INFO:root:Received data from server: {"type": "change_status", "status": "ok"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "get_online_users", "status": "try"}
+INFO:root:Received data from server: {"type": "get_online_users", "status": "ok", "online_users": {"12": "Online"}}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "get_leaderboard", "status": "try"}
+INFO:root:Received data from server: {"type": "get_leaderboard", "status": "ok", "leaderboard": [["12", 7]]}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "logout", "status": "try"}
+INFO:root:Received data from server: {"type": "logout", "status": "ok"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "tchau", "status": "try"}
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
+INFO:root:Connected to 127.0.0.1:1234
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
+INFO:root:Connected to server
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "nathan", "password": "123"}
+INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
+DEBUG:root:Received data from server: {"type": "login", "status": "ok"}
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using UDP
+INFO:root:Connected to 127.0.0.1:1234
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 38230]}
+INFO:root:Connected to server
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "nathan", "password": "123"}
+INFO:root:Received data from server: {"type": "create_user", "status": "error: username already exists"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "nathan1", "password": "123"}
+INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
+DEBUG:root:Received data from server: {"type": "login", "status": "error: user already logged in"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "logout", "status": "try"}
+INFO:root:Received data from server: {"type": "logout", "status": "ok"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
+DEBUG:root:Received data from server: {"type": "login", "status": "ok"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "logout", "status": "try"}
+INFO:root:Received data from server: {"type": "logout", "status": "ok"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan1", "password": "123"}
+DEBUG:root:Received data from server: {"type": "login", "status": "ok"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
+DEBUG:root:Received data from server: {"type": "login", "status": "ok"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "change_status", "status": "try", "username": "nathan", "lstatus": "In-game"}
+INFO:root:Received data from server: {"type": "change_status", "status": "ok"}
+DEBUG:root:Adding player: nathan, C, 13, 2
+DEBUG:root:Adding player: local_ghost, F, 24, 3
+DEBUG:root:Sending message to server: {"type": "start_game", "status": "try", "host_ip": "127.0.0.1", "host_port": 5967}
+INFO:root:Received data from server: {"type": "start_game", "status": "ok"}
+DEBUG:root:Adding player: nathan, C, 13, 2
+DEBUG:root:Adding player: local_ghost, F, 24, 3
+DEBUG:root:TCP Server listening on 127.0.0.1:<socket.socket fd=5, family=2, type=1, proto=0, laddr=('127.0.0.1', 5967)>
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "challenge", "status": "try", "username": "nathan"}
+INFO:root:Received data from server: {"type": "challenge", "status": "ok", "host": ["127.0.0.1", 5967]}
+DEBUG:root:Sending message to server: {"type": "change_status", "status": "try", "username": "nathan1", "lstatus": "In-game"}
+INFO:root:Received data from server: {"type": "change_status", "status": "ok"}
+DEBUG:root:Ghost nathan1 connecting to 127.0.0.1:5967 asking to connect on port 26939
+INFO:root:Waiting for nathan1 move on ('127.0.0.1', 26939)
+DEBUG:root:Received data from ('127.0.0.1', 51694): {'username': 'nathan1', 'host': '127.0.0.1', 'port': 26939}
+DEBUG:root:Adding incoming player: nathan1, 127.0.0.1, 26939
+DEBUG:root:Adding player: nathan1, f, 12, 0
+DEBUG:root:Sending message to nathan1: {"type": "update_board", "status": "ok", "board": [["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", ".", ".", "f", ".", ".", ".", ".", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], [".", ".", ".", ".", ".", " ", ".", ".", ".", ".", "*", ".", ".", "C", ".", ".", "*", ".", ".", ".", ".", ".", ".", "F", ".", ".", "."], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"]]}
+DEBUG:root:Received data from nathan1: {"type": "update_board", "status": "ok", "board": [["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", ".", ".", "f", ".", ".", ".", ".", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], [".", ".", ".", ".", ".", " ", ".", ".", ".", ".", "*", ".", ".", "C", ".", ".", "*", ".", ".", ".", ".", ".", ".", "F", ".", ".", "."], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"]]}
+DEBUG:root:Received data from nathan1: {"type": "update_board", "status": "ok"}
+DEBUG:root:Sending message to ghost: {"type": "request_command", "status": "try"}
+DEBUG:root:Received data from nathan1: {"type": "request_command", "status": "try"}
+DEBUG:root:Received data from ghost: {"type": "send_command", "status": "ok", "command": "move", "direction": "w"}
+DEBUG:root:Sending message to nathan1: {"type": "update_board", "status": "ok", "board": [["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", ".", ".", " ", ".", ".", ".", ".", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], [".", ".", ".", ".", ".", " ", ".", ".", ".", ".", "*", ".", ".", "C", ".", ".", "*", ".", ".", ".", ".", ".", ".", "F", ".", ".", "."], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", "f", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"]]}
+DEBUG:root:Received data from nathan1: {"type": "update_board", "status": "ok", "board": [["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", ".", ".", " ", ".", ".", ".", ".", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], [".", ".", ".", ".", ".", " ", ".", ".", ".", ".", "*", ".", ".", "C", ".", ".", "*", ".", ".", ".", ".", ".", ".", "F", ".", ".", "."], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", "f", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"]]}
+DEBUG:root:Received data from nathan1: {"type": "update_board", "status": "ok"}
+DEBUG:root:Sending message to nathan1: {"type": "update_board", "status": "ok", "board": [["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", ".", ".", " ", ".", ".", ".", ".", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], [".", ".", ".", ".", ".", " ", ".", ".", ".", ".", "*", ".", ".", "C", ".", ".", "*", ".", ".", ".", ".", ".", "F", ".", ".", ".", "."], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", "f", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"]]}
+DEBUG:root:Received data from nathan1: {"type": "update_board", "status": "ok", "board": [["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", ".", ".", " ", ".", ".", ".", ".", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], [".", ".", ".", ".", ".", " ", ".", ".", ".", ".", "*", ".", ".", "C", ".", ".", "*", ".", ".", ".", ".", ".", "F", ".", ".", ".", "."], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", "f", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"]]}
+DEBUG:root:Received data from nathan1: {"type": "update_board", "status": "ok"}
+DEBUG:root:Sending message to nathan1: {"type": "update_board", "status": "ok", "board": [["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", ".", ".", " ", ".", ".", ".", ".", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], [".", ".", ".", ".", ".", " ", ".", ".", ".", ".", "*", ".", ".", " ", ".", ".", "*", ".", ".", ".", ".", ".", "F", ".", ".", ".", "."], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", "f", "C", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"]]}
+DEBUG:root:Received data from nathan1: {"type": "update_board", "status": "ok", "board": [["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", ".", ".", " ", ".", ".", ".", ".", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], [".", ".", ".", ".", ".", " ", ".", ".", ".", ".", "*", ".", ".", " ", ".", ".", "*", ".", ".", ".", ".", ".", "F", ".", ".", ".", "."], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", "f", "C", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"]]}
+DEBUG:root:Received data from nathan1: {"type": "update_board", "status": "ok"}
+DEBUG:root:Sending message to ghost: {"type": "request_command", "status": "try"}
+DEBUG:root:Received data from nathan1: {"type": "request_command", "status": "try"}
+DEBUG:root:Received data from ghost: {"type": "send_command", "status": "ok", "command": "move", "direction": "d"}
+DEBUG:root:Received data from nathan1: {"type": "end_game", "status": "ok"}
+DEBUG:root:Sending message to server: {"type": "change_status", "status": "try", "username": "nathan1", "lstatus": "Online"}
+INFO:root:Received data from server: {"type": "change_status", "status": "ok"}
+DEBUG:root:Sending message to server: {"type": "send_score", "status": "try", "user": "nathan", "score": 1}
+INFO:root:Received data from server: {"type": "send_score", "status": "ok"}
+DEBUG:root:Sending message to server: {"type": "change_status", "status": "try", "username": "nathan", "lstatus": "Online"}
+INFO:root:Received data from server: {"type": "change_status", "status": "ok"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "get_online_users", "status": "try"}
+INFO:root:Received data from server: {"type": "get_online_users", "status": "ok", "online_users": {"nathan1": "Online", "nathan": "Online"}}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "get_leaderboard", "status": "try"}
+INFO:root:Received data from server: {"type": "get_leaderboard", "status": "ok", "leaderboard": [["12", 7], ["nathan", 1]]}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "get_online_users", "status": "try"}
+INFO:root:Received data from server: {"type": "get_online_users", "status": "ok", "online_users": {"nathan1": "Online", "nathan": "Online"}}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "change_status", "status": "try", "username": "nathan", "lstatus": "In-game"}
+INFO:root:Received data from server: {"type": "change_status", "status": "ok"}
+DEBUG:root:Adding player: nathan, C, 13, 2
+DEBUG:root:Adding player: local_ghost, F, 24, 3
+DEBUG:root:Sending message to server: {"type": "start_game", "status": "try", "host_ip": "127.0.0.1", "host_port": 13502}
+INFO:root:Received data from server: {"type": "start_game", "status": "ok"}
+DEBUG:root:Adding player: nathan, C, 13, 2
+DEBUG:root:Adding player: local_ghost, F, 24, 3
+DEBUG:root:TCP Server listening on 127.0.0.1:<socket.socket fd=5, family=2, type=1, proto=0, laddr=('127.0.0.1', 13502)>
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "get_online_users", "status": "try"}
+INFO:root:Received data from server: {"type": "get_online_users", "status": "ok", "online_users": {"nathan1": "Online", "nathan": "In-game"}}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "challenge", "status": "try", "username": "nathan"}
+INFO:root:Received data from server: {"type": "challenge", "status": "ok", "host": ["127.0.0.1", 13502]}
+DEBUG:root:Sending message to server: {"type": "change_status", "status": "try", "username": "nathan1", "lstatus": "In-game"}
+INFO:root:Received data from server: {"type": "change_status", "status": "ok"}
+DEBUG:root:Ghost nathan1 connecting to 127.0.0.1:13502 asking to connect on port 37508
+INFO:root:Waiting for nathan1 move on ('127.0.0.1', 37508)
+DEBUG:root:Received data from ('127.0.0.1', 52038): {'username': 'nathan1', 'host': '127.0.0.1', 'port': 37508}
+DEBUG:root:Adding incoming player: nathan1, 127.0.0.1, 37508
+DEBUG:root:Adding player: nathan1, f, 12, 0
+DEBUG:root:Sending message to nathan1: {"type": "update_board", "status": "ok", "board": [["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", ".", ".", "f", ".", ".", ".", ".", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], [".", ".", ".", ".", ".", " ", ".", ".", ".", ".", "*", ".", ".", "C", ".", ".", "*", ".", ".", ".", ".", ".", ".", ".", "F", ".", "."], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"]]}
+DEBUG:root:Received data from nathan1: {"type": "update_board", "status": "ok", "board": [["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", ".", ".", "f", ".", ".", ".", ".", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], [".", ".", ".", ".", ".", " ", ".", ".", ".", ".", "*", ".", ".", "C", ".", ".", "*", ".", ".", ".", ".", ".", ".", ".", "F", ".", "."], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"]]}
+DEBUG:root:Received data from nathan1: {"type": "update_board", "status": "ok"}
+DEBUG:root:Sending message to ghost: {"type": "request_command", "status": "try"}
+DEBUG:root:Received data from nathan1: {"type": "request_command", "status": "try"}
+DEBUG:root:Received data from ghost: {"type": "send_command", "status": "ok", "command": "atraso"}
+DEBUG:root:Received data from nathan1: {"type": "ping"}
+DEBUG:root:Received data from nathan1: {"type": "ping"}
+DEBUG:root:Received data from nathan1: {"type": "ping"}
+DEBUG:root:Sending message to ghost: {"type": "atraso", "status": "ok", "atraso": [0.00019097328186035156, 0.00012874603271484375, 0.00013303756713867188]}
+DEBUG:root:Received data from nathan1: {"type": "atraso", "status": "ok", "atraso": [0.00019097328186035156, 0.00012874603271484375, 0.00013303756713867188]}
+DEBUG:root:Received data from ghost: {"type": "atraso", "status": "ok"}
+DEBUG:root:Sending message to ghost: {"type": "request_command", "status": "try"}
+DEBUG:root:Received data from nathan1: {"type": "request_command", "status": "try"}
+DEBUG:root:Received data from ghost: {"type": "send_command", "status": "ok", "command": "move", "direction": "a"}
+DEBUG:root:Sending message to nathan1: {"type": "update_board", "status": "ok", "board": [["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", ".", "f", " ", ".", ".", ".", ".", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], [".", ".", ".", ".", ".", " ", ".", ".", ".", ".", "*", ".", ".", "C", ".", ".", "*", ".", ".", ".", ".", ".", ".", ".", "F", ".", "."], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"]]}
+DEBUG:root:Received data from nathan1: {"type": "update_board", "status": "ok", "board": [["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", ".", "f", " ", ".", ".", ".", ".", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], [".", ".", ".", ".", ".", " ", ".", ".", ".", ".", "*", ".", ".", "C", ".", ".", "*", ".", ".", ".", ".", ".", ".", ".", "F", ".", "."], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"]]}
+DEBUG:root:Received data from nathan1: {"type": "update_board", "status": "ok"}
+DEBUG:root:Sending message to nathan1: {"type": "update_board", "status": "ok", "board": [["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", ".", "f", " ", ".", ".", ".", ".", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], [".", ".", ".", ".", ".", " ", ".", ".", ".", ".", "*", ".", ".", "C", ".", ".", "*", ".", ".", ".", ".", ".", ".", ".", "F", ".", "."], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"]]}
+DEBUG:root:Received data from nathan1: {"type": "update_board", "status": "ok", "board": [["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", ".", "f", " ", ".", ".", ".", ".", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], [".", ".", ".", ".", ".", " ", ".", ".", ".", ".", "*", ".", ".", "C", ".", ".", "*", ".", ".", ".", ".", ".", ".", ".", "F", ".", "."], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"]]}
+DEBUG:root:Received data from nathan1: {"type": "update_board", "status": "ok"}
+DEBUG:root:Received data from nathan1: {"type": "ping"}
+DEBUG:root:Received data from nathan1: {"type": "ping"}
+DEBUG:root:Received data from nathan1: {"type": "ping"}
+DEBUG:root:Received data from nathan1: {"type": "end_game", "status": "ok"}
+DEBUG:root:Sending message to server: {"type": "change_status", "status": "try", "username": "nathan1", "lstatus": "Online"}
+INFO:root:Received data from server: {"type": "change_status", "status": "ok"}
+DEBUG:root:Sending message to server: {"type": "send_score", "status": "try", "user": "nathan", "score": 1}
+INFO:root:Received data from server: {"type": "send_score", "status": "ok"}
+DEBUG:root:Sending message to server: {"type": "change_status", "status": "try", "username": "nathan", "lstatus": "Online"}
+INFO:root:Received data from server: {"type": "change_status", "status": "ok"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "change_password", "status": "try", "old_password": "123", "new_password": "1234"}
+INFO:root:Received data from server: {"type": "change_password", "status": "ok"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "logout", "status": "try"}
+INFO:root:Received data from server: {"type": "logout", "status": "ok"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan1", "password": "1234"}
+DEBUG:root:Received data from server: {"type": "login", "status": "ok"}
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
+INFO:root:Connected to 127.0.0.1:1234
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
+INFO:root:Connected to server
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "tchau", "status": "try"}
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
+INFO:root:Connected to 127.0.0.1:1234
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
+INFO:root:Connected to server
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "nathan", "password": "123"}
+DEBUG:root:Received data from server: {"type": "login", "status": "ok"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "tchau", "status": "try"}
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
+INFO:root:Connected to 127.0.0.1:1234
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
+INFO:root:Connected to server
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "tchau", "status": "try"}
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using UDP
+INFO:root:Connected to 127.0.0.1:1234
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 36163]}
+INFO:root:Connected to server
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "tchau", "status": "try"}
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
+INFO:root:Connected to 127.0.0.1:1234
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
+INFO:root:Connected to server
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using UDP
+INFO:root:Connected to 127.0.0.1:1234
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 19079]}
+INFO:root:Connected to server
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "daniel", "password": "123"}
+INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "daniel", "password": "2134"}
+INFO:root:Received data from server: {"type": "create_user", "status": "error: username already exists"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "daniel", "password": "123"}
+DEBUG:root:Received data from server: {"type": "login", "status": "ok"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "daniel1", "password": "123"}
+INFO:root:Received data from server: {"type": "create_user", "status": "ok"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "daniel1", "password": "123"}
+DEBUG:root:Received data from server: {"type": "login", "status": "ok"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "change_password", "status": "try", "old_password": "1234", "new_password": "123"}
+INFO:root:Received data from server: {"type": "change_password", "status": "error: wrong password"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "change_password", "status": "try", "old_password": "123", "new_password": "1234"}
+INFO:root:Received data from server: {"type": "change_password", "status": "ok"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "logout", "status": "try"}
+INFO:root:Received data from server: {"type": "logout", "status": "ok"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "daniel", "password": "1234"}
+DEBUG:root:Received data from server: {"type": "login", "status": "ok"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "change_status", "status": "try", "username": "daniel", "lstatus": "In-game"}
+INFO:root:Received data from server: {"type": "change_status", "status": "ok"}
+DEBUG:root:Adding player: daniel, C, 13, 2
+DEBUG:root:Adding player: local_ghost, F, 24, 3
+DEBUG:root:Sending message to server: {"type": "start_game", "status": "try", "host_ip": "127.0.0.1", "host_port": 35583}
+INFO:root:Received data from server: {"type": "start_game", "status": "ok"}
+DEBUG:root:Adding player: daniel, C, 13, 2
+DEBUG:root:Adding player: local_ghost, F, 24, 3
+DEBUG:root:TCP Server listening on 127.0.0.1:<socket.socket fd=5, family=2, type=1, proto=0, laddr=('127.0.0.1', 35583)>
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "get_online_users", "status": "try"}
+INFO:root:Received data from server: {"type": "get_online_users", "status": "ok", "online_users": {"daniel1": "Online", "daniel": "In-game"}}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "challenge", "status": "try", "username": "daniel"}
+INFO:root:Received data from server: {"type": "challenge", "status": "ok", "host": ["127.0.0.1", 35583]}
+DEBUG:root:Sending message to server: {"type": "change_status", "status": "try", "username": "daniel1", "lstatus": "In-game"}
+INFO:root:Received data from server: {"type": "change_status", "status": "ok"}
+DEBUG:root:Ghost daniel1 connecting to 127.0.0.1:35583 asking to connect on port 21213
+INFO:root:Waiting for daniel1 move on ('127.0.0.1', 21213)
+DEBUG:root:Received data from ('127.0.0.1', 49465): {'username': 'daniel1', 'host': '127.0.0.1', 'port': 21213}
+DEBUG:root:Adding incoming player: daniel1, 127.0.0.1, 21213
+DEBUG:root:Adding player: daniel1, f, 12, 0
+DEBUG:root:Sending message to daniel1: {"type": "update_board", "status": "ok", "board": [["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", ".", ".", "f", ".", ".", ".", ".", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], [".", ".", ".", ".", ".", " ", ".", ".", ".", ".", "*", ".", ".", "C", ".", ".", "*", ".", ".", ".", ".", ".", ".", ".", "F", ".", "."], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"]]}
+DEBUG:root:Received data from daniel1: {"type": "update_board", "status": "ok", "board": [["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", ".", ".", "f", ".", ".", ".", ".", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], [".", ".", ".", ".", ".", " ", ".", ".", ".", ".", "*", ".", ".", "C", ".", ".", "*", ".", ".", ".", ".", ".", ".", ".", "F", ".", "."], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"]]}
+DEBUG:root:Received data from daniel1: {"type": "update_board", "status": "ok"}
+DEBUG:root:Sending message to ghost: {"type": "request_command", "status": "try"}
+DEBUG:root:Received data from daniel1: {"type": "request_command", "status": "try"}
+DEBUG:root:Received data from ghost: {"type": "send_command", "status": "ok", "command": "move", "direction": "w"}
+DEBUG:root:Sending message to daniel1: {"type": "update_board", "status": "ok", "board": [["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", ".", ".", " ", ".", ".", ".", ".", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], [".", ".", ".", ".", ".", " ", ".", ".", ".", ".", "*", ".", ".", "C", ".", ".", "*", ".", ".", ".", ".", ".", ".", ".", "F", ".", "."], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", "f", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"]]}
+DEBUG:root:Received data from daniel1: {"type": "update_board", "status": "ok", "board": [["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", ".", ".", " ", ".", ".", ".", ".", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], [".", ".", ".", ".", ".", " ", ".", ".", ".", ".", "*", ".", ".", "C", ".", ".", "*", ".", ".", ".", ".", ".", ".", ".", "F", ".", "."], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", "f", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"]]}
+DEBUG:root:Received data from daniel1: {"type": "update_board", "status": "ok"}
+DEBUG:root:Sending message to daniel1: {"type": "update_board", "status": "ok", "board": [["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", ".", ".", " ", ".", ".", ".", ".", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], [".", ".", ".", ".", ".", " ", ".", ".", ".", ".", "*", ".", ".", "C", ".", ".", "*", ".", ".", ".", ".", ".", ".", ".", ".", "F", "."], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", "f", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"]]}
+DEBUG:root:Received data from daniel1: {"type": "update_board", "status": "ok", "board": [["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", ".", ".", " ", ".", ".", ".", ".", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], [".", ".", ".", ".", ".", " ", ".", ".", ".", ".", "*", ".", ".", "C", ".", ".", "*", ".", ".", ".", ".", ".", ".", ".", ".", "F", "."], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", "f", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"]]}
+DEBUG:root:Received data from daniel1: {"type": "update_board", "status": "ok"}
+DEBUG:root:Sending message to daniel1: {"type": "update_board", "status": "ok", "board": [["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", ".", ".", " ", ".", ".", ".", ".", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], [".", ".", ".", ".", ".", " ", ".", ".", ".", ".", "*", ".", "C", " ", ".", ".", "*", ".", ".", ".", ".", ".", ".", ".", ".", "F", "."], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", "f", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"]]}
+DEBUG:root:Received data from daniel1: {"type": "update_board", "status": "ok", "board": [["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", ".", ".", " ", ".", ".", ".", ".", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], [".", ".", ".", ".", ".", " ", ".", ".", ".", ".", "*", ".", "C", " ", ".", ".", "*", ".", ".", ".", ".", ".", ".", ".", ".", "F", "."], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", "f", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"]]}
+DEBUG:root:Received data from daniel1: {"type": "update_board", "status": "ok"}
+DEBUG:root:Sending message to ghost: {"type": "request_command", "status": "try"}
+DEBUG:root:Received data from daniel1: {"type": "request_command", "status": "try"}
+DEBUG:root:Received data from ghost: {"type": "send_command", "status": "ok", "command": "atraso"}
+DEBUG:root:Received data from daniel1: {"type": "ping"}
+DEBUG:root:Received data from daniel1: {"type": "ping"}
+DEBUG:root:Received data from daniel1: {"type": "ping"}
+DEBUG:root:Sending message to ghost: {"type": "atraso", "status": "ok", "atraso": [0.00018525123596191406, 0.00012803077697753906, 0.00011920928955078125]}
+DEBUG:root:Received data from daniel1: {"type": "atraso", "status": "ok", "atraso": [0.00018525123596191406, 0.00012803077697753906, 0.00011920928955078125]}
+DEBUG:root:Received data from ghost: {"type": "atraso", "status": "ok"}
+DEBUG:root:Sending message to ghost: {"type": "request_command", "status": "try"}
+DEBUG:root:Received data from daniel1: {"type": "request_command", "status": "try"}
+DEBUG:root:Received data from ghost: {"type": "send_command", "status": "ok", "command": "move", "direction": "a"}
+DEBUG:root:Sending message to daniel1: {"type": "update_board", "status": "ok", "board": [["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", ".", ".", " ", ".", ".", ".", ".", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], [".", ".", ".", ".", ".", " ", ".", ".", ".", ".", "*", ".", "C", " ", ".", ".", "*", ".", ".", ".", ".", ".", ".", ".", ".", "F", "."], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "f", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"]]}
+DEBUG:root:Received data from daniel1: {"type": "update_board", "status": "ok", "board": [["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", ".", ".", " ", ".", ".", ".", ".", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], [".", ".", ".", ".", ".", " ", ".", ".", ".", ".", "*", ".", "C", " ", ".", ".", "*", ".", ".", ".", ".", ".", ".", ".", ".", "F", "."], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "f", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"]]}
+DEBUG:root:Received data from daniel1: {"type": "update_board", "status": "ok"}
+DEBUG:root:Sending message to daniel1: {"type": "update_board", "status": "ok", "board": [["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", ".", ".", " ", ".", ".", ".", ".", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], [".", ".", ".", ".", ".", " ", ".", ".", ".", ".", "*", ".", "C", " ", ".", ".", "*", ".", ".", ".", ".", ".", ".", ".", "F", ".", "."], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "f", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"]]}
+DEBUG:root:Received data from daniel1: {"type": "update_board", "status": "ok", "board": [["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", ".", ".", " ", ".", ".", ".", ".", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], [".", ".", ".", ".", ".", " ", ".", ".", ".", ".", "*", ".", "C", " ", ".", ".", "*", ".", ".", ".", ".", ".", ".", ".", "F", ".", "."], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "f", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"]]}
+DEBUG:root:Received data from daniel1: {"type": "update_board", "status": "ok"}
+DEBUG:root:Received data from daniel1: {"type": "ping"}
+DEBUG:root:Received data from daniel1: {"type": "ping"}
+DEBUG:root:Received data from daniel1: {"type": "ping"}
+DEBUG:root:Sending message to daniel1: {"type": "update_board", "status": "ok", "board": [["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", ".", ".", " ", ".", ".", ".", ".", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], [".", ".", ".", ".", ".", " ", ".", ".", ".", ".", "*", "C", " ", " ", ".", ".", "*", ".", ".", ".", ".", ".", ".", ".", "F", ".", "."], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "f", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"]]}
+DEBUG:root:Received data from daniel1: {"type": "update_board", "status": "ok", "board": [["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", ".", ".", " ", ".", ".", ".", ".", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], [".", ".", ".", ".", ".", " ", ".", ".", ".", ".", "*", "C", " ", " ", ".", ".", "*", ".", ".", ".", ".", ".", ".", ".", "F", ".", "."], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "f", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"]]}
+DEBUG:root:Received data from daniel1: {"type": "update_board", "status": "ok"}
+DEBUG:root:Sending message to ghost: {"type": "request_command", "status": "try"}
+DEBUG:root:Received data from daniel1: {"type": "request_command", "status": "try"}
+DEBUG:root:Received data from ghost: {"type": "send_command", "status": "ok", "command": "move", "direction": "w"}
+DEBUG:root:Received data from daniel1: {"type": "end_game", "status": "ok"}
+DEBUG:root:Sending message to server: {"type": "change_status", "status": "try", "username": "daniel1", "lstatus": "Online"}
+INFO:root:Received data from server: {"type": "change_status", "status": "ok"}
+DEBUG:root:Sending message to server: {"type": "send_score", "status": "try", "user": "daniel", "score": 3}
+INFO:root:Received data from server: {"type": "send_score", "status": "ok"}
+DEBUG:root:Sending message to server: {"type": "change_status", "status": "try", "username": "daniel", "lstatus": "Online"}
+INFO:root:Received data from server: {"type": "change_status", "status": "ok"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "get_leaderboard", "status": "try"}
+INFO:root:Received data from server: {"type": "get_leaderboard", "status": "ok", "leaderboard": [["12", 7], ["nathan", 2], ["daniel", 3]]}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "tchau", "status": "try"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "tchau", "status": "try"}
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
+INFO:root:Connected to 127.0.0.1:1234
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
+INFO:root:Connected to server
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "daniel", "password": "123"}
+DEBUG:root:Received data from server: {"type": "login", "status": "error: wrong password"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "daniel", "password": "1234"}
+DEBUG:root:Received data from server: {"type": "login", "status": "ok"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "get_online_users", "status": "try"}
+INFO:root:Received data from server: {"type": "get_online_users", "status": "ok", "online_users": {"daniel": "Online"}}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "get_leaderboard", "status": "try"}
+INFO:root:Received data from server: {"type": "get_leaderboard", "status": "ok", "leaderboard": [["12", 7], ["nathan", 2], ["daniel", 3]]}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "change_status", "status": "try", "username": "daniel", "lstatus": "In-game"}
+INFO:root:Received data from server: {"type": "change_status", "status": "ok"}
+DEBUG:root:Adding player: daniel, C, 13, 2
+DEBUG:root:Adding player: local_ghost, F, 24, 3
+DEBUG:root:Sending message to server: {"type": "start_game", "status": "try", "host_ip": "127.0.0.1", "host_port": 43572}
+INFO:root:Received data from server: {"type": "start_game", "status": "ok"}
+DEBUG:root:Adding player: daniel, C, 13, 2
+DEBUG:root:Adding player: local_ghost, F, 24, 3
+DEBUG:root:TCP Server listening on 127.0.0.1:<socket.socket fd=5, family=2, type=1, proto=0, laddr=('127.0.0.1', 43572)>
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using UDP
+INFO:root:Connected to 127.0.0.1:1234
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 41284]}
+INFO:root:Connected to server
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "daniel1", "password": "123"}
+DEBUG:root:Received data from server: {"type": "login", "status": "ok"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "challenge", "status": "try", "username": "nathan1"}
+INFO:root:Received data from server: {"type": "challenge", "status": "error: user is not in-game or something else happened"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "challenge", "status": "try", "username": "nathan"}
+INFO:root:Received data from server: {"type": "challenge", "status": "error: user is not in-game or something else happened"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "challenge", "status": "try", "username": "daniel"}
+INFO:root:Received data from server: {"type": "challenge", "status": "ok", "host": ["127.0.0.1", 43572]}
+DEBUG:root:Sending message to server: {"type": "change_status", "status": "try", "username": "daniel1", "lstatus": "In-game"}
+INFO:root:Received data from server: {"type": "change_status", "status": "ok"}
+DEBUG:root:Ghost daniel1 connecting to 127.0.0.1:43572 asking to connect on port 4403
+INFO:root:Waiting for daniel1 move on ('127.0.0.1', 4403)
+DEBUG:root:Received data from ('127.0.0.1', 49536): {'username': 'daniel1', 'host': '127.0.0.1', 'port': 4403}
+DEBUG:root:Adding incoming player: daniel1, 127.0.0.1, 4403
+DEBUG:root:Adding player: daniel1, f, 12, 0
+DEBUG:root:Sending message to daniel1: {"type": "update_board", "status": "ok", "board": [["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", ".", ".", "f", ".", ".", ".", ".", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], [".", ".", ".", ".", ".", " ", ".", ".", ".", ".", "*", ".", ".", "C", ".", ".", "*", ".", ".", ".", ".", ".", ".", "F", ".", ".", "."], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"]]}
+DEBUG:root:Received data from daniel1: {"type": "update_board", "status": "ok", "board": [["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", ".", ".", "f", ".", ".", ".", ".", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], [".", ".", ".", ".", ".", " ", ".", ".", ".", ".", "*", ".", ".", "C", ".", ".", "*", ".", ".", ".", ".", ".", ".", "F", ".", ".", "."], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"]]}
+DEBUG:root:Received data from daniel1: {"type": "update_board", "status": "ok"}
+DEBUG:root:Sending message to ghost: {"type": "request_command", "status": "try"}
+DEBUG:root:Received data from daniel1: {"type": "request_command", "status": "try"}
+DEBUG:root:Received data from ghost: {"type": "send_command", "status": "ok", "command": "encerra"}
+DEBUG:root:Sending message to daniel1: {"type": "update_board", "status": "ok", "board": [["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", ".", ".", "f", ".", ".", ".", ".", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], [".", ".", ".", ".", ".", " ", ".", ".", ".", ".", "*", ".", ".", "C", ".", ".", "*", ".", ".", ".", ".", ".", ".", "F", ".", ".", "."], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"]]}
+DEBUG:root:Received data from daniel1: {"type": "end_game", "status": "ok"}
+DEBUG:root:Sending message to server: {"type": "change_status", "status": "try", "username": "daniel1", "lstatus": "Online"}
+INFO:root:Received data from server: {"type": "change_status", "status": "ok"}
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
+INFO:root:Connected to 127.0.0.1:1234
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
+INFO:root:Connected to server
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using UDP
+INFO:root:Connected to 127.0.0.1:1234
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 33356]}
+INFO:root:Connected to server
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "daniel", "password": "123"}
+INFO:root:Received data from server: {"type": "create_user", "status": "error: username already exists"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "create_user", "status": "try", "username": "daniel1", "password": "123"}
+INFO:root:Received data from server: {"type": "create_user", "status": "error: username already exists"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "daniel1", "password": "123"}
+DEBUG:root:Received data from server: {"type": "login", "status": "ok"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "daniel", "password": "123"}
+DEBUG:root:Received data from server: {"type": "login", "status": "error: wrong password"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "daniel", "password": "2134"}
+DEBUG:root:Received data from server: {"type": "login", "status": "error: wrong password"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "daniel", "password": "1234"}
+DEBUG:root:Received data from server: {"type": "login", "status": "ok"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "change_status", "status": "try", "username": "daniel", "lstatus": "In-game"}
+INFO:root:Received data from server: {"type": "change_status", "status": "ok"}
+DEBUG:root:Adding player: daniel, C, 13, 2
+DEBUG:root:Adding player: local_ghost, F, 24, 3
+DEBUG:root:Sending message to server: {"type": "start_game", "status": "try", "host_ip": "127.0.0.1", "host_port": 25438}
+INFO:root:Received data from server: {"type": "start_game", "status": "ok"}
+DEBUG:root:Adding player: daniel, C, 13, 2
+DEBUG:root:Adding player: local_ghost, F, 24, 3
+DEBUG:root:TCP Server listening on 127.0.0.1:<socket.socket fd=5, family=2, type=1, proto=0, laddr=('127.0.0.1', 25438)>
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "challenge", "status": "try", "username": "daniel"}
+INFO:root:Received data from server: {"type": "challenge", "status": "ok", "host": ["127.0.0.1", 25438]}
+DEBUG:root:Sending message to server: {"type": "change_status", "status": "try", "username": "daniel1", "lstatus": "In-game"}
+INFO:root:Received data from server: {"type": "change_status", "status": "ok"}
+DEBUG:root:Ghost daniel1 connecting to 127.0.0.1:25438 asking to connect on port 29838
+INFO:root:Waiting for daniel1 move on ('127.0.0.1', 29838)
+DEBUG:root:Received data from ('127.0.0.1', 49557): {'username': 'daniel1', 'host': '127.0.0.1', 'port': 29838}
+DEBUG:root:Adding incoming player: daniel1, 127.0.0.1, 29838
+DEBUG:root:Adding player: daniel1, f, 12, 0
+DEBUG:root:Sending message to daniel1: {"type": "update_board", "status": "ok", "board": [["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", ".", ".", "f", ".", ".", ".", ".", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], [".", ".", ".", ".", ".", " ", ".", ".", ".", ".", "*", ".", ".", "C", ".", ".", "*", ".", ".", ".", ".", ".", ".", ".", "F", ".", "."], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"]]}
+DEBUG:root:Received data from daniel1: {"type": "update_board", "status": "ok", "board": [["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", ".", ".", "f", ".", ".", ".", ".", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], [".", ".", ".", ".", ".", " ", ".", ".", ".", ".", "*", ".", ".", "C", ".", ".", "*", ".", ".", ".", ".", ".", ".", ".", "F", ".", "."], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"]]}
+DEBUG:root:Received data from daniel1: {"type": "update_board", "status": "ok"}
+DEBUG:root:Sending message to ghost: {"type": "request_command", "status": "try"}
+DEBUG:root:Received data from daniel1: {"type": "request_command", "status": "try"}
+DEBUG:root:Received data from ghost: {"type": "send_command", "status": "ok", "command": "move", "direction": "s"}
+DEBUG:root:Sending message to daniel1: {"type": "update_board", "status": "ok", "board": [["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", ".", ".", "f", ".", ".", ".", ".", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], [".", ".", ".", ".", ".", " ", ".", ".", ".", ".", "*", ".", ".", "C", ".", ".", "*", ".", ".", ".", ".", ".", ".", ".", "F", ".", "."], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"]]}
+DEBUG:root:Received data from daniel1: {"type": "update_board", "status": "ok", "board": [["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", ".", ".", "f", ".", ".", ".", ".", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], [".", ".", ".", ".", ".", " ", ".", ".", ".", ".", "*", ".", ".", "C", ".", ".", "*", ".", ".", ".", ".", ".", ".", ".", "F", ".", "."], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"]]}
+DEBUG:root:Received data from daniel1: {"type": "update_board", "status": "ok"}
+DEBUG:root:Sending message to daniel1: {"type": "update_board", "status": "ok", "board": [["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", ".", ".", "f", ".", ".", ".", ".", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], [".", ".", ".", ".", ".", " ", ".", ".", ".", ".", "*", ".", ".", "C", ".", ".", "*", ".", ".", ".", ".", ".", ".", "F", ".", ".", "."], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"]]}
+DEBUG:root:Received data from daniel1: {"type": "update_board", "status": "ok", "board": [["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", ".", ".", "f", ".", ".", ".", ".", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], [".", ".", ".", ".", ".", " ", ".", ".", ".", ".", "*", ".", ".", "C", ".", ".", "*", ".", ".", ".", ".", ".", ".", "F", ".", ".", "."], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"]]}
+DEBUG:root:Received data from daniel1: {"type": "update_board", "status": "ok"}
+DEBUG:root:Sending message to daniel1: {"type": "update_board", "status": "ok", "board": [["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", ".", ".", "f", ".", ".", ".", ".", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], [".", ".", ".", ".", ".", " ", ".", ".", ".", ".", "*", ".", ".", " ", ".", ".", "*", ".", ".", ".", ".", ".", ".", "F", ".", ".", "."], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", "C", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"]]}
+DEBUG:root:Received data from daniel1: {"type": "update_board", "status": "ok", "board": [["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", ".", ".", "f", ".", ".", ".", ".", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], [".", ".", ".", ".", ".", " ", ".", ".", ".", ".", "*", ".", ".", " ", ".", ".", "*", ".", ".", ".", ".", ".", ".", "F", ".", ".", "."], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", "C", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"]]}
+DEBUG:root:Received data from daniel1: {"type": "update_board", "status": "ok"}
+DEBUG:root:Sending message to ghost: {"type": "request_command", "status": "try"}
+DEBUG:root:Received data from daniel1: {"type": "request_command", "status": "try"}
+DEBUG:root:Received data from ghost: {"type": "send_command", "status": "ok", "command": "encerra"}
+DEBUG:root:Sending message to daniel1: {"type": "update_board", "status": "ok", "board": [["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", ".", ".", "f", ".", ".", ".", ".", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], [".", ".", ".", ".", ".", " ", ".", ".", ".", ".", "*", ".", ".", " ", ".", ".", "*", ".", ".", ".", ".", ".", ".", "F", ".", ".", "."], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", "C", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"]]}
+DEBUG:root:Received data from daniel1: {"type": "end_game", "status": "ok"}
+DEBUG:root:Sending message to server: {"type": "change_status", "status": "try", "username": "daniel1", "lstatus": "Online"}
+INFO:root:Received data from server: {"type": "change_status", "status": "ok"}
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
+INFO:root:Connected to 127.0.0.1:1234
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
+INFO:root:Connected to server
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using UDP
+INFO:root:Connected to 127.0.0.1:1234
+DEBUG:root:Sending message to server: {"type": "connect", "status": "try"}
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 25232]}
+INFO:root:Connected to server
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "daniel", "password": "123"}
+DEBUG:root:Received data from server: {"type": "login", "status": "error: wrong password"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "daniel", "password": "1234"}
+DEBUG:root:Received data from server: {"type": "login", "status": "ok"}
+DEBUG:root:NOT_LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "login", "status": "try", "username": "daniel1", "password": "123"}
+DEBUG:root:Received data from server: {"type": "login", "status": "ok"}
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "change_status", "status": "try", "username": "daniel", "lstatus": "In-game"}
+INFO:root:Received data from server: {"type": "change_status", "status": "ok"}
+DEBUG:root:Adding player: daniel, C, 13, 2
+DEBUG:root:Adding player: local_ghost, F, 24, 3
+DEBUG:root:Sending message to server: {"type": "start_game", "status": "try", "host_ip": "127.0.0.1", "host_port": 19946}
+INFO:root:Received data from server: {"type": "start_game", "status": "ok"}
+DEBUG:root:Adding player: daniel, C, 13, 2
+DEBUG:root:Adding player: local_ghost, F, 24, 3
+DEBUG:root:TCP Server listening on 127.0.0.1:<socket.socket fd=5, family=2, type=1, proto=0, laddr=('127.0.0.1', 19946)>
+DEBUG:root:LOGGED_IN
+DEBUG:root:Sending message to server: {"type": "challenge", "status": "try", "username": "daniel"}
+INFO:root:Received data from server: {"type": "challenge", "status": "ok", "host": ["127.0.0.1", 19946]}
+DEBUG:root:Sending message to server: {"type": "change_status", "status": "try", "username": "daniel1", "lstatus": "In-game"}
+INFO:root:Received data from server: {"type": "change_status", "status": "ok"}
+DEBUG:root:Ghost daniel1 connecting to 127.0.0.1:19946 asking to connect on port 40327
+INFO:root:Waiting for daniel1 move on ('127.0.0.1', 40327)
+DEBUG:root:Received data from ('127.0.0.1', 49575): {'username': 'daniel1', 'host': '127.0.0.1', 'port': 40327}
+DEBUG:root:Adding incoming player: daniel1, 127.0.0.1, 40327
+DEBUG:root:Adding player: daniel1, f, 12, 0
+DEBUG:root:Sending message to daniel1: {"type": "update_board", "status": "ok", "board": [["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", ".", ".", "f", ".", ".", ".", ".", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], [".", ".", ".", ".", ".", " ", ".", ".", ".", ".", "*", ".", ".", "C", ".", ".", "*", ".", ".", ".", ".", ".", ".", ".", "F", ".", "."], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"]]}
+DEBUG:root:Received data from daniel1: {"type": "update_board", "status": "ok", "board": [["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", ".", ".", "f", ".", ".", ".", ".", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"], [".", ".", ".", ".", ".", " ", ".", ".", ".", ".", "*", ".", ".", "C", ".", ".", "*", ".", ".", ".", ".", ".", ".", ".", "F", ".", "."], ["*", "*", "*", "*", "*", "*", ".", "*", "*", ".", "*", ".", ".", " ", ".", ".", "*", ".", "*", "*", ".", "*", "*", "*", "*", "*", "*"]]}
+DEBUG:root:Received data from daniel1: {"type": "update_board", "status": "ok"}
+DEBUG:root:Sending message to ghost: {"type": "request_command", "status": "try"}
+DEBUG:root:Received data from daniel1: {"type": "request_command", "status": "try"}
+DEBUG:root:Received data from ghost: {"type": "send_command", "status": "ok", "command": "encerra"}
+DEBUG:root:Received data from daniel1: {"type": "end_game", "status": "ok"}
+DEBUG:root:Sending message to server: {"type": "change_status", "status": "try", "username": "daniel1", "lstatus": "Online"}
+INFO:root:Received data from server: {"type": "change_status", "status": "ok"}
+DEBUG:root:Sending message to server: {"type": "send_score", "status": "try", "user": "daniel", "score": 1}
+INFO:root:Received data from server: {"type": "send_score", "status": "ok"}
+DEBUG:root:Sending message to server: {"type": "change_status", "status": "try", "username": "daniel", "lstatus": "Online"}
+INFO:root:Received data from server: {"type": "change_status", "status": "ok"}
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
+INFO:root:Connected to 127.0.0.1:1234
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
+INFO:root:Connected to server
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
+INFO:root:Connected to 127.0.0.1:1234
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
+INFO:root:Connected to server
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
+INFO:root:Connected to 127.0.0.1:1234
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
+INFO:root:Connected to server
+INFO:root:Received data from server: {"type": "change_status", "status": "ok"}
+INFO:root:Received data from server: {"type": "start_game", "status": "ok"}
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using UDP
+INFO:root:Connected to 127.0.0.1:1234
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 17541]}
+INFO:root:Connected to server
+INFO:root:Received data from server: {"type": "challenge", "status": "ok", "host": ["127.0.0.1", 25364]}
+INFO:root:Received data from server: {"type": "change_status", "status": "ok"}
+INFO:root:Waiting for 123 move on ('127.0.0.1', 28934)
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
+INFO:root:Connected to 127.0.0.1:1234
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
+INFO:root:Connected to server
+INFO:root:Received data from server: {"type": "change_status", "status": "ok"}
+INFO:root:Received data from server: {"type": "start_game", "status": "ok"}
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using UDP
+INFO:root:Connected to 127.0.0.1:1234
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 14813]}
+INFO:root:Connected to server
+INFO:root:Received data from server: {"type": "change_status", "status": "ok"}
+INFO:root:Received data from server: {"type": "start_game", "status": "ok"}
+INFO:root:Received data from server: {"type": "send_score", "status": "ok"}
+INFO:root:Received data from server: {"type": "change_status", "status": "ok"}
+INFO:root:Received data from server: {"type": "challenge", "status": "ok", "host": ["127.0.0.1", 30559]}
+INFO:root:Received data from server: {"type": "change_status", "status": "ok"}
+INFO:root:Waiting for 123 move on ('127.0.0.1', 41301)
+INFO:root:Received data from server: {"type": "send_score", "status": "ok"}
+INFO:root:Received data from server: {"type": "change_status", "status": "ok"}
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
+INFO:root:Connected to 127.0.0.1:1234
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
+INFO:root:Connected to server
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using UDP
+INFO:root:Connected to 127.0.0.1:1234
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 30297]}
+INFO:root:Connected to server
+INFO:root:Received data from server: {"type": "change_status", "status": "ok"}
+INFO:root:Received data from server: {"type": "start_game", "status": "ok"}
+INFO:root:Received data from server: {"type": "challenge", "status": "ok", "host": ["127.0.0.1", 26734]}
+INFO:root:Received data from server: {"type": "change_status", "status": "ok"}
+INFO:root:Waiting for 123 move on ('127.0.0.1', 2262)
+INFO:root:Received data from server: {"type": "send_score", "status": "ok"}
+INFO:root:Received data from server: {"type": "change_status", "status": "ok"}
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
+INFO:root:Connected to 127.0.0.1:1234
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
+INFO:root:Connected to server
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using UDP
+INFO:root:Connected to 127.0.0.1:1234
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 23122]}
+INFO:root:Connected to server
+INFO:root:Received data from server: {"type": "change_status", "status": "ok"}
+INFO:root:Received data from server: {"type": "start_game", "status": "ok"}
+INFO:root:Received data from server: {"type": "challenge", "status": "ok", "host": ["127.0.0.1", 49342]}
+INFO:root:Received data from server: {"type": "change_status", "status": "ok"}
+INFO:root:Waiting for 123 move on ('127.0.0.1', 16687)
+INFO:root:Received data from server: {"type": "change_status", "status": "ok"}
+INFO:root:Received data from server: {"type": "send_score", "status": "ok"}
+INFO:root:Received data from server: {"type": "change_status", "status": "ok"}
+INFO:root:Received data from server: {"type": "get_online_users", "status": "ok", "online_users": {"daniel": "Online", "123": "Online"}}
+INFO:root:Received data from server: {"type": "get_online_users", "status": "ok", "online_users": {"daniel": "Online", "123": "Online"}}
+INFO:root:Received data from server: {"type": "change_status", "status": "ok"}
+INFO:root:Received data from server: {"type": "start_game", "status": "ok"}
+INFO:root:Received data from server: {"type": "challenge", "status": "ok", "host": ["127.0.0.1", 23991]}
+INFO:root:Received data from server: {"type": "change_status", "status": "ok"}
+INFO:root:Waiting for 123 move on ('127.0.0.1', 23505)
+INFO:root:Received data from server: {"type": "change_status", "status": "ok"}
+INFO:root:Received data from server: {"type": "send_score", "status": "ok"}
+INFO:root:Received data from server: {"type": "change_status", "status": "ok"}
+INFO:root:Received data from server: {"type": "get_online_users", "status": "ok", "online_users": {"daniel": "Online", "123": "Online"}}
+INFO:root:Starting client. It is connecting to 127.0.0.1:1234 using TCP
+INFO:root:Connected to 127.0.0.1:1234
+INFO:root:Received data from server: {'type': 'connect', 'status': 'ok', 'address': ['127.0.0.1', 1234]}
+INFO:root:Connected to server
