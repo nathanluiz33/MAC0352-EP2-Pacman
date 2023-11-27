@@ -63,7 +63,7 @@ class ClientCommunication:
 
         data = self.general_socket.receive_message()
         data = data.decode('ascii')
-        logging.info(f"Received data from server: {data}")
+        logging.debug(f"Received data from server: {data}")
 
         data = json.loads(data)
 

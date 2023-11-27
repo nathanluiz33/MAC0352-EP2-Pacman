@@ -137,7 +137,7 @@ if __name__ == "__main__":
                 else:
                     sorted_leaderboard = []
                     for user in leaderboard:
-                        sorted_leaderboard.append((int(leaderboard[user]), user))
+                        sorted_leaderboard.append((int(user[1]), user[0]))
                     sorted_leaderboard.sort(reverse=True)
                     print("Leaderboard:")
                     for score, user in sorted_leaderboard:

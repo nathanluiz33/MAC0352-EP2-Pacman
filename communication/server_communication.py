@@ -7,7 +7,7 @@ import json
 import asyncio
 
 from communication.protocol import Protocol
-logging.basicConfig(filename='../communication/server.log', encoding='utf-8', level=logging.DEBUG)
+logging.basicConfig(filename='../communication/server.log', encoding='utf-8', level=logging.INFO)
 
 from communication.server_database import ServerDataBase
 from communication.game_manager import GameManager
@@ -44,21 +44,25 @@ class ServerCommunication:
     
     def login (self, username, password):
         if not server_database.find_user(username):
+            logging.info(f"User from {self.general_socket.otherside_address} could not login on {username}")
             package = {'type': 'login', 'status': 'error: username does not exist'}
             message = json.dumps(package)
             logging.debug(f"Sending message to client: {message}")
             self.general_socket.send_message(message)
         elif not server_database.check_password(username, password):
+            logging.info(f"User from {self.general_socket.otherside_address} could not login on {username}")
             package = {'type': 'login', 'status': 'error: wrong password'}
             message = json.dumps(package)
             logging.debug(f"Sending message to client: {message}")
             self.general_socket.send_message(message)
         elif server_database.is_online(username):
+            logging.info(f"User from {self.general_socket.otherside_address} could not login on {username}")
             package = {'type': 'login', 'status': 'error: user already logged in'}
             message = json.dumps(package)
             logging.debug(f"Sending message to client: {message}")
             self.general_socket.send_message(message)
         else:
+            logging.info(f"User from {self.general_socket.otherside_address} logged in on {username}")
             self.account_logged = username
             package = {'type': 'login', 'status': 'ok'}
             message = json.dumps(package)
@@ -92,7 +96,7 @@ class ServerCommunication:
         self.general_socket.send_message(message)
 
     def get_leaderboard (self):
-        package = {'type': 'get_leaderboard', 'status': 'ok', 'leaderboard': server_database.leaderboard}
+        package = {'type': 'get_leaderboard', 'status': 'ok', 'leaderboard': server_database.get_leaderboard()}
         message = json.dumps(package)
         logging.debug(f"Sending message to client: {message}")
         self.general_socket.send_message(message)
@@ -104,6 +108,7 @@ class ServerCommunication:
         self.general_socket.send_message(message)
 
     def tchau (self):
+        logging.info(f"User {self.general_socket.otherside_address} disconnected")
         server_database.logout(self.account_logged)
 
         package = {'type': 'tchau', 'status': 'ok'}
@@ -112,6 +117,7 @@ class ServerCommunication:
         self.general_socket.send_message(message)
     
     def start_game (self, host_ip, host_port):
+        logging.info(f"User form {self.general_socket.otherside_address} started a game on account {self.account_logged}")
         game_manager.create_game(self.account_logged, host_ip, host_port)
 
         package = {'type': 'start_game', 'status': 'ok'}
@@ -152,7 +158,7 @@ class ServerCommunication:
 
     def parse_client (self, initial_data = None):
         while True:
-            logging.info ("Waiting for data from client")
+            logging.debug ("Waiting for data from client")
 
             if initial_data == None:
                 recv_data = self.general_socket.receive_message()
@@ -164,7 +170,7 @@ class ServerCommunication:
                 break
 
             recv_data = recv_data.decode('ascii')
-            logging.info(f"Received data from client: {recv_data}")
+            logging.debug(f"Received data from client: {recv_data}")
 
             data = json.loads(recv_data)
 

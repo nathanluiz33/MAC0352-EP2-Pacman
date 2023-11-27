@@ -115,6 +115,21 @@ class Pacman ():
         logging.debug (f"Adding incoming player: {username}, {host}, {port}")
         self.incoming_players.append([username, host, port])
 
+    def measure_latency (self):
+        for player in self.game.players:
+            if player != 'local_ghost' and player != self.game.username_host:
+                ans = []
+                for i in range (3):
+                    data = {'type': 'ping'}
+                    message = json.dumps(data)
+                    time_in = time.time ()
+                    self.players_sockets[player].sendall(message.encode('ascii'))
+                    self.players_sockets[player].recv(1024)
+                    time_out = time.time ()
+                    ans.append (time_out - time_in)
+                return ans
+        return None
+
     def start_game (self):
         continue_game = True
         while continue_game:
@@ -148,20 +163,25 @@ class Pacman ():
                         
                 player = self.game.player[user]
                 if player['symbol'] == 'C':
-                    line = input("Pac-Man> ")
-                    line = line.split()
+                    while True:
+                        line = input("Pac-Man> ")
+                        line = line.split()
 
-                    if line[0] == 'move':
-                        if len(line) != 2:
+                        if line[0] == 'move':
+                            if len(line) != 2:
+                                print("Comando invalido")
+                                continue
+                            dir = line[1]
+                            self.game.move(user, dir)
+                            break
+                        elif line[0] == 'encerra':
+                            self.end_game()
+                            continue_game = False
+                            break
+                        elif line[0] == 'atraso':
+                            print (self.measure_latency())
+                        else:
                             print("Comando invalido")
-                            continue
-                        dir = line[1]
-                        self.game.move(user, dir)
-                    elif line[0] == 'encerra':
-                        self.end_game()
-                        continue_game = False
-                    else:
-                        print("Comando invalido")
                 elif player['symbol'] == 'F':
                     rand = random.randint(0, 7)
                     if rand <= 2:
@@ -173,30 +193,42 @@ class Pacman ():
                     else:
                         self.game.move(user, 's')
                 else:
-                    data = {'type': 'request_command', 'status': 'try'}
-                    message = json.dumps(data)
-                    logging.debug(f"Sending message to ghost: {message}")
-                    self.players_sockets[user].sendall(message.encode('ascii'))
+                    while True:
+                        data = {'type': 'request_command', 'status': 'try'}
+                        message = json.dumps(data)
+                        logging.debug(f"Sending message to ghost: {message}")
+                        self.players_sockets[user].sendall(message.encode('ascii'))
 
-                    recv = self.players_sockets[user].recv(1024)
-                    recv = recv.decode('ascii')
-                    logging.debug(f"Received data from ghost: {recv}")
+                        recv = self.players_sockets[user].recv(1024)
+                        recv = recv.decode('ascii')
+                        logging.debug(f"Received data from ghost: {recv}")
 
-                    recv = json.loads(recv)
-                    if recv['type'] == 'send_command' and recv['status'] == 'ok':
-                        command = recv['command']
+                        recv = json.loads(recv)
+                        if recv['type'] == 'send_command' and recv['status'] == 'ok':
+                            command = recv['command']
 
-                        if command == 'move':
-                            dir = recv['direction']
-                            self.game.move(user, dir)
-                        elif command == 'encerra':
-                            self.end_game()
-                            continue_game = False
-                            print ("Game ended")
+                            if command == 'move':
+                                dir = recv['direction']
+                                self.game.move(user, dir)
+                                break
+                            elif command == 'encerra':
+                                self.end_game()
+                                continue_game = False
+                                print ("Game ended")
+                                break
+                            elif command == 'atraso':
+                                data = {'type': 'atraso', 'status': 'ok', 'atraso': self.measure_latency()}
+                                message = json.dumps(data)
+                                logging.debug(f"Sending message to ghost: {message}")
+                                self.players_sockets[user].sendall(message.encode('ascii'))
+
+                                recv = self.players_sockets[user].recv(1024)
+                                recv = recv.decode('ascii')
+                                logging.debug(f"Received data from ghost: {recv}")
+                            else:
+                                print("Comando invalido")
                         else:
-                            print("Comando invalido")
-                    else:
-                        print("Algo deu errado")
+                            print("Algo deu errado")
 
             time.sleep(1)
             self.flush_incoming_players()
@@ -268,6 +300,8 @@ class Ghost ():
             elif recv['type'] == 'end_game' and recv['status'] == 'ok':
                 print ("Game ended")
                 break
+            elif recv['type'] == 'ping':
+                back_socket.sendall(json.dumps({'type': 'ping'}).encode('ascii'))
             elif recv['type'] == 'update_board' and recv['status'] == 'ok':
                 self.board = recv['board']
                 print ("---------------------------")
