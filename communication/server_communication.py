@@ -105,6 +105,11 @@ class ServerCommunication:
 
     def tchau (self):
         server_database.logout(self.account_logged)
+
+        package = {'type': 'tchau', 'status': 'ok'}
+        message = json.dumps(package)
+        logging.debug(f"Sending message to client: {message}")
+        self.general_socket.send_message(message)
     
     def start_game (self, host_ip, host_port):
         game_manager.create_game(self.account_logged, host_ip, host_port)
@@ -127,6 +132,23 @@ class ServerCommunication:
             message = json.dumps(package)
             logging.debug(f"Sending message to client: {message}")
             self.general_socket.send_message(message)
+
+    def send_score (self, user, score):
+        server_database.update_leaderboard(user, score)
+
+        package = {'type': 'send_score', 'status': 'ok'}
+        message = json.dumps(package)
+        logging.debug(f"Sending message to client: {message}")
+        self.general_socket.send_message(message)
+
+    def change_status (self, username, lstatus):
+        server_database.change_status(username, lstatus)
+
+        package = {'type': 'change_status', 'status': 'ok'}
+        message = json.dumps(package)
+        logging.debug(f"Sending message to client: {message}")
+        self.general_socket.send_message(message)
+        
 
     def parse_client (self, initial_data = None):
         while True:
@@ -164,6 +186,10 @@ class ServerCommunication:
                 self.start_game(data['host_ip'], data['host_port'])
             elif data['type'] == 'challenge' and data['status'] == 'try':
                 self.challenge(data['username'])
+            elif data['type'] == 'send_score' and data['status'] == 'try':
+                self.send_score(data['user'], data['score'])
+            elif data['type'] == 'change_status' and data['status'] == 'try':
+                self.change_status(data['username'], data['lstatus'])
             elif data['type'] == 'tchau' and data['status'] == 'try':
                 self.tchau()
                 break
@@ -172,3 +198,4 @@ class ServerCommunication:
                 message = json.dumps(package)
                 logging.debug(f"Sending message to client: {message}")
                 self.general_socket.send_message(message)
+

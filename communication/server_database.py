@@ -20,8 +20,9 @@ class ServerDataBase:
         self.onlineUsersSocket[username] = socket
 
     def remove_online_user (self, username):
-        self.onlineUsersStatus.pop(username)
-        self.onlineUsersSocket.pop(username)
+        if username in self.onlineUsersStatus:
+            self.onlineUsersStatus.pop(username)
+            self.onlineUsersSocket.pop(username)
 
     def create_user(self, username, password):
         if username in self.usersDatabase:
@@ -49,5 +50,14 @@ class ServerDataBase:
 
     def logout (self, username):
         self.remove_online_user(username)
+
+    def update_leaderboard (self, username, score):
+        if username in self.leaderboard:
+            self.leaderboard[username] += score
+        else:
+            self.leaderboard[username] = score
+
+    def change_status (self, username, status):
+        self.onlineUsersStatus[username] = status
 
     

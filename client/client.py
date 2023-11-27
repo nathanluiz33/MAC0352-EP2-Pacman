@@ -22,29 +22,26 @@ logging.basicConfig(filename='../communication/client.log', encoding='utf-8', le
 
 def receive_players (listen_port, pacman):
     # inicializamos um socket que ira ouvir quem entra na sala
-    print ("AQUIIIIIIIIIIIII", pacman)
-    receive_players_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    receive_players_socket.bind(('127.0.0.1', listen_port))
-    receive_players_socket.listen()
-
-
-    logging.info (f"TCP Server listening on 127.0.0.1:{listen_port}")
+    logging.debug (f"TCP Server listening on 127.0.0.1:{listen_port}")
     while True:
-        ghost_socket, ghost_address = receive_players_socket.accept()
+        try:
+            ghost_socket, ghost_address = receive_players_socket.accept()
+            if pacman.game_ended:
+                break
 
-        recv_data = ghost_socket.recv(1024)
-        recv_data = recv_data.decode('ascii')
-        recv_data = json.loads(recv_data)
-        logging.info (f"Received data from {ghost_address}: {recv_data}")
+            recv_data = ghost_socket.recv(1024)
+            recv_data = recv_data.decode('ascii')
+            recv_data = json.loads(recv_data)
+            logging.debug (f"Received data from {ghost_address}: {recv_data}")
 
-        ghost_socket.close()
+            ghost_socket.close()
 
-        ghost_name = recv_data['username']
-        ghost_port = recv_data['port']
+            ghost_name = recv_data['username']
+            ghost_port = recv_data['port']
 
-        # TODO: add mutex
-        print (ghost_name, ghost_address[0], ghost_port)
-        pacman.add_incoming_player(ghost_name, ghost_address[0], ghost_port)
+            pacman.add_incoming_player(ghost_name, ghost_address[0], ghost_port)
+        except:
+            break
 
 
 
@@ -146,15 +143,25 @@ if __name__ == "__main__":
                     for score, user in sorted_leaderboard:
                         print(f"{user}: {score}")
             elif commands[0] == 'inicia':
-                state = 'IN_GAME'
+                server_communication.change_status(cur_username, 'In-game')
+
                 game = Game (cur_username)
 
                 listen_port = get_open_port()
-                print ("listen_port: ", listen_port)
                 server_communication.start_game(server_communication.general_socket.this_socket.getsockname ()[0], listen_port)
                 pacman = Pacman(cur_username)
-                threading.Thread(target=receive_players, args=(listen_port, pacman)).start()
+
+                receive_players_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+                receive_players_socket.bind(('127.0.0.1', listen_port))
+                receive_players_socket.listen()
+
+                threading.Thread(target=receive_players, args=(receive_players_socket, pacman)).start()
                 pacman.start_game()
+
+                # precisamos mandar a pontuacao para o servidor
+                server_communication.send_score(cur_username, pacman.game.score)
+                server_communication.change_status(cur_username, 'Online')
+                receive_players_socket.close()
 
             elif commands[0] == 'desafio':
                 if len(commands) != 2:
@@ -167,14 +174,9 @@ if __name__ == "__main__":
                         print(error)
                     else:
                         print("Desafio aceito!")
+                        server_communication.change_status(cur_username, 'In-game')
                         ghost = Ghost (cur_username, pacman_host[0], pacman_host[1], get_open_port ())
-
-                    # TODO: implementar challenge
-                    # challenge_ok, challenge_error = server_communication.challenge(user)
-                    # if challenge_ok:
-                    #     print("Desafio enviado com sucesso")
-                    # else:
-                    #     print(challenge_error)
+                        server_communication.change_status(cur_username, 'Online')
             elif commands[0] == 'l':
                 online_users = server_communication.get_online_users()
                 if online_users == None:
@@ -191,9 +193,6 @@ if __name__ == "__main__":
                 print ("inicia")
                 print ("desafio <usuario>")
                 print ("l")
-        elif state == 'IN_GAME':
-            # TODO: implementar in game
-            pass
         else:
             print("Unknown state")
 

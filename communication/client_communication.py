@@ -142,6 +142,12 @@ class ClientCommunication:
         logging.debug(f"Sending message to server: {message}")
         self.general_socket.send_message(message)
 
+        data = self.general_socket.receive_message()
+        data = data.decode('ascii')
+        data = json.loads(data)
+
+        return data['type'] == 'tchau' and data['status'] == 'ok'
+
     def start_game (self, host_ip, host_port):
         package = {'type': 'start_game', 'status': 'try', 'host_ip': host_ip, 'host_port': host_port}
         message = json.dumps(package)
@@ -174,3 +180,33 @@ class ClientCommunication:
             return data['host'], data['status']
         else:
             return None, data['status']
+        
+    def send_score (self, user, score):
+        package = {'type': 'send_score', 'status': 'try', 'user': user, 'score': score}
+        message = json.dumps(package)
+
+        logging.debug(f"Sending message to server: {message}")
+        self.general_socket.send_message(message)
+
+        data = self.general_socket.receive_message()
+        data = data.decode('ascii')
+        logging.info(f"Received data from server: {data}")
+
+        data = json.loads(data)
+
+        return data['type'] == 'send_score' and data['status'] == 'ok'
+
+    def change_status (self, username, status):
+        package = {'type': 'change_status', 'status': 'try', 'username': username, 'lstatus': status}
+        message = json.dumps(package)
+
+        logging.debug(f"Sending message to server: {message}")
+        self.general_socket.send_message(message)
+
+        data = self.general_socket.receive_message()
+        data = data.decode('ascii')
+        logging.info(f"Received data from server: {data}")
+
+        data = json.loads(data)
+
+        return data['type'] == 'change_status' and data['status'] == 'ok'
