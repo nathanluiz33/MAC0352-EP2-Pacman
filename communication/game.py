@@ -10,6 +10,7 @@ logging.basicConfig(filename='../communication/client.log', encoding='utf-8', le
 
 class Game:
     def __init__ (self, username_host):
+        self.winner = username_host
         self.username_host = username_host
         self.players = []
         self.player = {}
@@ -50,6 +51,10 @@ class Game:
                         self.score += 1
                         self.coded_board[i][j].remove('.')
                     if has_ghost:
+                        self.winner = 'local_ghost'
+                        for player in self.players:
+                            if player != 'local_ghost' and player != self.username_host:
+                                self.winner = player
                         return True
                     self.board[i][j] = 'C'
                 elif has_ghost_F and has_ghost_f:
@@ -236,6 +241,8 @@ class Pacman ():
         self.end_game()
         self.game_ended = True
         print ("Game ended")
+        self.game.players.remove('local_ghost')
+        return self.game.winner, self.game.score, self.game.players
     
     def flush_incoming_players (self):
         for player in self.incoming_players:

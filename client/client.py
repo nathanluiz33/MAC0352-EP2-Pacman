@@ -156,10 +156,10 @@ if __name__ == "__main__":
                 receive_players_socket.listen()
 
                 threading.Thread(target=receive_players, args=(receive_players_socket, pacman)).start()
-                pacman.start_game()
+                winner, score, players = pacman.start_game()
 
                 # precisamos mandar a pontuacao para o servidor
-                server_communication.send_score(cur_username, pacman.game.score)
+                server_communication.send_score(cur_username, score, winner, players)
                 server_communication.change_status(cur_username, 'Online')
                 receive_players_socket.close()
 

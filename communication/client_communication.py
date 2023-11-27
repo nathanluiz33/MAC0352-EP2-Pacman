@@ -181,8 +181,8 @@ class ClientCommunication:
         else:
             return None, data['status']
         
-    def send_score (self, user, score):
-        package = {'type': 'send_score', 'status': 'try', 'user': user, 'score': score}
+    def send_score (self, user, score, winner, players):
+        package = {'type': 'send_score', 'status': 'try', 'user': user, 'score': score, 'winner': winner, 'players': players}
         message = json.dumps(package)
 
         logging.debug(f"Sending message to server: {message}")

@@ -48,3 +48,21 @@ INFO:root:New TCP connection from ('127.0.0.1', 49769)
 INFO:root:User from ('127.0.0.1', 49769) could not login on daniel
 INFO:root:User from ('127.0.0.1', 49769) logged in on daniel
 INFO:root:Server stopped.
+INFO:root:Starting server on localhost on port 1234
+INFO:root:New TCP connection from ('127.0.0.1', 49913)
+INFO:root:User from ('127.0.0.1', 49913) could not login on daniel
+INFO:root:User from ('127.0.0.1', 49913) logged in on daniel
+INFO:root:User form ('127.0.0.1', 49913) started a game on account daniel
+INFO:root:New UDP connection from ('127.0.0.1', 51084)
+INFO:root:User from ('127.0.0.1', 51084) logged in on 123
+INFO:root:User from ('127.0.0.1', 51084) with account 123 challenged daniel and was accepted
+INFO:root:Game finished. User from ('127.0.0.1', 49913) with account daniel sent a score of 4 to daniel
+INFO:root:The winner was 123 and the players were ['123', 'daniel']
+INFO:root:User form ('127.0.0.1', 49913) started a game on account daniel
+INFO:root:Game finished. User from ('127.0.0.1', 49913) with account daniel sent a score of 0 to daniel
+INFO:root:The winner was daniel and the players were ['daniel']
+INFO:root:Server stopped.
+INFO:root:Starting server on localhost on port 1234
+INFO:root:New UDP connection from ('127.0.0.1', 52015)
+INFO:root:User from ('127.0.0.1', 52015) logged in on daniel
+INFO:root:User ('127.0.0.1', 52015) disconnected

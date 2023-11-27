@@ -140,8 +140,9 @@ class ServerCommunication:
             logging.debug(f"Sending message to client: {message}")
             self.general_socket.send_message(message)
 
-    def send_score (self, user, score):
+    def send_score (self, user, score, winner, players):
         logging.info(f"Game finished. User from {self.general_socket.otherside_address} with account {self.account_logged} sent a score of {score} to {user}")
+        logging.info(f"The winner was {winner} and the players were {players}")
         server_database.update_leaderboard(user, score)
 
         package = {'type': 'send_score', 'status': 'ok'}
@@ -157,7 +158,6 @@ class ServerCommunication:
         logging.debug(f"Sending message to client: {message}")
         self.general_socket.send_message(message)
         
-
     def parse_client (self, initial_data = None):
         while True:
             logging.debug ("Waiting for data from client")
@@ -195,7 +195,7 @@ class ServerCommunication:
             elif data['type'] == 'challenge' and data['status'] == 'try':
                 self.challenge(data['username'])
             elif data['type'] == 'send_score' and data['status'] == 'try':
-                self.send_score(data['user'], data['score'])
+                self.send_score(data['user'], data['score'], data['winner'], data['players'])
             elif data['type'] == 'change_status' and data['status'] == 'try':
                 self.change_status(data['username'], data['lstatus'])
             elif data['type'] == 'tchau' and data['status'] == 'try':
